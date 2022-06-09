@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **blur_hash** | **string** |  | [optional] 
 **newcoin_mint_tx** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
-**consent_email** | **string** |  | [optional] 
+**embed** | **string** |  | [optional] 
 **updated** | **string** |  | [optional] 
 **content_type** | **string** |  | [optional] 
 **longitude** | **float** |  | [optional] 

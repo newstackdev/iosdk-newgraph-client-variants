@@ -1,0 +1,20 @@
+# swagger.model.BcDaoProposalExecuteRequest
+
+## Load the model package
+```dart
+import 'package:swagger/api.dart';
+```
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**proposalAuthor** | **String** |  | [optional] [default to null]
+**proposalId** | **num** |  | [optional] [default to null]
+**daoId** | **String** |  | [optional] [default to null]
+**daoOwner** | **String** |  | [optional] [default to null]
+**exec** | **String** |  | [optional] [default to null]
+**execPrvKey** | **String** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

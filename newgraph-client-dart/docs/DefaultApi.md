@@ -13,12 +13,6 @@ Method | HTTP request | Description
 [**authCallbackPathOptions**](DefaultApi.md#authCallbackPathOptions) | **OPTIONS** /auth/callback/{path+} | 
 [**authProviderPathGet**](DefaultApi.md#authProviderPathGet) | **GET** /auth/provider/{path+} | 
 [**authProviderPathOptions**](DefaultApi.md#authProviderPathOptions) | **OPTIONS** /auth/provider/{path+} | 
-[**bcmaindaodldunstakeOptions**](DefaultApi.md#bcmaindaodldunstakeOptions) | **OPTIONS** /bcmaindaodldunstake | 
-[**bcmaindaodldunstakePost**](DefaultApi.md#bcmaindaodldunstakePost) | **POST** /bcmaindaodldunstake | 
-[**bcmaindaoinstunstakeOptions**](DefaultApi.md#bcmaindaoinstunstakeOptions) | **OPTIONS** /bcmaindaoinstunstake | 
-[**bcmaindaoinstunstakePost**](DefaultApi.md#bcmaindaoinstunstakePost) | **POST** /bcmaindaoinstunstake | 
-[**bcmaindaostakeOptions**](DefaultApi.md#bcmaindaostakeOptions) | **OPTIONS** /bcmaindaostake | 
-[**bcmaindaostakePost**](DefaultApi.md#bcmaindaostakePost) | **POST** /bcmaindaostake | 
 [**folderGet**](DefaultApi.md#folderGet) | **GET** /folder | 
 [**folderOptions**](DefaultApi.md#folderOptions) | **OPTIONS** /folder | 
 [**infoAuthGet**](DefaultApi.md#infoAuthGet) | **GET** /info-auth | 
@@ -51,6 +45,12 @@ Method | HTTP request | Description
 [**newcoinBcgetpoolPost**](DefaultApi.md#newcoinBcgetpoolPost) | **POST** /newcoin/bcgetpool | 
 [**newcoinBckeypairOptions**](DefaultApi.md#newcoinBckeypairOptions) | **OPTIONS** /newcoin/bckeypair | 
 [**newcoinBckeypairPost**](DefaultApi.md#newcoinBckeypairPost) | **POST** /newcoin/bckeypair | 
+[**newcoinBcmaindaodldunstakeOptions**](DefaultApi.md#newcoinBcmaindaodldunstakeOptions) | **OPTIONS** /newcoin/bcmaindaodldunstake | 
+[**newcoinBcmaindaodldunstakePost**](DefaultApi.md#newcoinBcmaindaodldunstakePost) | **POST** /newcoin/bcmaindaodldunstake | 
+[**newcoinBcmaindaoinstunstakeOptions**](DefaultApi.md#newcoinBcmaindaoinstunstakeOptions) | **OPTIONS** /newcoin/bcmaindaoinstunstake | 
+[**newcoinBcmaindaoinstunstakePost**](DefaultApi.md#newcoinBcmaindaoinstunstakePost) | **POST** /newcoin/bcmaindaoinstunstake | 
+[**newcoinBcmaindaostakeOptions**](DefaultApi.md#newcoinBcmaindaostakeOptions) | **OPTIONS** /newcoin/bcmaindaostake | 
+[**newcoinBcmaindaostakePost**](DefaultApi.md#newcoinBcmaindaostakePost) | **POST** /newcoin/bcmaindaostake | 
 [**newcoinBcmintassetOptions**](DefaultApi.md#newcoinBcmintassetOptions) | **OPTIONS** /newcoin/bcmintasset | 
 [**newcoinBcmintassetPost**](DefaultApi.md#newcoinBcmintassetPost) | **POST** /newcoin/bcmintasset | 
 [**newcoinBcpoolcreateOptions**](DefaultApi.md#newcoinBcpoolcreateOptions) | **OPTIONS** /newcoin/bcpoolcreate | 
@@ -61,6 +61,8 @@ Method | HTTP request | Description
 [**newcoinDaoCreatePost**](DefaultApi.md#newcoinDaoCreatePost) | **POST** /newcoin/dao/create | 
 [**newcoinDaoProposalApproveOptions**](DefaultApi.md#newcoinDaoProposalApproveOptions) | **OPTIONS** /newcoin/dao/proposal/approve | 
 [**newcoinDaoProposalApprovePost**](DefaultApi.md#newcoinDaoProposalApprovePost) | **POST** /newcoin/dao/proposal/approve | 
+[**newcoinDaoProposalExecuteOptions**](DefaultApi.md#newcoinDaoProposalExecuteOptions) | **OPTIONS** /newcoin/dao/proposal/execute | 
+[**newcoinDaoProposalExecutePost**](DefaultApi.md#newcoinDaoProposalExecutePost) | **POST** /newcoin/dao/proposal/execute | 
 [**newcoinDaoProposalListGet**](DefaultApi.md#newcoinDaoProposalListGet) | **GET** /newcoin/dao/proposal/list | 
 [**newcoinDaoProposalListOptions**](DefaultApi.md#newcoinDaoProposalListOptions) | **OPTIONS** /newcoin/dao/proposal/list | 
 [**newcoinDaoProposalOptions**](DefaultApi.md#newcoinDaoProposalOptions) | **OPTIONS** /newcoin/dao/proposal | 
@@ -69,6 +71,18 @@ Method | HTTP request | Description
 [**newcoinDaoProposalVotePost**](DefaultApi.md#newcoinDaoProposalVotePost) | **POST** /newcoin/dao/proposal/vote | 
 [**newcoinDaoProposalVotesGet**](DefaultApi.md#newcoinDaoProposalVotesGet) | **GET** /newcoin/dao/proposal/votes | 
 [**newcoinDaoProposalVotesOptions**](DefaultApi.md#newcoinDaoProposalVotesOptions) | **OPTIONS** /newcoin/dao/proposal/votes | 
+[**newcoinDaoProposalWhitelistApproveOptions**](DefaultApi.md#newcoinDaoProposalWhitelistApproveOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoinDaoProposalWhitelistApprovePost**](DefaultApi.md#newcoinDaoProposalWhitelistApprovePost) | **POST** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoinDaoProposalWhitelistExecuteOptions**](DefaultApi.md#newcoinDaoProposalWhitelistExecuteOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoinDaoProposalWhitelistExecutePost**](DefaultApi.md#newcoinDaoProposalWhitelistExecutePost) | **POST** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoinDaoProposalWhitelistListGet**](DefaultApi.md#newcoinDaoProposalWhitelistListGet) | **GET** /newcoin/dao/proposal-whitelist/list | 
+[**newcoinDaoProposalWhitelistListOptions**](DefaultApi.md#newcoinDaoProposalWhitelistListOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/list | 
+[**newcoinDaoProposalWhitelistOptions**](DefaultApi.md#newcoinDaoProposalWhitelistOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist | 
+[**newcoinDaoProposalWhitelistPost**](DefaultApi.md#newcoinDaoProposalWhitelistPost) | **POST** /newcoin/dao/proposal-whitelist | 
+[**newcoinDaoWhitelistGet**](DefaultApi.md#newcoinDaoWhitelistGet) | **GET** /newcoin/dao/whitelist | 
+[**newcoinDaoWhitelistOptions**](DefaultApi.md#newcoinDaoWhitelistOptions) | **OPTIONS** /newcoin/dao/whitelist | 
+[**newcoinDaoWithdrawVoteDepositOptions**](DefaultApi.md#newcoinDaoWithdrawVoteDepositOptions) | **OPTIONS** /newcoin/dao/withdrawVoteDeposit | 
+[**newcoinDaoWithdrawVoteDepositPost**](DefaultApi.md#newcoinDaoWithdrawVoteDepositPost) | **POST** /newcoin/dao/withdrawVoteDeposit | 
 [**paymentStripeIntentOptions**](DefaultApi.md#paymentStripeIntentOptions) | **OPTIONS** /payment/stripe/intent | 
 [**paymentStripeIntentPost**](DefaultApi.md#paymentStripeIntentPost) | **POST** /payment/stripe/intent | 
 [**paymentStripeSubscriptionPaymentOptions**](DefaultApi.md#paymentStripeSubscriptionPaymentOptions) | **OPTIONS** /payment/stripe/subscription/payment | 
@@ -91,6 +105,8 @@ Method | HTTP request | Description
 [**postReportPost**](DefaultApi.md#postReportPost) | **POST** /post/report | 
 [**postUploadOptions**](DefaultApi.md#postUploadOptions) | **OPTIONS** /post/upload | 
 [**postUploadPost**](DefaultApi.md#postUploadPost) | **POST** /post/upload | 
+[**postUtilsRemoteMetaProxyGet**](DefaultApi.md#postUtilsRemoteMetaProxyGet) | **GET** /post/utils/remote-meta-proxy | 
+[**postUtilsRemoteMetaProxyOptions**](DefaultApi.md#postUtilsRemoteMetaProxyOptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**searchCreativeGet**](DefaultApi.md#searchCreativeGet) | **GET** /search/creative | 
 [**searchCreativeOptions**](DefaultApi.md#searchCreativeOptions) | **OPTIONS** /search/creative | 
 [**uploadNodeOptions**](DefaultApi.md#uploadNodeOptions) | **OPTIONS** /upload/node | 
@@ -288,249 +304,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaodldunstakeOptions**
-> bcmaindaodldunstakeOptions()
-
-
-
-### Example 
-```dart
-import 'package:swagger/api.dart';
-
-var api_instance = new DefaultApi();
-
-try { 
-    api_instance.bcmaindaodldunstakeOptions();
-} catch (e) {
-    print("Exception when calling DefaultApi->bcmaindaodldunstakeOptions: $e\n");
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaodldunstakePost**
-> BcTxResponse bcmaindaodldunstakePost(bcStakeMainDAORequest)
-
-
-
-### Example 
-```dart
-import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
-//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
-// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
-
-var api_instance = new DefaultApi();
-var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
-
-try { 
-    var result = api_instance.bcmaindaodldunstakePost(bcStakeMainDAORequest);
-    print(result);
-} catch (e) {
-    print("Exception when calling DefaultApi->bcmaindaodldunstakePost: $e\n");
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaoinstunstakeOptions**
-> bcmaindaoinstunstakeOptions()
-
-
-
-### Example 
-```dart
-import 'package:swagger/api.dart';
-
-var api_instance = new DefaultApi();
-
-try { 
-    api_instance.bcmaindaoinstunstakeOptions();
-} catch (e) {
-    print("Exception when calling DefaultApi->bcmaindaoinstunstakeOptions: $e\n");
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaoinstunstakePost**
-> BcTxResponse bcmaindaoinstunstakePost(bcStakePoolRequest)
-
-
-
-### Example 
-```dart
-import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
-//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
-// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
-
-var api_instance = new DefaultApi();
-var bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
-
-try { 
-    var result = api_instance.bcmaindaoinstunstakePost(bcStakePoolRequest);
-    print(result);
-} catch (e) {
-    print("Exception when calling DefaultApi->bcmaindaoinstunstakePost: $e\n");
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakePoolRequest** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaostakeOptions**
-> bcmaindaostakeOptions()
-
-
-
-### Example 
-```dart
-import 'package:swagger/api.dart';
-
-var api_instance = new DefaultApi();
-
-try { 
-    api_instance.bcmaindaostakeOptions();
-} catch (e) {
-    print("Exception when calling DefaultApi->bcmaindaostakeOptions: $e\n");
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaostakePost**
-> BcTxResponse bcmaindaostakePost(bcStakeMainDAORequest)
-
-
-
-### Example 
-```dart
-import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
-//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
-// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
-
-var api_instance = new DefaultApi();
-var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
-
-try { 
-    var result = api_instance.bcmaindaostakePost(bcStakeMainDAORequest);
-    print(result);
-} catch (e) {
-    print("Exception when calling DefaultApi->bcmaindaostakePost: $e\n");
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1830,6 +1603,249 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **newcoinBcmaindaodldunstakeOptions**
+> newcoinBcmaindaodldunstakeOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinBcmaindaodldunstakeOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinBcmaindaodldunstakeOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinBcmaindaodldunstakePost**
+> BcTxResponse newcoinBcmaindaodldunstakePost(bcStakeMainDAORequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
+
+try { 
+    var result = api_instance.newcoinBcmaindaodldunstakePost(bcStakeMainDAORequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinBcmaindaodldunstakePost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinBcmaindaoinstunstakeOptions**
+> newcoinBcmaindaoinstunstakeOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinBcmaindaoinstunstakeOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinBcmaindaoinstunstakeOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinBcmaindaoinstunstakePost**
+> BcTxResponse newcoinBcmaindaoinstunstakePost(bcStakePoolRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
+
+try { 
+    var result = api_instance.newcoinBcmaindaoinstunstakePost(bcStakePoolRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinBcmaindaoinstunstakePost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakePoolRequest** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinBcmaindaostakeOptions**
+> newcoinBcmaindaostakeOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinBcmaindaostakeOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinBcmaindaostakeOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinBcmaindaostakePost**
+> BcTxResponse newcoinBcmaindaostakePost(bcStakeMainDAORequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
+
+try { 
+    var result = api_instance.newcoinBcmaindaostakePost(bcStakeMainDAORequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinBcmaindaostakePost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **newcoinBcmintassetOptions**
 > newcoinBcmintassetOptions()
 
@@ -2234,8 +2250,44 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **newcoinDaoProposalListGet**
-> BcListDaoProposalsResponse newcoinDaoProposalListGet(proposalAuthor, daoOwner, daoId, id)
+# **newcoinDaoProposalExecuteOptions**
+> newcoinDaoProposalExecuteOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinDaoProposalExecuteOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalExecuteOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalExecutePost**
+> BcDaoProposalExecuteResponse newcoinDaoProposalExecutePost(bcDaoProposalExecuteRequest)
 
 
 
@@ -2248,13 +2300,62 @@ import 'package:swagger/api.dart';
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
 
 var api_instance = new DefaultApi();
+var bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
+
+try { 
+    var result = api_instance.newcoinDaoProposalExecutePost(bcDaoProposalExecuteRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalExecutePost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoProposalExecuteRequest** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalListGet**
+> BcListDaoProposalsResponse newcoinDaoProposalListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var reverse = reverse_example; // String | 
 var proposalAuthor = proposalAuthor_example; // String | 
 var daoOwner = daoOwner_example; // String | 
 var daoId = daoId_example; // String | 
+var limit = limit_example; // String | 
+var lowerBound = lowerBound_example; // String | 
+var upperBound = upperBound_example; // String | 
 var id = id_example; // String | 
 
 try { 
-    var result = api_instance.newcoinDaoProposalListGet(proposalAuthor, daoOwner, daoId, id);
+    var result = api_instance.newcoinDaoProposalListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id);
     print(result);
 } catch (e) {
     print("Exception when calling DefaultApi->newcoinDaoProposalListGet: $e\n");
@@ -2265,9 +2366,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
  **proposalAuthor** | **String**|  | [optional] 
  **daoOwner** | **String**|  | [optional] 
  **daoId** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **lowerBound** | **String**|  | [optional] 
+ **upperBound** | **String**|  | [optional] 
  **id** | **String**|  | [optional] 
 
 ### Return type
@@ -2483,7 +2588,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **newcoinDaoProposalVotesGet**
-> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(voter, voteId)
+> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId)
 
 
 
@@ -2496,11 +2601,15 @@ import 'package:swagger/api.dart';
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
 
 var api_instance = new DefaultApi();
+var reverse = reverse_example; // String | 
+var limit = limit_example; // String | 
+var upperBound = upperBound_example; // String | 
 var voter = voter_example; // String | 
+var lowerBound = lowerBound_example; // String | 
 var voteId = voteId_example; // String | 
 
 try { 
-    var result = api_instance.newcoinDaoProposalVotesGet(voter, voteId);
+    var result = api_instance.newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId);
     print(result);
 } catch (e) {
     print("Exception when calling DefaultApi->newcoinDaoProposalVotesGet: $e\n");
@@ -2511,7 +2620,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **upperBound** | **String**|  | [optional] 
  **voter** | **String**|  | [optional] 
+ **lowerBound** | **String**|  | [optional] 
  **voteId** | **String**|  | [optional] 
 
 ### Return type
@@ -2561,6 +2674,514 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistApproveOptions**
+> newcoinDaoProposalWhitelistApproveOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinDaoProposalWhitelistApproveOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistApproveOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistApprovePost**
+> newcoinDaoProposalWhitelistApprovePost(bcApproveDaoProposalRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var bcApproveDaoProposalRequest = new BcApproveDaoProposalRequest(); // BcApproveDaoProposalRequest | 
+
+try { 
+    api_instance.newcoinDaoProposalWhitelistApprovePost(bcApproveDaoProposalRequest);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistApprovePost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcApproveDaoProposalRequest** | [**BcApproveDaoProposalRequest**](BcApproveDaoProposalRequest.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistExecuteOptions**
+> newcoinDaoProposalWhitelistExecuteOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinDaoProposalWhitelistExecuteOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistExecuteOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistExecutePost**
+> BcDaoProposalExecuteResponse newcoinDaoProposalWhitelistExecutePost(bcDaoProposalExecuteRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
+
+try { 
+    var result = api_instance.newcoinDaoProposalWhitelistExecutePost(bcDaoProposalExecuteRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistExecutePost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoProposalExecuteRequest** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistListGet**
+> BcListDaoProposalsResponse newcoinDaoProposalWhitelistListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var reverse = reverse_example; // String | 
+var proposalAuthor = proposalAuthor_example; // String | 
+var daoOwner = daoOwner_example; // String | 
+var daoId = daoId_example; // String | 
+var limit = limit_example; // String | 
+var lowerBound = lowerBound_example; // String | 
+var upperBound = upperBound_example; // String | 
+var id = id_example; // String | 
+
+try { 
+    var result = api_instance.newcoinDaoProposalWhitelistListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistListGet: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
+ **proposalAuthor** | **String**|  | [optional] 
+ **daoOwner** | **String**|  | [optional] 
+ **daoId** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **lowerBound** | **String**|  | [optional] 
+ **upperBound** | **String**|  | [optional] 
+ **id** | **String**|  | [optional] 
+
+### Return type
+
+[**BcListDaoProposalsResponse**](BcListDaoProposalsResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistListOptions**
+> newcoinDaoProposalWhitelistListOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinDaoProposalWhitelistListOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistListOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistOptions**
+> newcoinDaoProposalWhitelistOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinDaoProposalWhitelistOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoProposalWhitelistPost**
+> newcoinDaoProposalWhitelistPost(bcCreateWhitelistDaoProposal)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var bcCreateWhitelistDaoProposal = new BcCreateWhitelistDaoProposal(); // BcCreateWhitelistDaoProposal | 
+
+try { 
+    api_instance.newcoinDaoProposalWhitelistPost(bcCreateWhitelistDaoProposal);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoProposalWhitelistPost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcCreateWhitelistDaoProposal** | [**BcCreateWhitelistDaoProposal**](BcCreateWhitelistDaoProposal.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoWhitelistGet**
+> BcListDaoWhitelistResponse newcoinDaoWhitelistGet(reverse, daoOwner, daoId, limit, upperBound, lowerBound)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var reverse = reverse_example; // String | 
+var daoOwner = daoOwner_example; // String | 
+var daoId = daoId_example; // String | 
+var limit = limit_example; // String | 
+var upperBound = upperBound_example; // String | 
+var lowerBound = lowerBound_example; // String | 
+
+try { 
+    var result = api_instance.newcoinDaoWhitelistGet(reverse, daoOwner, daoId, limit, upperBound, lowerBound);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoWhitelistGet: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
+ **daoOwner** | **String**|  | [optional] 
+ **daoId** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **upperBound** | **String**|  | [optional] 
+ **lowerBound** | **String**|  | [optional] 
+
+### Return type
+
+[**BcListDaoWhitelistResponse**](BcListDaoWhitelistResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoWhitelistOptions**
+> newcoinDaoWhitelistOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinDaoWhitelistOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoWhitelistOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoWithdrawVoteDepositOptions**
+> newcoinDaoWithdrawVoteDepositOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.newcoinDaoWithdrawVoteDepositOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoWithdrawVoteDepositOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoinDaoWithdrawVoteDepositPost**
+> BcDaoWidthdrawVoteDepositResponse newcoinDaoWithdrawVoteDepositPost(bcDaoWidthdrawVoteDepositRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var bcDaoWidthdrawVoteDepositRequest = new BcDaoWidthdrawVoteDepositRequest(); // BcDaoWidthdrawVoteDepositRequest | 
+
+try { 
+    var result = api_instance.newcoinDaoWithdrawVoteDepositPost(bcDaoWidthdrawVoteDepositRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->newcoinDaoWithdrawVoteDepositPost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoWidthdrawVoteDepositRequest** | [**BcDaoWidthdrawVoteDepositRequest**](BcDaoWidthdrawVoteDepositRequest.md)|  | 
+
+### Return type
+
+[**BcDaoWidthdrawVoteDepositResponse**](BcDaoWidthdrawVoteDepositResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3473,6 +4094,87 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **postUtilsRemoteMetaProxyGet**
+> PostRemoteMetaProxyResponse postUtilsRemoteMetaProxyGet(url)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newlife-creator-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var url = url_example; // String | 
+
+try { 
+    var result = api_instance.postUtilsRemoteMetaProxyGet(url);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->postUtilsRemoteMetaProxyGet: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | **String**|  | [optional] 
+
+### Return type
+
+[**PostRemoteMetaProxyResponse**](PostRemoteMetaProxyResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **postUtilsRemoteMetaProxyOptions**
+> postUtilsRemoteMetaProxyOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.postUtilsRemoteMetaProxyOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->postUtilsRemoteMetaProxyOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

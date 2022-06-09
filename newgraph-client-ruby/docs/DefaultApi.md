@@ -8,12 +8,6 @@ Method | HTTP request | Description
 [**auth_callback_path_options**](DefaultApi.md#auth_callback_path_options) | **OPTIONS** /auth/callback/{path+} | 
 [**auth_provider_path_get**](DefaultApi.md#auth_provider_path_get) | **GET** /auth/provider/{path+} | 
 [**auth_provider_path_options**](DefaultApi.md#auth_provider_path_options) | **OPTIONS** /auth/provider/{path+} | 
-[**bcmaindaodldunstake_options**](DefaultApi.md#bcmaindaodldunstake_options) | **OPTIONS** /bcmaindaodldunstake | 
-[**bcmaindaodldunstake_post**](DefaultApi.md#bcmaindaodldunstake_post) | **POST** /bcmaindaodldunstake | 
-[**bcmaindaoinstunstake_options**](DefaultApi.md#bcmaindaoinstunstake_options) | **OPTIONS** /bcmaindaoinstunstake | 
-[**bcmaindaoinstunstake_post**](DefaultApi.md#bcmaindaoinstunstake_post) | **POST** /bcmaindaoinstunstake | 
-[**bcmaindaostake_options**](DefaultApi.md#bcmaindaostake_options) | **OPTIONS** /bcmaindaostake | 
-[**bcmaindaostake_post**](DefaultApi.md#bcmaindaostake_post) | **POST** /bcmaindaostake | 
 [**folder_get**](DefaultApi.md#folder_get) | **GET** /folder | 
 [**folder_options**](DefaultApi.md#folder_options) | **OPTIONS** /folder | 
 [**info_auth_get**](DefaultApi.md#info_auth_get) | **GET** /info-auth | 
@@ -46,6 +40,12 @@ Method | HTTP request | Description
 [**newcoin_bcgetpool_post**](DefaultApi.md#newcoin_bcgetpool_post) | **POST** /newcoin/bcgetpool | 
 [**newcoin_bckeypair_options**](DefaultApi.md#newcoin_bckeypair_options) | **OPTIONS** /newcoin/bckeypair | 
 [**newcoin_bckeypair_post**](DefaultApi.md#newcoin_bckeypair_post) | **POST** /newcoin/bckeypair | 
+[**newcoin_bcmaindaodldunstake_options**](DefaultApi.md#newcoin_bcmaindaodldunstake_options) | **OPTIONS** /newcoin/bcmaindaodldunstake | 
+[**newcoin_bcmaindaodldunstake_post**](DefaultApi.md#newcoin_bcmaindaodldunstake_post) | **POST** /newcoin/bcmaindaodldunstake | 
+[**newcoin_bcmaindaoinstunstake_options**](DefaultApi.md#newcoin_bcmaindaoinstunstake_options) | **OPTIONS** /newcoin/bcmaindaoinstunstake | 
+[**newcoin_bcmaindaoinstunstake_post**](DefaultApi.md#newcoin_bcmaindaoinstunstake_post) | **POST** /newcoin/bcmaindaoinstunstake | 
+[**newcoin_bcmaindaostake_options**](DefaultApi.md#newcoin_bcmaindaostake_options) | **OPTIONS** /newcoin/bcmaindaostake | 
+[**newcoin_bcmaindaostake_post**](DefaultApi.md#newcoin_bcmaindaostake_post) | **POST** /newcoin/bcmaindaostake | 
 [**newcoin_bcmintasset_options**](DefaultApi.md#newcoin_bcmintasset_options) | **OPTIONS** /newcoin/bcmintasset | 
 [**newcoin_bcmintasset_post**](DefaultApi.md#newcoin_bcmintasset_post) | **POST** /newcoin/bcmintasset | 
 [**newcoin_bcpoolcreate_options**](DefaultApi.md#newcoin_bcpoolcreate_options) | **OPTIONS** /newcoin/bcpoolcreate | 
@@ -56,6 +56,8 @@ Method | HTTP request | Description
 [**newcoin_dao_create_post**](DefaultApi.md#newcoin_dao_create_post) | **POST** /newcoin/dao/create | 
 [**newcoin_dao_proposal_approve_options**](DefaultApi.md#newcoin_dao_proposal_approve_options) | **OPTIONS** /newcoin/dao/proposal/approve | 
 [**newcoin_dao_proposal_approve_post**](DefaultApi.md#newcoin_dao_proposal_approve_post) | **POST** /newcoin/dao/proposal/approve | 
+[**newcoin_dao_proposal_execute_options**](DefaultApi.md#newcoin_dao_proposal_execute_options) | **OPTIONS** /newcoin/dao/proposal/execute | 
+[**newcoin_dao_proposal_execute_post**](DefaultApi.md#newcoin_dao_proposal_execute_post) | **POST** /newcoin/dao/proposal/execute | 
 [**newcoin_dao_proposal_list_get**](DefaultApi.md#newcoin_dao_proposal_list_get) | **GET** /newcoin/dao/proposal/list | 
 [**newcoin_dao_proposal_list_options**](DefaultApi.md#newcoin_dao_proposal_list_options) | **OPTIONS** /newcoin/dao/proposal/list | 
 [**newcoin_dao_proposal_options**](DefaultApi.md#newcoin_dao_proposal_options) | **OPTIONS** /newcoin/dao/proposal | 
@@ -64,6 +66,18 @@ Method | HTTP request | Description
 [**newcoin_dao_proposal_vote_post**](DefaultApi.md#newcoin_dao_proposal_vote_post) | **POST** /newcoin/dao/proposal/vote | 
 [**newcoin_dao_proposal_votes_get**](DefaultApi.md#newcoin_dao_proposal_votes_get) | **GET** /newcoin/dao/proposal/votes | 
 [**newcoin_dao_proposal_votes_options**](DefaultApi.md#newcoin_dao_proposal_votes_options) | **OPTIONS** /newcoin/dao/proposal/votes | 
+[**newcoin_dao_proposal_whitelist_approve_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_approve_options) | **OPTIONS** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoin_dao_proposal_whitelist_approve_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_approve_post) | **POST** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoin_dao_proposal_whitelist_execute_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_execute_options) | **OPTIONS** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoin_dao_proposal_whitelist_execute_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_execute_post) | **POST** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoin_dao_proposal_whitelist_list_get**](DefaultApi.md#newcoin_dao_proposal_whitelist_list_get) | **GET** /newcoin/dao/proposal-whitelist/list | 
+[**newcoin_dao_proposal_whitelist_list_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_list_options) | **OPTIONS** /newcoin/dao/proposal-whitelist/list | 
+[**newcoin_dao_proposal_whitelist_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_options) | **OPTIONS** /newcoin/dao/proposal-whitelist | 
+[**newcoin_dao_proposal_whitelist_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_post) | **POST** /newcoin/dao/proposal-whitelist | 
+[**newcoin_dao_whitelist_get**](DefaultApi.md#newcoin_dao_whitelist_get) | **GET** /newcoin/dao/whitelist | 
+[**newcoin_dao_whitelist_options**](DefaultApi.md#newcoin_dao_whitelist_options) | **OPTIONS** /newcoin/dao/whitelist | 
+[**newcoin_dao_withdraw_vote_deposit_options**](DefaultApi.md#newcoin_dao_withdraw_vote_deposit_options) | **OPTIONS** /newcoin/dao/withdrawVoteDeposit | 
+[**newcoin_dao_withdraw_vote_deposit_post**](DefaultApi.md#newcoin_dao_withdraw_vote_deposit_post) | **POST** /newcoin/dao/withdrawVoteDeposit | 
 [**payment_stripe_intent_options**](DefaultApi.md#payment_stripe_intent_options) | **OPTIONS** /payment/stripe/intent | 
 [**payment_stripe_intent_post**](DefaultApi.md#payment_stripe_intent_post) | **POST** /payment/stripe/intent | 
 [**payment_stripe_subscription_payment_options**](DefaultApi.md#payment_stripe_subscription_payment_options) | **OPTIONS** /payment/stripe/subscription/payment | 
@@ -86,6 +100,8 @@ Method | HTTP request | Description
 [**post_report_post**](DefaultApi.md#post_report_post) | **POST** /post/report | 
 [**post_upload_options**](DefaultApi.md#post_upload_options) | **OPTIONS** /post/upload | 
 [**post_upload_post**](DefaultApi.md#post_upload_post) | **POST** /post/upload | 
+[**post_utils_remote_meta_proxy_get**](DefaultApi.md#post_utils_remote_meta_proxy_get) | **GET** /post/utils/remote-meta-proxy | 
+[**post_utils_remote_meta_proxy_options**](DefaultApi.md#post_utils_remote_meta_proxy_options) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**search_creative_get**](DefaultApi.md#search_creative_get) | **GET** /search/creative | 
 [**search_creative_options**](DefaultApi.md#search_creative_options) | **OPTIONS** /search/creative | 
 [**upload_node_options**](DefaultApi.md#upload_node_options) | **OPTIONS** /upload/node | 
@@ -295,270 +311,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **bcmaindaodldunstake_options**
-> bcmaindaodldunstake_options
-
-
-
-### Example
-```ruby
-# load the gem
-require 'swagger_client'
-
-api_instance = SwaggerClient::DefaultApi.new
-
-begin
-  api_instance.bcmaindaodldunstake_options
-rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DefaultApi->bcmaindaodldunstake_options: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-nil (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **bcmaindaodldunstake_post**
-> BcTxResponse bcmaindaodldunstake_post(bc_stake_main_dao_request)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'swagger_client'
-# setup authorization
-SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
-  config.api_key['Authorization'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['Authorization'] = 'Bearer'
-end
-
-api_instance = SwaggerClient::DefaultApi.new
-
-bc_stake_main_dao_request = SwaggerClient::BcStakeMainDAORequest.new # BcStakeMainDAORequest | 
-
-
-begin
-  result = api_instance.bcmaindaodldunstake_post(bc_stake_main_dao_request)
-  p result
-rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DefaultApi->bcmaindaodldunstake_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-
-
-# **bcmaindaoinstunstake_options**
-> bcmaindaoinstunstake_options
-
-
-
-### Example
-```ruby
-# load the gem
-require 'swagger_client'
-
-api_instance = SwaggerClient::DefaultApi.new
-
-begin
-  api_instance.bcmaindaoinstunstake_options
-rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DefaultApi->bcmaindaoinstunstake_options: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-nil (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **bcmaindaoinstunstake_post**
-> BcTxResponse bcmaindaoinstunstake_post(bc_stake_pool_request)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'swagger_client'
-# setup authorization
-SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
-  config.api_key['Authorization'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['Authorization'] = 'Bearer'
-end
-
-api_instance = SwaggerClient::DefaultApi.new
-
-bc_stake_pool_request = SwaggerClient::BcStakePoolRequest.new # BcStakePoolRequest | 
-
-
-begin
-  result = api_instance.bcmaindaoinstunstake_post(bc_stake_pool_request)
-  p result
-rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DefaultApi->bcmaindaoinstunstake_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_pool_request** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-
-
-# **bcmaindaostake_options**
-> bcmaindaostake_options
-
-
-
-### Example
-```ruby
-# load the gem
-require 'swagger_client'
-
-api_instance = SwaggerClient::DefaultApi.new
-
-begin
-  api_instance.bcmaindaostake_options
-rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DefaultApi->bcmaindaostake_options: #{e}"
-end
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-nil (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-
-# **bcmaindaostake_post**
-> BcTxResponse bcmaindaostake_post(bc_stake_main_dao_request)
-
-
-
-### Example
-```ruby
-# load the gem
-require 'swagger_client'
-# setup authorization
-SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
-  config.api_key['Authorization'] = 'YOUR API KEY'
-  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
-  #config.api_key_prefix['Authorization'] = 'Bearer'
-end
-
-api_instance = SwaggerClient::DefaultApi.new
-
-bc_stake_main_dao_request = SwaggerClient::BcStakeMainDAORequest.new # BcStakeMainDAORequest | 
-
-
-begin
-  result = api_instance.bcmaindaostake_post(bc_stake_main_dao_request)
-  p result
-rescue SwaggerClient::ApiError => e
-  puts "Exception when calling DefaultApi->bcmaindaostake_post: #{e}"
-end
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 
@@ -1969,6 +1721,270 @@ Name | Type | Description  | Notes
 
 
 
+# **newcoin_bcmaindaodldunstake_options**
+> newcoin_bcmaindaodldunstake_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_bcmaindaodldunstake_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_bcmaindaodldunstake_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_bcmaindaodldunstake_post**
+> BcTxResponse newcoin_bcmaindaodldunstake_post(bc_stake_main_dao_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_stake_main_dao_request = SwaggerClient::BcStakeMainDAORequest.new # BcStakeMainDAORequest | 
+
+
+begin
+  result = api_instance.newcoin_bcmaindaodldunstake_post(bc_stake_main_dao_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_bcmaindaodldunstake_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **newcoin_bcmaindaoinstunstake_options**
+> newcoin_bcmaindaoinstunstake_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_bcmaindaoinstunstake_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_bcmaindaoinstunstake_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_bcmaindaoinstunstake_post**
+> BcTxResponse newcoin_bcmaindaoinstunstake_post(bc_stake_pool_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_stake_pool_request = SwaggerClient::BcStakePoolRequest.new # BcStakePoolRequest | 
+
+
+begin
+  result = api_instance.newcoin_bcmaindaoinstunstake_post(bc_stake_pool_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_bcmaindaoinstunstake_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_pool_request** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **newcoin_bcmaindaostake_options**
+> newcoin_bcmaindaostake_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_bcmaindaostake_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_bcmaindaostake_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_bcmaindaostake_post**
+> BcTxResponse newcoin_bcmaindaostake_post(bc_stake_main_dao_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_stake_main_dao_request = SwaggerClient::BcStakeMainDAORequest.new # BcStakeMainDAORequest | 
+
+
+begin
+  result = api_instance.newcoin_bcmaindaostake_post(bc_stake_main_dao_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_bcmaindaostake_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
 # **newcoin_bcmintasset_options**
 > newcoin_bcmintasset_options
 
@@ -2408,6 +2424,94 @@ nil (empty response body)
 
 
 
+# **newcoin_dao_proposal_execute_options**
+> newcoin_dao_proposal_execute_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_dao_proposal_execute_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_execute_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_execute_post**
+> BcDaoProposalExecuteResponse newcoin_dao_proposal_execute_post(bc_dao_proposal_execute_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_dao_proposal_execute_request = SwaggerClient::BcDaoProposalExecuteRequest.new # BcDaoProposalExecuteRequest | 
+
+
+begin
+  result = api_instance.newcoin_dao_proposal_execute_post(bc_dao_proposal_execute_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_execute_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_proposal_execute_request** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
 # **newcoin_dao_proposal_list_get**
 > BcListDaoProposalsResponse newcoin_dao_proposal_list_get(opts)
 
@@ -2428,9 +2532,13 @@ end
 api_instance = SwaggerClient::DefaultApi.new
 
 opts = { 
+  reverse: 'reverse_example', # String | 
   proposal_author: 'proposal_author_example', # String | 
   dao_owner: 'dao_owner_example', # String | 
   dao_id: 'dao_id_example', # String | 
+  limit: 'limit_example', # String | 
+  lower_bound: 'lower_bound_example', # String | 
+  upper_bound: 'upper_bound_example', # String | 
   id: 'id_example' # String | 
 }
 
@@ -2446,9 +2554,13 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
  **proposal_author** | **String**|  | [optional] 
  **dao_owner** | **String**|  | [optional] 
  **dao_id** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **lower_bound** | **String**|  | [optional] 
+ **upper_bound** | **String**|  | [optional] 
  **id** | **String**|  | [optional] 
 
 ### Return type
@@ -2698,7 +2810,11 @@ end
 api_instance = SwaggerClient::DefaultApi.new
 
 opts = { 
+  reverse: 'reverse_example', # String | 
+  limit: 'limit_example', # String | 
+  upper_bound: 'upper_bound_example', # String | 
   voter: 'voter_example', # String | 
+  lower_bound: 'lower_bound_example', # String | 
   vote_id: 'vote_id_example' # String | 
 }
 
@@ -2714,7 +2830,11 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **upper_bound** | **String**|  | [optional] 
  **voter** | **String**|  | [optional] 
+ **lower_bound** | **String**|  | [optional] 
  **vote_id** | **String**|  | [optional] 
 
 ### Return type
@@ -2765,6 +2885,558 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_approve_options**
+> newcoin_dao_proposal_whitelist_approve_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_dao_proposal_whitelist_approve_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_approve_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_approve_post**
+> newcoin_dao_proposal_whitelist_approve_post(bc_approve_dao_proposal_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_approve_dao_proposal_request = SwaggerClient::BcApproveDaoProposalRequest.new # BcApproveDaoProposalRequest | 
+
+
+begin
+  api_instance.newcoin_dao_proposal_whitelist_approve_post(bc_approve_dao_proposal_request)
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_approve_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_approve_dao_proposal_request** | [**BcApproveDaoProposalRequest**](BcApproveDaoProposalRequest.md)|  | 
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_execute_options**
+> newcoin_dao_proposal_whitelist_execute_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_dao_proposal_whitelist_execute_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_execute_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_execute_post**
+> BcDaoProposalExecuteResponse newcoin_dao_proposal_whitelist_execute_post(bc_dao_proposal_execute_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_dao_proposal_execute_request = SwaggerClient::BcDaoProposalExecuteRequest.new # BcDaoProposalExecuteRequest | 
+
+
+begin
+  result = api_instance.newcoin_dao_proposal_whitelist_execute_post(bc_dao_proposal_execute_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_execute_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_proposal_execute_request** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_list_get**
+> BcListDaoProposalsResponse newcoin_dao_proposal_whitelist_list_get(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+opts = { 
+  reverse: 'reverse_example', # String | 
+  proposal_author: 'proposal_author_example', # String | 
+  dao_owner: 'dao_owner_example', # String | 
+  dao_id: 'dao_id_example', # String | 
+  limit: 'limit_example', # String | 
+  lower_bound: 'lower_bound_example', # String | 
+  upper_bound: 'upper_bound_example', # String | 
+  id: 'id_example' # String | 
+}
+
+begin
+  result = api_instance.newcoin_dao_proposal_whitelist_list_get(opts)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_list_get: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
+ **proposal_author** | **String**|  | [optional] 
+ **dao_owner** | **String**|  | [optional] 
+ **dao_id** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **lower_bound** | **String**|  | [optional] 
+ **upper_bound** | **String**|  | [optional] 
+ **id** | **String**|  | [optional] 
+
+### Return type
+
+[**BcListDaoProposalsResponse**](BcListDaoProposalsResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_list_options**
+> newcoin_dao_proposal_whitelist_list_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_dao_proposal_whitelist_list_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_list_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_options**
+> newcoin_dao_proposal_whitelist_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_dao_proposal_whitelist_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_proposal_whitelist_post**
+> newcoin_dao_proposal_whitelist_post(bc_create_whitelist_dao_proposal)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_create_whitelist_dao_proposal = SwaggerClient::BcCreateWhitelistDaoProposal.new # BcCreateWhitelistDaoProposal | 
+
+
+begin
+  api_instance.newcoin_dao_proposal_whitelist_post(bc_create_whitelist_dao_proposal)
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_create_whitelist_dao_proposal** | [**BcCreateWhitelistDaoProposal**](BcCreateWhitelistDaoProposal.md)|  | 
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_whitelist_get**
+> BcListDaoWhitelistResponse newcoin_dao_whitelist_get(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+opts = { 
+  reverse: 'reverse_example', # String | 
+  dao_owner: 'dao_owner_example', # String | 
+  dao_id: 'dao_id_example', # String | 
+  limit: 'limit_example', # String | 
+  upper_bound: 'upper_bound_example', # String | 
+  lower_bound: 'lower_bound_example' # String | 
+}
+
+begin
+  result = api_instance.newcoin_dao_whitelist_get(opts)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_whitelist_get: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional] 
+ **dao_owner** | **String**|  | [optional] 
+ **dao_id** | **String**|  | [optional] 
+ **limit** | **String**|  | [optional] 
+ **upper_bound** | **String**|  | [optional] 
+ **lower_bound** | **String**|  | [optional] 
+
+### Return type
+
+[**BcListDaoWhitelistResponse**](BcListDaoWhitelistResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_whitelist_options**
+> newcoin_dao_whitelist_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_dao_whitelist_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_whitelist_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_withdraw_vote_deposit_options**
+> newcoin_dao_withdraw_vote_deposit_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.newcoin_dao_withdraw_vote_deposit_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_withdraw_vote_deposit_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **newcoin_dao_withdraw_vote_deposit_post**
+> BcDaoWidthdrawVoteDepositResponse newcoin_dao_withdraw_vote_deposit_post(bc_dao_widthdraw_vote_deposit_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+bc_dao_widthdraw_vote_deposit_request = SwaggerClient::BcDaoWidthdrawVoteDepositRequest.new # BcDaoWidthdrawVoteDepositRequest | 
+
+
+begin
+  result = api_instance.newcoin_dao_withdraw_vote_deposit_post(bc_dao_widthdraw_vote_deposit_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->newcoin_dao_withdraw_vote_deposit_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_widthdraw_vote_deposit_request** | [**BcDaoWidthdrawVoteDepositRequest**](BcDaoWidthdrawVoteDepositRequest.md)|  | 
+
+### Return type
+
+[**BcDaoWidthdrawVoteDepositResponse**](BcDaoWidthdrawVoteDepositResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 
@@ -3758,6 +4430,95 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **post_utils_remote_meta_proxy_get**
+> PostRemoteMetaProxyResponse post_utils_remote_meta_proxy_get(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newlife-creator-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+opts = { 
+  url: 'url_example' # String | 
+}
+
+begin
+  result = api_instance.post_utils_remote_meta_proxy_get(opts)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->post_utils_remote_meta_proxy_get: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | **String**|  | [optional] 
+
+### Return type
+
+[**PostRemoteMetaProxyResponse**](PostRemoteMetaProxyResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **post_utils_remote_meta_proxy_options**
+> post_utils_remote_meta_proxy_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.post_utils_remote_meta_proxy_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->post_utils_remote_meta_proxy_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

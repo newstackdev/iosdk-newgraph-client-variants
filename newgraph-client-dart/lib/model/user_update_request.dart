@@ -2,10 +2,10 @@ part of swagger.api;
 
 class UserUpdateRequest {
   
-  String lastName = null;
+  String youtube = null;
   
 
-  String website = null;
+  String lastName = null;
   
 
   String consentPrivacyPolicy = null;
@@ -20,22 +20,25 @@ class UserUpdateRequest {
   String newcoinCreateAccount = null;
   
 
-  String fullName = null;
+  String description = null;
   
 
   String tumblr = null;
   
 
-  String description = null;
+  String instagram = null;
   
 
-  String instagram = null;
+  String medium = null;
   
 
   String soundcloud = null;
   
 
-  String firstName = null;
+  String snapchat = null;
+  
+
+  String apple = null;
   
 
   String twitter = null;
@@ -44,28 +47,58 @@ class UserUpdateRequest {
   String tiktok = null;
   
 
+  String reddit = null;
+  
+
   String id = null;
   
 
-  String consentEmail = null;
+  String signal = null;
   
 
   num longitude = null;
+  
+
+  String website = null;
+  
+
+  String spotify = null;
+  
+
+  String facebook = null;
+  
+
+  String fullName = null;
+  
+
+  String telegram = null;
+  
+
+  String pinterest = null;
+  
+
+  String firstName = null;
+  
+
+  String discord = null;
+  
+
+  String consentEmail = null;
   
   UserUpdateRequest();
 
   @override
   String toString() {
-    return 'UserUpdateRequest[lastName=$lastName, website=$website, consentPrivacyPolicy=$consentPrivacyPolicy, displayName=$displayName, latitude=$latitude, newcoinCreateAccount=$newcoinCreateAccount, fullName=$fullName, tumblr=$tumblr, description=$description, instagram=$instagram, soundcloud=$soundcloud, firstName=$firstName, twitter=$twitter, tiktok=$tiktok, id=$id, consentEmail=$consentEmail, longitude=$longitude, ]';
+    return 'UserUpdateRequest[youtube=$youtube, lastName=$lastName, consentPrivacyPolicy=$consentPrivacyPolicy, displayName=$displayName, latitude=$latitude, newcoinCreateAccount=$newcoinCreateAccount, description=$description, tumblr=$tumblr, instagram=$instagram, medium=$medium, soundcloud=$soundcloud, snapchat=$snapchat, apple=$apple, twitter=$twitter, tiktok=$tiktok, reddit=$reddit, id=$id, signal=$signal, longitude=$longitude, website=$website, spotify=$spotify, facebook=$facebook, fullName=$fullName, telegram=$telegram, pinterest=$pinterest, firstName=$firstName, discord=$discord, consentEmail=$consentEmail, ]';
   }
 
   UserUpdateRequest.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
+    youtube =
+        json['youtube']
+    ;
     lastName =
         json['lastName']
-    ;
-    website =
-        json['website']
     ;
     consentPrivacyPolicy =
         json['consentPrivacyPolicy']
@@ -79,23 +112,26 @@ class UserUpdateRequest {
     newcoinCreateAccount =
         json['newcoinCreateAccount']
     ;
-    fullName =
-        json['fullName']
+    description =
+        json['description']
     ;
     tumblr =
         json['tumblr']
     ;
-    description =
-        json['description']
-    ;
     instagram =
         json['instagram']
+    ;
+    medium =
+        json['medium']
     ;
     soundcloud =
         json['soundcloud']
     ;
-    firstName =
-        json['firstName']
+    snapchat =
+        json['snapchat']
+    ;
+    apple =
+        json['apple']
     ;
     twitter =
         json['twitter']
@@ -103,36 +139,77 @@ class UserUpdateRequest {
     tiktok =
         json['tiktok']
     ;
+    reddit =
+        json['reddit']
+    ;
     id =
         json['id']
     ;
-    consentEmail =
-        json['consentEmail']
+    signal =
+        json['signal']
     ;
     longitude =
         json['longitude']
+    ;
+    website =
+        json['website']
+    ;
+    spotify =
+        json['spotify']
+    ;
+    facebook =
+        json['facebook']
+    ;
+    fullName =
+        json['fullName']
+    ;
+    telegram =
+        json['telegram']
+    ;
+    pinterest =
+        json['pinterest']
+    ;
+    firstName =
+        json['firstName']
+    ;
+    discord =
+        json['discord']
+    ;
+    consentEmail =
+        json['consentEmail']
     ;
   }
 
   Map<String, dynamic> toJson() {
     return {
+      'youtube': youtube,
       'lastName': lastName,
-      'website': website,
       'consentPrivacyPolicy': consentPrivacyPolicy,
       'displayName': displayName,
       'latitude': latitude,
       'newcoinCreateAccount': newcoinCreateAccount,
-      'fullName': fullName,
-      'tumblr': tumblr,
       'description': description,
+      'tumblr': tumblr,
       'instagram': instagram,
+      'medium': medium,
       'soundcloud': soundcloud,
-      'firstName': firstName,
+      'snapchat': snapchat,
+      'apple': apple,
       'twitter': twitter,
       'tiktok': tiktok,
+      'reddit': reddit,
       'id': id,
-      'consentEmail': consentEmail,
-      'longitude': longitude
+      'signal': signal,
+      'longitude': longitude,
+      'website': website,
+      'spotify': spotify,
+      'facebook': facebook,
+      'fullName': fullName,
+      'telegram': telegram,
+      'pinterest': pinterest,
+      'firstName': firstName,
+      'discord': discord,
+      'consentEmail': consentEmail
      };
   }
 

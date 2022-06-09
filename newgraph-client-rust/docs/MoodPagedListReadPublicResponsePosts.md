@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **blur_hash** | **String** |  | [optional] [default to null]
 **newcoin_mint_tx** | **String** |  | [optional] [default to null]
 **id** | **String** |  | [optional] [default to null]
-**consent_email** | **String** |  | [optional] [default to null]
+**embed** | **String** |  | [optional] [default to null]
 **updated** | **String** |  | [optional] [default to null]
 **content_type** | **String** |  | [optional] [default to null]
 **longitude** | **f32** |  | [optional] [default to null]

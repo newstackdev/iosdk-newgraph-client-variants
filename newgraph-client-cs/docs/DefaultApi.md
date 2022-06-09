@@ -8,12 +8,6 @@ Method | HTTP request | Description
 [**AuthCallbackPathOptions**](DefaultApi.md#authcallbackpathoptions) | **OPTIONS** /auth/callback/{path+} | 
 [**AuthProviderPathGet**](DefaultApi.md#authproviderpathget) | **GET** /auth/provider/{path+} | 
 [**AuthProviderPathOptions**](DefaultApi.md#authproviderpathoptions) | **OPTIONS** /auth/provider/{path+} | 
-[**BcmaindaodldunstakeOptions**](DefaultApi.md#bcmaindaodldunstakeoptions) | **OPTIONS** /bcmaindaodldunstake | 
-[**BcmaindaodldunstakePost**](DefaultApi.md#bcmaindaodldunstakepost) | **POST** /bcmaindaodldunstake | 
-[**BcmaindaoinstunstakeOptions**](DefaultApi.md#bcmaindaoinstunstakeoptions) | **OPTIONS** /bcmaindaoinstunstake | 
-[**BcmaindaoinstunstakePost**](DefaultApi.md#bcmaindaoinstunstakepost) | **POST** /bcmaindaoinstunstake | 
-[**BcmaindaostakeOptions**](DefaultApi.md#bcmaindaostakeoptions) | **OPTIONS** /bcmaindaostake | 
-[**BcmaindaostakePost**](DefaultApi.md#bcmaindaostakepost) | **POST** /bcmaindaostake | 
 [**FolderGet**](DefaultApi.md#folderget) | **GET** /folder | 
 [**FolderOptions**](DefaultApi.md#folderoptions) | **OPTIONS** /folder | 
 [**InfoAuthGet**](DefaultApi.md#infoauthget) | **GET** /info-auth | 
@@ -46,6 +40,12 @@ Method | HTTP request | Description
 [**NewcoinBcgetpoolPost**](DefaultApi.md#newcoinbcgetpoolpost) | **POST** /newcoin/bcgetpool | 
 [**NewcoinBckeypairOptions**](DefaultApi.md#newcoinbckeypairoptions) | **OPTIONS** /newcoin/bckeypair | 
 [**NewcoinBckeypairPost**](DefaultApi.md#newcoinbckeypairpost) | **POST** /newcoin/bckeypair | 
+[**NewcoinBcmaindaodldunstakeOptions**](DefaultApi.md#newcoinbcmaindaodldunstakeoptions) | **OPTIONS** /newcoin/bcmaindaodldunstake | 
+[**NewcoinBcmaindaodldunstakePost**](DefaultApi.md#newcoinbcmaindaodldunstakepost) | **POST** /newcoin/bcmaindaodldunstake | 
+[**NewcoinBcmaindaoinstunstakeOptions**](DefaultApi.md#newcoinbcmaindaoinstunstakeoptions) | **OPTIONS** /newcoin/bcmaindaoinstunstake | 
+[**NewcoinBcmaindaoinstunstakePost**](DefaultApi.md#newcoinbcmaindaoinstunstakepost) | **POST** /newcoin/bcmaindaoinstunstake | 
+[**NewcoinBcmaindaostakeOptions**](DefaultApi.md#newcoinbcmaindaostakeoptions) | **OPTIONS** /newcoin/bcmaindaostake | 
+[**NewcoinBcmaindaostakePost**](DefaultApi.md#newcoinbcmaindaostakepost) | **POST** /newcoin/bcmaindaostake | 
 [**NewcoinBcmintassetOptions**](DefaultApi.md#newcoinbcmintassetoptions) | **OPTIONS** /newcoin/bcmintasset | 
 [**NewcoinBcmintassetPost**](DefaultApi.md#newcoinbcmintassetpost) | **POST** /newcoin/bcmintasset | 
 [**NewcoinBcpoolcreateOptions**](DefaultApi.md#newcoinbcpoolcreateoptions) | **OPTIONS** /newcoin/bcpoolcreate | 
@@ -56,6 +56,8 @@ Method | HTTP request | Description
 [**NewcoinDaoCreatePost**](DefaultApi.md#newcoindaocreatepost) | **POST** /newcoin/dao/create | 
 [**NewcoinDaoProposalApproveOptions**](DefaultApi.md#newcoindaoproposalapproveoptions) | **OPTIONS** /newcoin/dao/proposal/approve | 
 [**NewcoinDaoProposalApprovePost**](DefaultApi.md#newcoindaoproposalapprovepost) | **POST** /newcoin/dao/proposal/approve | 
+[**NewcoinDaoProposalExecuteOptions**](DefaultApi.md#newcoindaoproposalexecuteoptions) | **OPTIONS** /newcoin/dao/proposal/execute | 
+[**NewcoinDaoProposalExecutePost**](DefaultApi.md#newcoindaoproposalexecutepost) | **POST** /newcoin/dao/proposal/execute | 
 [**NewcoinDaoProposalListGet**](DefaultApi.md#newcoindaoproposallistget) | **GET** /newcoin/dao/proposal/list | 
 [**NewcoinDaoProposalListOptions**](DefaultApi.md#newcoindaoproposallistoptions) | **OPTIONS** /newcoin/dao/proposal/list | 
 [**NewcoinDaoProposalOptions**](DefaultApi.md#newcoindaoproposaloptions) | **OPTIONS** /newcoin/dao/proposal | 
@@ -64,6 +66,18 @@ Method | HTTP request | Description
 [**NewcoinDaoProposalVotePost**](DefaultApi.md#newcoindaoproposalvotepost) | **POST** /newcoin/dao/proposal/vote | 
 [**NewcoinDaoProposalVotesGet**](DefaultApi.md#newcoindaoproposalvotesget) | **GET** /newcoin/dao/proposal/votes | 
 [**NewcoinDaoProposalVotesOptions**](DefaultApi.md#newcoindaoproposalvotesoptions) | **OPTIONS** /newcoin/dao/proposal/votes | 
+[**NewcoinDaoProposalWhitelistApproveOptions**](DefaultApi.md#newcoindaoproposalwhitelistapproveoptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/approve | 
+[**NewcoinDaoProposalWhitelistApprovePost**](DefaultApi.md#newcoindaoproposalwhitelistapprovepost) | **POST** /newcoin/dao/proposal-whitelist/approve | 
+[**NewcoinDaoProposalWhitelistExecuteOptions**](DefaultApi.md#newcoindaoproposalwhitelistexecuteoptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/execute | 
+[**NewcoinDaoProposalWhitelistExecutePost**](DefaultApi.md#newcoindaoproposalwhitelistexecutepost) | **POST** /newcoin/dao/proposal-whitelist/execute | 
+[**NewcoinDaoProposalWhitelistListGet**](DefaultApi.md#newcoindaoproposalwhitelistlistget) | **GET** /newcoin/dao/proposal-whitelist/list | 
+[**NewcoinDaoProposalWhitelistListOptions**](DefaultApi.md#newcoindaoproposalwhitelistlistoptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/list | 
+[**NewcoinDaoProposalWhitelistOptions**](DefaultApi.md#newcoindaoproposalwhitelistoptions) | **OPTIONS** /newcoin/dao/proposal-whitelist | 
+[**NewcoinDaoProposalWhitelistPost**](DefaultApi.md#newcoindaoproposalwhitelistpost) | **POST** /newcoin/dao/proposal-whitelist | 
+[**NewcoinDaoWhitelistGet**](DefaultApi.md#newcoindaowhitelistget) | **GET** /newcoin/dao/whitelist | 
+[**NewcoinDaoWhitelistOptions**](DefaultApi.md#newcoindaowhitelistoptions) | **OPTIONS** /newcoin/dao/whitelist | 
+[**NewcoinDaoWithdrawVoteDepositOptions**](DefaultApi.md#newcoindaowithdrawvotedepositoptions) | **OPTIONS** /newcoin/dao/withdrawVoteDeposit | 
+[**NewcoinDaoWithdrawVoteDepositPost**](DefaultApi.md#newcoindaowithdrawvotedepositpost) | **POST** /newcoin/dao/withdrawVoteDeposit | 
 [**PaymentStripeIntentOptions**](DefaultApi.md#paymentstripeintentoptions) | **OPTIONS** /payment/stripe/intent | 
 [**PaymentStripeIntentPost**](DefaultApi.md#paymentstripeintentpost) | **POST** /payment/stripe/intent | 
 [**PaymentStripeSubscriptionPaymentOptions**](DefaultApi.md#paymentstripesubscriptionpaymentoptions) | **OPTIONS** /payment/stripe/subscription/payment | 
@@ -86,6 +100,8 @@ Method | HTTP request | Description
 [**PostReportPost**](DefaultApi.md#postreportpost) | **POST** /post/report | 
 [**PostUploadOptions**](DefaultApi.md#postuploadoptions) | **OPTIONS** /post/upload | 
 [**PostUploadPost**](DefaultApi.md#postuploadpost) | **POST** /post/upload | 
+[**PostUtilsRemoteMetaProxyGet**](DefaultApi.md#postutilsremotemetaproxyget) | **GET** /post/utils/remote-meta-proxy | 
+[**PostUtilsRemoteMetaProxyOptions**](DefaultApi.md#postutilsremotemetaproxyoptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**SearchCreativeGet**](DefaultApi.md#searchcreativeget) | **GET** /search/creative | 
 [**SearchCreativeOptions**](DefaultApi.md#searchcreativeoptions) | **OPTIONS** /search/creative | 
 [**UploadNodeOptions**](DefaultApi.md#uploadnodeoptions) | **OPTIONS** /upload/node | 
@@ -351,354 +367,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="bcmaindaodldunstakeoptions"></a>
-# **BcmaindaodldunstakeOptions**
-> void BcmaindaodldunstakeOptions ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
-
-namespace Example
-{
-    public class BcmaindaodldunstakeOptionsExample
-    {
-        public void main()
-        {
-            var apiInstance = new DefaultApi();
-
-            try
-            {
-                apiInstance.BcmaindaodldunstakeOptions();
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DefaultApi.BcmaindaodldunstakeOptions: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="bcmaindaodldunstakepost"></a>
-# **BcmaindaodldunstakePost**
-> BcTxResponse BcmaindaodldunstakePost (BcStakeMainDAORequest bcStakeMainDAORequest)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
-
-namespace Example
-{
-    public class BcmaindaodldunstakePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: newlife-creator-api-eu-dev
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new DefaultApi();
-            var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
-
-            try
-            {
-                BcTxResponse result = apiInstance.BcmaindaodldunstakePost(bcStakeMainDAORequest);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DefaultApi.BcmaindaodldunstakePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="bcmaindaoinstunstakeoptions"></a>
-# **BcmaindaoinstunstakeOptions**
-> void BcmaindaoinstunstakeOptions ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
-
-namespace Example
-{
-    public class BcmaindaoinstunstakeOptionsExample
-    {
-        public void main()
-        {
-            var apiInstance = new DefaultApi();
-
-            try
-            {
-                apiInstance.BcmaindaoinstunstakeOptions();
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DefaultApi.BcmaindaoinstunstakeOptions: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="bcmaindaoinstunstakepost"></a>
-# **BcmaindaoinstunstakePost**
-> BcTxResponse BcmaindaoinstunstakePost (BcStakePoolRequest bcStakePoolRequest)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
-
-namespace Example
-{
-    public class BcmaindaoinstunstakePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: newlife-creator-api-eu-dev
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new DefaultApi();
-            var bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
-
-            try
-            {
-                BcTxResponse result = apiInstance.BcmaindaoinstunstakePost(bcStakePoolRequest);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DefaultApi.BcmaindaoinstunstakePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakePoolRequest** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="bcmaindaostakeoptions"></a>
-# **BcmaindaostakeOptions**
-> void BcmaindaostakeOptions ()
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
-
-namespace Example
-{
-    public class BcmaindaostakeOptionsExample
-    {
-        public void main()
-        {
-            var apiInstance = new DefaultApi();
-
-            try
-            {
-                apiInstance.BcmaindaostakeOptions();
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DefaultApi.BcmaindaostakeOptions: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="bcmaindaostakepost"></a>
-# **BcmaindaostakePost**
-> BcTxResponse BcmaindaostakePost (BcStakeMainDAORequest bcStakeMainDAORequest)
-
-
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
-
-namespace Example
-{
-    public class BcmaindaostakePostExample
-    {
-        public void main()
-        {
-            // Configure API key authorization: newlife-creator-api-eu-dev
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new DefaultApi();
-            var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
-
-            try
-            {
-                BcTxResponse result = apiInstance.BcmaindaostakePost(bcStakeMainDAORequest);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling DefaultApi.BcmaindaostakePost: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2557,6 +2225,354 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="newcoinbcmaindaodldunstakeoptions"></a>
+# **NewcoinBcmaindaodldunstakeOptions**
+> void NewcoinBcmaindaodldunstakeOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinBcmaindaodldunstakeOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinBcmaindaodldunstakeOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinBcmaindaodldunstakeOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoinbcmaindaodldunstakepost"></a>
+# **NewcoinBcmaindaodldunstakePost**
+> BcTxResponse NewcoinBcmaindaodldunstakePost (BcStakeMainDAORequest bcStakeMainDAORequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinBcmaindaodldunstakePostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
+
+            try
+            {
+                BcTxResponse result = apiInstance.NewcoinBcmaindaodldunstakePost(bcStakeMainDAORequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinBcmaindaodldunstakePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoinbcmaindaoinstunstakeoptions"></a>
+# **NewcoinBcmaindaoinstunstakeOptions**
+> void NewcoinBcmaindaoinstunstakeOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinBcmaindaoinstunstakeOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinBcmaindaoinstunstakeOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinBcmaindaoinstunstakeOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoinbcmaindaoinstunstakepost"></a>
+# **NewcoinBcmaindaoinstunstakePost**
+> BcTxResponse NewcoinBcmaindaoinstunstakePost (BcStakePoolRequest bcStakePoolRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinBcmaindaoinstunstakePostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
+
+            try
+            {
+                BcTxResponse result = apiInstance.NewcoinBcmaindaoinstunstakePost(bcStakePoolRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinBcmaindaoinstunstakePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakePoolRequest** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoinbcmaindaostakeoptions"></a>
+# **NewcoinBcmaindaostakeOptions**
+> void NewcoinBcmaindaostakeOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinBcmaindaostakeOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinBcmaindaostakeOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinBcmaindaostakeOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoinbcmaindaostakepost"></a>
+# **NewcoinBcmaindaostakePost**
+> BcTxResponse NewcoinBcmaindaostakePost (BcStakeMainDAORequest bcStakeMainDAORequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinBcmaindaostakePostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
+
+            try
+            {
+                BcTxResponse result = apiInstance.NewcoinBcmaindaostakePost(bcStakeMainDAORequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinBcmaindaostakePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="newcoinbcmintassetoptions"></a>
 # **NewcoinBcmintassetOptions**
 > void NewcoinBcmintassetOptions ()
@@ -3136,9 +3152,125 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="newcoindaoproposalexecuteoptions"></a>
+# **NewcoinDaoProposalExecuteOptions**
+> void NewcoinDaoProposalExecuteOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalExecuteOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinDaoProposalExecuteOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalExecuteOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalexecutepost"></a>
+# **NewcoinDaoProposalExecutePost**
+> BcDaoProposalExecuteResponse NewcoinDaoProposalExecutePost (BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalExecutePostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
+
+            try
+            {
+                BcDaoProposalExecuteResponse result = apiInstance.NewcoinDaoProposalExecutePost(bcDaoProposalExecuteRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalExecutePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoProposalExecuteRequest** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="newcoindaoproposallistget"></a>
 # **NewcoinDaoProposalListGet**
-> BcListDaoProposalsResponse NewcoinDaoProposalListGet (string proposalAuthor = null, string daoOwner = null, string daoId = null, string id = null)
+> BcListDaoProposalsResponse NewcoinDaoProposalListGet (string reverse = null, string proposalAuthor = null, string daoOwner = null, string daoId = null, string limit = null, string lowerBound = null, string upperBound = null, string id = null)
 
 
 
@@ -3162,14 +3294,18 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DefaultApi();
+            var reverse = reverse_example;  // string |  (optional) 
             var proposalAuthor = proposalAuthor_example;  // string |  (optional) 
             var daoOwner = daoOwner_example;  // string |  (optional) 
             var daoId = daoId_example;  // string |  (optional) 
+            var limit = limit_example;  // string |  (optional) 
+            var lowerBound = lowerBound_example;  // string |  (optional) 
+            var upperBound = upperBound_example;  // string |  (optional) 
             var id = id_example;  // string |  (optional) 
 
             try
             {
-                BcListDaoProposalsResponse result = apiInstance.NewcoinDaoProposalListGet(proposalAuthor, daoOwner, daoId, id);
+                BcListDaoProposalsResponse result = apiInstance.NewcoinDaoProposalListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3185,9 +3321,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional] 
  **proposalAuthor** | **string**|  | [optional] 
  **daoOwner** | **string**|  | [optional] 
  **daoId** | **string**|  | [optional] 
+ **limit** | **string**|  | [optional] 
+ **lowerBound** | **string**|  | [optional] 
+ **upperBound** | **string**|  | [optional] 
  **id** | **string**|  | [optional] 
 
 ### Return type
@@ -3491,7 +3631,7 @@ Name | Type | Description  | Notes
 
 <a name="newcoindaoproposalvotesget"></a>
 # **NewcoinDaoProposalVotesGet**
-> BcDaoProposalVoteResponse NewcoinDaoProposalVotesGet (string voter = null, string voteId = null)
+> BcDaoProposalVoteResponse NewcoinDaoProposalVotesGet (string reverse = null, string limit = null, string upperBound = null, string voter = null, string lowerBound = null, string voteId = null)
 
 
 
@@ -3515,12 +3655,16 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DefaultApi();
+            var reverse = reverse_example;  // string |  (optional) 
+            var limit = limit_example;  // string |  (optional) 
+            var upperBound = upperBound_example;  // string |  (optional) 
             var voter = voter_example;  // string |  (optional) 
+            var lowerBound = lowerBound_example;  // string |  (optional) 
             var voteId = voteId_example;  // string |  (optional) 
 
             try
             {
-                BcDaoProposalVoteResponse result = apiInstance.NewcoinDaoProposalVotesGet(voter, voteId);
+                BcDaoProposalVoteResponse result = apiInstance.NewcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3536,7 +3680,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional] 
+ **limit** | **string**|  | [optional] 
+ **upperBound** | **string**|  | [optional] 
  **voter** | **string**|  | [optional] 
+ **lowerBound** | **string**|  | [optional] 
  **voteId** | **string**|  | [optional] 
 
 ### Return type
@@ -3603,6 +3751,724 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistapproveoptions"></a>
+# **NewcoinDaoProposalWhitelistApproveOptions**
+> void NewcoinDaoProposalWhitelistApproveOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistApproveOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinDaoProposalWhitelistApproveOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistApproveOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistapprovepost"></a>
+# **NewcoinDaoProposalWhitelistApprovePost**
+> void NewcoinDaoProposalWhitelistApprovePost (BcApproveDaoProposalRequest bcApproveDaoProposalRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistApprovePostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcApproveDaoProposalRequest = new BcApproveDaoProposalRequest(); // BcApproveDaoProposalRequest | 
+
+            try
+            {
+                apiInstance.NewcoinDaoProposalWhitelistApprovePost(bcApproveDaoProposalRequest);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistApprovePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcApproveDaoProposalRequest** | [**BcApproveDaoProposalRequest**](BcApproveDaoProposalRequest.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistexecuteoptions"></a>
+# **NewcoinDaoProposalWhitelistExecuteOptions**
+> void NewcoinDaoProposalWhitelistExecuteOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistExecuteOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinDaoProposalWhitelistExecuteOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistExecuteOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistexecutepost"></a>
+# **NewcoinDaoProposalWhitelistExecutePost**
+> BcDaoProposalExecuteResponse NewcoinDaoProposalWhitelistExecutePost (BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistExecutePostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
+
+            try
+            {
+                BcDaoProposalExecuteResponse result = apiInstance.NewcoinDaoProposalWhitelistExecutePost(bcDaoProposalExecuteRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistExecutePost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoProposalExecuteRequest** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistlistget"></a>
+# **NewcoinDaoProposalWhitelistListGet**
+> BcListDaoProposalsResponse NewcoinDaoProposalWhitelistListGet (string reverse = null, string proposalAuthor = null, string daoOwner = null, string daoId = null, string limit = null, string lowerBound = null, string upperBound = null, string id = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistListGetExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var reverse = reverse_example;  // string |  (optional) 
+            var proposalAuthor = proposalAuthor_example;  // string |  (optional) 
+            var daoOwner = daoOwner_example;  // string |  (optional) 
+            var daoId = daoId_example;  // string |  (optional) 
+            var limit = limit_example;  // string |  (optional) 
+            var lowerBound = lowerBound_example;  // string |  (optional) 
+            var upperBound = upperBound_example;  // string |  (optional) 
+            var id = id_example;  // string |  (optional) 
+
+            try
+            {
+                BcListDaoProposalsResponse result = apiInstance.NewcoinDaoProposalWhitelistListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistListGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional] 
+ **proposalAuthor** | **string**|  | [optional] 
+ **daoOwner** | **string**|  | [optional] 
+ **daoId** | **string**|  | [optional] 
+ **limit** | **string**|  | [optional] 
+ **lowerBound** | **string**|  | [optional] 
+ **upperBound** | **string**|  | [optional] 
+ **id** | **string**|  | [optional] 
+
+### Return type
+
+[**BcListDaoProposalsResponse**](BcListDaoProposalsResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistlistoptions"></a>
+# **NewcoinDaoProposalWhitelistListOptions**
+> void NewcoinDaoProposalWhitelistListOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistListOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinDaoProposalWhitelistListOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistListOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistoptions"></a>
+# **NewcoinDaoProposalWhitelistOptions**
+> void NewcoinDaoProposalWhitelistOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinDaoProposalWhitelistOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaoproposalwhitelistpost"></a>
+# **NewcoinDaoProposalWhitelistPost**
+> void NewcoinDaoProposalWhitelistPost (BcCreateWhitelistDaoProposal bcCreateWhitelistDaoProposal)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoProposalWhitelistPostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcCreateWhitelistDaoProposal = new BcCreateWhitelistDaoProposal(); // BcCreateWhitelistDaoProposal | 
+
+            try
+            {
+                apiInstance.NewcoinDaoProposalWhitelistPost(bcCreateWhitelistDaoProposal);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoProposalWhitelistPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcCreateWhitelistDaoProposal** | [**BcCreateWhitelistDaoProposal**](BcCreateWhitelistDaoProposal.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaowhitelistget"></a>
+# **NewcoinDaoWhitelistGet**
+> Object NewcoinDaoWhitelistGet (string reverse = null, string daoOwner = null, string daoId = null, string limit = null, string upperBound = null, string lowerBound = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoWhitelistGetExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var reverse = reverse_example;  // string |  (optional) 
+            var daoOwner = daoOwner_example;  // string |  (optional) 
+            var daoId = daoId_example;  // string |  (optional) 
+            var limit = limit_example;  // string |  (optional) 
+            var upperBound = upperBound_example;  // string |  (optional) 
+            var lowerBound = lowerBound_example;  // string |  (optional) 
+
+            try
+            {
+                Object result = apiInstance.NewcoinDaoWhitelistGet(reverse, daoOwner, daoId, limit, upperBound, lowerBound);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoWhitelistGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional] 
+ **daoOwner** | **string**|  | [optional] 
+ **daoId** | **string**|  | [optional] 
+ **limit** | **string**|  | [optional] 
+ **upperBound** | **string**|  | [optional] 
+ **lowerBound** | **string**|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaowhitelistoptions"></a>
+# **NewcoinDaoWhitelistOptions**
+> void NewcoinDaoWhitelistOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoWhitelistOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinDaoWhitelistOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoWhitelistOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaowithdrawvotedepositoptions"></a>
+# **NewcoinDaoWithdrawVoteDepositOptions**
+> void NewcoinDaoWithdrawVoteDepositOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoWithdrawVoteDepositOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.NewcoinDaoWithdrawVoteDepositOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoWithdrawVoteDepositOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="newcoindaowithdrawvotedepositpost"></a>
+# **NewcoinDaoWithdrawVoteDepositPost**
+> BcDaoWidthdrawVoteDepositResponse NewcoinDaoWithdrawVoteDepositPost (BcDaoWidthdrawVoteDepositRequest bcDaoWidthdrawVoteDepositRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class NewcoinDaoWithdrawVoteDepositPostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var bcDaoWidthdrawVoteDepositRequest = new BcDaoWidthdrawVoteDepositRequest(); // BcDaoWidthdrawVoteDepositRequest | 
+
+            try
+            {
+                BcDaoWidthdrawVoteDepositResponse result = apiInstance.NewcoinDaoWithdrawVoteDepositPost(bcDaoWidthdrawVoteDepositRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.NewcoinDaoWithdrawVoteDepositPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoWidthdrawVoteDepositRequest** | [**BcDaoWidthdrawVoteDepositRequest**](BcDaoWidthdrawVoteDepositRequest.md)|  | 
+
+### Return type
+
+[**BcDaoWidthdrawVoteDepositResponse**](BcDaoWidthdrawVoteDepositResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -4900,6 +5766,122 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postutilsremotemetaproxyget"></a>
+# **PostUtilsRemoteMetaProxyGet**
+> PostRemoteMetaProxyResponse PostUtilsRemoteMetaProxyGet (string url = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostUtilsRemoteMetaProxyGetExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newlife-creator-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var url = url_example;  // string |  (optional) 
+
+            try
+            {
+                PostRemoteMetaProxyResponse result = apiInstance.PostUtilsRemoteMetaProxyGet(url);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.PostUtilsRemoteMetaProxyGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | **string**|  | [optional] 
+
+### Return type
+
+[**PostRemoteMetaProxyResponse**](PostRemoteMetaProxyResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postutilsremotemetaproxyoptions"></a>
+# **PostUtilsRemoteMetaProxyOptions**
+> void PostUtilsRemoteMetaProxyOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostUtilsRemoteMetaProxyOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.PostUtilsRemoteMetaProxyOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.PostUtilsRemoteMetaProxyOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

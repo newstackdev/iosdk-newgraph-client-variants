@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **blurHash** | **String** |  |  [optional]
 **newcoinMintTx** | **String** |  |  [optional]
 **id** | **String** |  |  [optional]
-**consentEmail** | **String** |  |  [optional]
+**embed** | **String** |  |  [optional]
 **updated** | **String** |  |  [optional]
 **contentType** | **String** |  |  [optional]
 **longitude** | [**BigDecimal**](BigDecimal.md) |  |  [optional]

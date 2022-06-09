@@ -8,12 +8,6 @@ Method | HTTP request | Description
 [**auth_callback_path_options**](DefaultApi.md#auth_callback_path_options) | **Options** /auth/callback/{path+} | 
 [**auth_provider_path_get**](DefaultApi.md#auth_provider_path_get) | **Get** /auth/provider/{path+} | 
 [**auth_provider_path_options**](DefaultApi.md#auth_provider_path_options) | **Options** /auth/provider/{path+} | 
-[**bcmaindaodldunstake_options**](DefaultApi.md#bcmaindaodldunstake_options) | **Options** /bcmaindaodldunstake | 
-[**bcmaindaodldunstake_post**](DefaultApi.md#bcmaindaodldunstake_post) | **Post** /bcmaindaodldunstake | 
-[**bcmaindaoinstunstake_options**](DefaultApi.md#bcmaindaoinstunstake_options) | **Options** /bcmaindaoinstunstake | 
-[**bcmaindaoinstunstake_post**](DefaultApi.md#bcmaindaoinstunstake_post) | **Post** /bcmaindaoinstunstake | 
-[**bcmaindaostake_options**](DefaultApi.md#bcmaindaostake_options) | **Options** /bcmaindaostake | 
-[**bcmaindaostake_post**](DefaultApi.md#bcmaindaostake_post) | **Post** /bcmaindaostake | 
 [**folder_get**](DefaultApi.md#folder_get) | **Get** /folder | 
 [**folder_options**](DefaultApi.md#folder_options) | **Options** /folder | 
 [**info_auth_get**](DefaultApi.md#info_auth_get) | **Get** /info-auth | 
@@ -46,6 +40,12 @@ Method | HTTP request | Description
 [**newcoin_bcgetpool_post**](DefaultApi.md#newcoin_bcgetpool_post) | **Post** /newcoin/bcgetpool | 
 [**newcoin_bckeypair_options**](DefaultApi.md#newcoin_bckeypair_options) | **Options** /newcoin/bckeypair | 
 [**newcoin_bckeypair_post**](DefaultApi.md#newcoin_bckeypair_post) | **Post** /newcoin/bckeypair | 
+[**newcoin_bcmaindaodldunstake_options**](DefaultApi.md#newcoin_bcmaindaodldunstake_options) | **Options** /newcoin/bcmaindaodldunstake | 
+[**newcoin_bcmaindaodldunstake_post**](DefaultApi.md#newcoin_bcmaindaodldunstake_post) | **Post** /newcoin/bcmaindaodldunstake | 
+[**newcoin_bcmaindaoinstunstake_options**](DefaultApi.md#newcoin_bcmaindaoinstunstake_options) | **Options** /newcoin/bcmaindaoinstunstake | 
+[**newcoin_bcmaindaoinstunstake_post**](DefaultApi.md#newcoin_bcmaindaoinstunstake_post) | **Post** /newcoin/bcmaindaoinstunstake | 
+[**newcoin_bcmaindaostake_options**](DefaultApi.md#newcoin_bcmaindaostake_options) | **Options** /newcoin/bcmaindaostake | 
+[**newcoin_bcmaindaostake_post**](DefaultApi.md#newcoin_bcmaindaostake_post) | **Post** /newcoin/bcmaindaostake | 
 [**newcoin_bcmintasset_options**](DefaultApi.md#newcoin_bcmintasset_options) | **Options** /newcoin/bcmintasset | 
 [**newcoin_bcmintasset_post**](DefaultApi.md#newcoin_bcmintasset_post) | **Post** /newcoin/bcmintasset | 
 [**newcoin_bcpoolcreate_options**](DefaultApi.md#newcoin_bcpoolcreate_options) | **Options** /newcoin/bcpoolcreate | 
@@ -56,6 +56,8 @@ Method | HTTP request | Description
 [**newcoin_dao_create_post**](DefaultApi.md#newcoin_dao_create_post) | **Post** /newcoin/dao/create | 
 [**newcoin_dao_proposal_approve_options**](DefaultApi.md#newcoin_dao_proposal_approve_options) | **Options** /newcoin/dao/proposal/approve | 
 [**newcoin_dao_proposal_approve_post**](DefaultApi.md#newcoin_dao_proposal_approve_post) | **Post** /newcoin/dao/proposal/approve | 
+[**newcoin_dao_proposal_execute_options**](DefaultApi.md#newcoin_dao_proposal_execute_options) | **Options** /newcoin/dao/proposal/execute | 
+[**newcoin_dao_proposal_execute_post**](DefaultApi.md#newcoin_dao_proposal_execute_post) | **Post** /newcoin/dao/proposal/execute | 
 [**newcoin_dao_proposal_list_get**](DefaultApi.md#newcoin_dao_proposal_list_get) | **Get** /newcoin/dao/proposal/list | 
 [**newcoin_dao_proposal_list_options**](DefaultApi.md#newcoin_dao_proposal_list_options) | **Options** /newcoin/dao/proposal/list | 
 [**newcoin_dao_proposal_options**](DefaultApi.md#newcoin_dao_proposal_options) | **Options** /newcoin/dao/proposal | 
@@ -64,6 +66,18 @@ Method | HTTP request | Description
 [**newcoin_dao_proposal_vote_post**](DefaultApi.md#newcoin_dao_proposal_vote_post) | **Post** /newcoin/dao/proposal/vote | 
 [**newcoin_dao_proposal_votes_get**](DefaultApi.md#newcoin_dao_proposal_votes_get) | **Get** /newcoin/dao/proposal/votes | 
 [**newcoin_dao_proposal_votes_options**](DefaultApi.md#newcoin_dao_proposal_votes_options) | **Options** /newcoin/dao/proposal/votes | 
+[**newcoin_dao_proposal_whitelist_approve_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_approve_options) | **Options** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoin_dao_proposal_whitelist_approve_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_approve_post) | **Post** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoin_dao_proposal_whitelist_execute_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_execute_options) | **Options** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoin_dao_proposal_whitelist_execute_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_execute_post) | **Post** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoin_dao_proposal_whitelist_list_get**](DefaultApi.md#newcoin_dao_proposal_whitelist_list_get) | **Get** /newcoin/dao/proposal-whitelist/list | 
+[**newcoin_dao_proposal_whitelist_list_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_list_options) | **Options** /newcoin/dao/proposal-whitelist/list | 
+[**newcoin_dao_proposal_whitelist_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_options) | **Options** /newcoin/dao/proposal-whitelist | 
+[**newcoin_dao_proposal_whitelist_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_post) | **Post** /newcoin/dao/proposal-whitelist | 
+[**newcoin_dao_whitelist_get**](DefaultApi.md#newcoin_dao_whitelist_get) | **Get** /newcoin/dao/whitelist | 
+[**newcoin_dao_whitelist_options**](DefaultApi.md#newcoin_dao_whitelist_options) | **Options** /newcoin/dao/whitelist | 
+[**newcoin_dao_withdraw_vote_deposit_options**](DefaultApi.md#newcoin_dao_withdraw_vote_deposit_options) | **Options** /newcoin/dao/withdrawVoteDeposit | 
+[**newcoin_dao_withdraw_vote_deposit_post**](DefaultApi.md#newcoin_dao_withdraw_vote_deposit_post) | **Post** /newcoin/dao/withdrawVoteDeposit | 
 [**payment_stripe_intent_options**](DefaultApi.md#payment_stripe_intent_options) | **Options** /payment/stripe/intent | 
 [**payment_stripe_intent_post**](DefaultApi.md#payment_stripe_intent_post) | **Post** /payment/stripe/intent | 
 [**payment_stripe_subscription_payment_options**](DefaultApi.md#payment_stripe_subscription_payment_options) | **Options** /payment/stripe/subscription/payment | 
@@ -86,6 +100,8 @@ Method | HTTP request | Description
 [**post_report_post**](DefaultApi.md#post_report_post) | **Post** /post/report | 
 [**post_upload_options**](DefaultApi.md#post_upload_options) | **Options** /post/upload | 
 [**post_upload_post**](DefaultApi.md#post_upload_post) | **Post** /post/upload | 
+[**post_utils_remote_meta_proxy_get**](DefaultApi.md#post_utils_remote_meta_proxy_get) | **Get** /post/utils/remote-meta-proxy | 
+[**post_utils_remote_meta_proxy_options**](DefaultApi.md#post_utils_remote_meta_proxy_options) | **Options** /post/utils/remote-meta-proxy | 
 [**search_creative_get**](DefaultApi.md#search_creative_get) | **Get** /search/creative | 
 [**search_creative_options**](DefaultApi.md#search_creative_options) | **Options** /search/creative | 
 [**upload_node_options**](DefaultApi.md#upload_node_options) | **Options** /upload/node | 
@@ -223,150 +239,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaodldunstake_options**
-> bcmaindaodldunstake_options()
-
-
-### Required Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaodldunstake_post**
-> ::models::BcTxResponse bcmaindaodldunstake_post(ctx, bc_stake_main_dao_request)
-
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **bc_stake_main_dao_request** | [**BcStakeMainDaoRequest**](BcStakeMainDaoRequest.md)|  | 
-
-### Return type
-
-[**::models::BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaoinstunstake_options**
-> bcmaindaoinstunstake_options()
-
-
-### Required Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaoinstunstake_post**
-> ::models::BcTxResponse bcmaindaoinstunstake_post(ctx, bc_stake_pool_request)
-
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **bc_stake_pool_request** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
-
-### Return type
-
-[**::models::BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaostake_options**
-> bcmaindaostake_options()
-
-
-### Required Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
- (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaostake_post**
-> ::models::BcTxResponse bcmaindaostake_post(ctx, bc_stake_main_dao_request)
-
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context containing the authentication | nil if no authentication
-  **bc_stake_main_dao_request** | [**BcStakeMainDaoRequest**](BcStakeMainDaoRequest.md)|  | 
-
-### Return type
-
-[**::models::BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1166,6 +1038,150 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **newcoin_bcmaindaodldunstake_options**
+> newcoin_bcmaindaodldunstake_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaodldunstake_post**
+> ::models::BcTxResponse newcoin_bcmaindaodldunstake_post(ctx, bc_stake_main_dao_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_stake_main_dao_request** | [**BcStakeMainDaoRequest**](BcStakeMainDaoRequest.md)|  | 
+
+### Return type
+
+[**::models::BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaoinstunstake_options**
+> newcoin_bcmaindaoinstunstake_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaoinstunstake_post**
+> ::models::BcTxResponse newcoin_bcmaindaoinstunstake_post(ctx, bc_stake_pool_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_stake_pool_request** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
+
+### Return type
+
+[**::models::BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaostake_options**
+> newcoin_bcmaindaostake_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaostake_post**
+> ::models::BcTxResponse newcoin_bcmaindaostake_post(ctx, bc_stake_main_dao_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_stake_main_dao_request** | [**BcStakeMainDaoRequest**](BcStakeMainDaoRequest.md)|  | 
+
+### Return type
+
+[**::models::BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **newcoin_bcmintasset_options**
 > newcoin_bcmintasset_options()
 
@@ -1406,6 +1422,54 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **newcoin_dao_proposal_execute_options**
+> newcoin_dao_proposal_execute_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_execute_post**
+> ::models::BcDaoProposalExecuteResponse newcoin_dao_proposal_execute_post(ctx, bc_dao_proposal_execute_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_dao_proposal_execute_request** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**::models::BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **newcoin_dao_proposal_list_get**
 > ::models::BcListDaoProposalsResponse newcoin_dao_proposal_list_get(ctx, optional)
 
@@ -1422,9 +1486,13 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | 
  **proposal_author** | **String**|  | 
  **dao_owner** | **String**|  | 
  **dao_id** | **String**|  | 
+ **limit** | **String**|  | 
+ **lower_bound** | **String**|  | 
+ **upper_bound** | **String**|  | 
  **id** | **String**|  | 
 
 ### Return type
@@ -1576,7 +1644,11 @@ Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | 
+ **limit** | **String**|  | 
+ **upper_bound** | **String**|  | 
  **voter** | **String**|  | 
+ **lower_bound** | **String**|  | 
  **vote_id** | **String**|  | 
 
 ### Return type
@@ -1612,6 +1684,320 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_approve_options**
+> newcoin_dao_proposal_whitelist_approve_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_approve_post**
+> newcoin_dao_proposal_whitelist_approve_post(ctx, bc_approve_dao_proposal_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_approve_dao_proposal_request** | [**BcApproveDaoProposalRequest**](BcApproveDaoProposalRequest.md)|  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_execute_options**
+> newcoin_dao_proposal_whitelist_execute_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_execute_post**
+> ::models::BcDaoProposalExecuteResponse newcoin_dao_proposal_whitelist_execute_post(ctx, bc_dao_proposal_execute_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_dao_proposal_execute_request** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**::models::BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_list_get**
+> ::models::BcListDaoProposalsResponse newcoin_dao_proposal_whitelist_list_get(ctx, optional)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | 
+ **proposal_author** | **String**|  | 
+ **dao_owner** | **String**|  | 
+ **dao_id** | **String**|  | 
+ **limit** | **String**|  | 
+ **lower_bound** | **String**|  | 
+ **upper_bound** | **String**|  | 
+ **id** | **String**|  | 
+
+### Return type
+
+[**::models::BcListDaoProposalsResponse**](BcListDaoProposalsResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_list_options**
+> newcoin_dao_proposal_whitelist_list_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_options**
+> newcoin_dao_proposal_whitelist_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_post**
+> newcoin_dao_proposal_whitelist_post(ctx, bc_create_whitelist_dao_proposal)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_create_whitelist_dao_proposal** | [**BcCreateWhitelistDaoProposal**](BcCreateWhitelistDaoProposal.md)|  | 
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_whitelist_get**
+> ::models::BcListDaoWhitelistResponse newcoin_dao_whitelist_get(ctx, optional)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | 
+ **dao_owner** | **String**|  | 
+ **dao_id** | **String**|  | 
+ **limit** | **String**|  | 
+ **upper_bound** | **String**|  | 
+ **lower_bound** | **String**|  | 
+
+### Return type
+
+[**::models::BcListDaoWhitelistResponse**](BcListDaoWhitelistResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_whitelist_options**
+> newcoin_dao_whitelist_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_withdraw_vote_deposit_options**
+> newcoin_dao_withdraw_vote_deposit_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_withdraw_vote_deposit_post**
+> ::models::BcDaoWidthdrawVoteDepositResponse newcoin_dao_withdraw_vote_deposit_post(ctx, bc_dao_widthdraw_vote_deposit_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **bc_dao_widthdraw_vote_deposit_request** | [**BcDaoWidthdrawVoteDepositRequest**](BcDaoWidthdrawVoteDepositRequest.md)|  | 
+
+### Return type
+
+[**::models::BcDaoWidthdrawVoteDepositResponse**](BcDaoWidthdrawVoteDepositResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2178,6 +2564,61 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **post_utils_remote_meta_proxy_get**
+> ::models::PostRemoteMetaProxyResponse post_utils_remote_meta_proxy_get(ctx, optional)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | **String**|  | 
+
+### Return type
+
+[**::models::PostRemoteMetaProxyResponse**](PostRemoteMetaProxyResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **post_utils_remote_meta_proxy_options**
+> post_utils_remote_meta_proxy_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

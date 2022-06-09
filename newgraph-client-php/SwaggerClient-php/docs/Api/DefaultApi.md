@@ -8,12 +8,6 @@ Method | HTTP request | Description
 [**authCallbackPathOptions**](DefaultApi.md#authCallbackPathOptions) | **OPTIONS** /auth/callback/{path+} | 
 [**authProviderPathGet**](DefaultApi.md#authProviderPathGet) | **GET** /auth/provider/{path+} | 
 [**authProviderPathOptions**](DefaultApi.md#authProviderPathOptions) | **OPTIONS** /auth/provider/{path+} | 
-[**bcmaindaodldunstakeOptions**](DefaultApi.md#bcmaindaodldunstakeOptions) | **OPTIONS** /bcmaindaodldunstake | 
-[**bcmaindaodldunstakePost**](DefaultApi.md#bcmaindaodldunstakePost) | **POST** /bcmaindaodldunstake | 
-[**bcmaindaoinstunstakeOptions**](DefaultApi.md#bcmaindaoinstunstakeOptions) | **OPTIONS** /bcmaindaoinstunstake | 
-[**bcmaindaoinstunstakePost**](DefaultApi.md#bcmaindaoinstunstakePost) | **POST** /bcmaindaoinstunstake | 
-[**bcmaindaostakeOptions**](DefaultApi.md#bcmaindaostakeOptions) | **OPTIONS** /bcmaindaostake | 
-[**bcmaindaostakePost**](DefaultApi.md#bcmaindaostakePost) | **POST** /bcmaindaostake | 
 [**folderGet**](DefaultApi.md#folderGet) | **GET** /folder | 
 [**folderOptions**](DefaultApi.md#folderOptions) | **OPTIONS** /folder | 
 [**infoAuthGet**](DefaultApi.md#infoAuthGet) | **GET** /info-auth | 
@@ -46,6 +40,12 @@ Method | HTTP request | Description
 [**newcoinBcgetpoolPost**](DefaultApi.md#newcoinBcgetpoolPost) | **POST** /newcoin/bcgetpool | 
 [**newcoinBckeypairOptions**](DefaultApi.md#newcoinBckeypairOptions) | **OPTIONS** /newcoin/bckeypair | 
 [**newcoinBckeypairPost**](DefaultApi.md#newcoinBckeypairPost) | **POST** /newcoin/bckeypair | 
+[**newcoinBcmaindaodldunstakeOptions**](DefaultApi.md#newcoinBcmaindaodldunstakeOptions) | **OPTIONS** /newcoin/bcmaindaodldunstake | 
+[**newcoinBcmaindaodldunstakePost**](DefaultApi.md#newcoinBcmaindaodldunstakePost) | **POST** /newcoin/bcmaindaodldunstake | 
+[**newcoinBcmaindaoinstunstakeOptions**](DefaultApi.md#newcoinBcmaindaoinstunstakeOptions) | **OPTIONS** /newcoin/bcmaindaoinstunstake | 
+[**newcoinBcmaindaoinstunstakePost**](DefaultApi.md#newcoinBcmaindaoinstunstakePost) | **POST** /newcoin/bcmaindaoinstunstake | 
+[**newcoinBcmaindaostakeOptions**](DefaultApi.md#newcoinBcmaindaostakeOptions) | **OPTIONS** /newcoin/bcmaindaostake | 
+[**newcoinBcmaindaostakePost**](DefaultApi.md#newcoinBcmaindaostakePost) | **POST** /newcoin/bcmaindaostake | 
 [**newcoinBcmintassetOptions**](DefaultApi.md#newcoinBcmintassetOptions) | **OPTIONS** /newcoin/bcmintasset | 
 [**newcoinBcmintassetPost**](DefaultApi.md#newcoinBcmintassetPost) | **POST** /newcoin/bcmintasset | 
 [**newcoinBcpoolcreateOptions**](DefaultApi.md#newcoinBcpoolcreateOptions) | **OPTIONS** /newcoin/bcpoolcreate | 
@@ -56,6 +56,8 @@ Method | HTTP request | Description
 [**newcoinDaoCreatePost**](DefaultApi.md#newcoinDaoCreatePost) | **POST** /newcoin/dao/create | 
 [**newcoinDaoProposalApproveOptions**](DefaultApi.md#newcoinDaoProposalApproveOptions) | **OPTIONS** /newcoin/dao/proposal/approve | 
 [**newcoinDaoProposalApprovePost**](DefaultApi.md#newcoinDaoProposalApprovePost) | **POST** /newcoin/dao/proposal/approve | 
+[**newcoinDaoProposalExecuteOptions**](DefaultApi.md#newcoinDaoProposalExecuteOptions) | **OPTIONS** /newcoin/dao/proposal/execute | 
+[**newcoinDaoProposalExecutePost**](DefaultApi.md#newcoinDaoProposalExecutePost) | **POST** /newcoin/dao/proposal/execute | 
 [**newcoinDaoProposalListGet**](DefaultApi.md#newcoinDaoProposalListGet) | **GET** /newcoin/dao/proposal/list | 
 [**newcoinDaoProposalListOptions**](DefaultApi.md#newcoinDaoProposalListOptions) | **OPTIONS** /newcoin/dao/proposal/list | 
 [**newcoinDaoProposalOptions**](DefaultApi.md#newcoinDaoProposalOptions) | **OPTIONS** /newcoin/dao/proposal | 
@@ -64,6 +66,18 @@ Method | HTTP request | Description
 [**newcoinDaoProposalVotePost**](DefaultApi.md#newcoinDaoProposalVotePost) | **POST** /newcoin/dao/proposal/vote | 
 [**newcoinDaoProposalVotesGet**](DefaultApi.md#newcoinDaoProposalVotesGet) | **GET** /newcoin/dao/proposal/votes | 
 [**newcoinDaoProposalVotesOptions**](DefaultApi.md#newcoinDaoProposalVotesOptions) | **OPTIONS** /newcoin/dao/proposal/votes | 
+[**newcoinDaoProposalWhitelistApproveOptions**](DefaultApi.md#newcoinDaoProposalWhitelistApproveOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoinDaoProposalWhitelistApprovePost**](DefaultApi.md#newcoinDaoProposalWhitelistApprovePost) | **POST** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoinDaoProposalWhitelistExecuteOptions**](DefaultApi.md#newcoinDaoProposalWhitelistExecuteOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoinDaoProposalWhitelistExecutePost**](DefaultApi.md#newcoinDaoProposalWhitelistExecutePost) | **POST** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoinDaoProposalWhitelistListGet**](DefaultApi.md#newcoinDaoProposalWhitelistListGet) | **GET** /newcoin/dao/proposal-whitelist/list | 
+[**newcoinDaoProposalWhitelistListOptions**](DefaultApi.md#newcoinDaoProposalWhitelistListOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/list | 
+[**newcoinDaoProposalWhitelistOptions**](DefaultApi.md#newcoinDaoProposalWhitelistOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist | 
+[**newcoinDaoProposalWhitelistPost**](DefaultApi.md#newcoinDaoProposalWhitelistPost) | **POST** /newcoin/dao/proposal-whitelist | 
+[**newcoinDaoWhitelistGet**](DefaultApi.md#newcoinDaoWhitelistGet) | **GET** /newcoin/dao/whitelist | 
+[**newcoinDaoWhitelistOptions**](DefaultApi.md#newcoinDaoWhitelistOptions) | **OPTIONS** /newcoin/dao/whitelist | 
+[**newcoinDaoWithdrawVoteDepositOptions**](DefaultApi.md#newcoinDaoWithdrawVoteDepositOptions) | **OPTIONS** /newcoin/dao/withdrawVoteDeposit | 
+[**newcoinDaoWithdrawVoteDepositPost**](DefaultApi.md#newcoinDaoWithdrawVoteDepositPost) | **POST** /newcoin/dao/withdrawVoteDeposit | 
 [**paymentStripeIntentOptions**](DefaultApi.md#paymentStripeIntentOptions) | **OPTIONS** /payment/stripe/intent | 
 [**paymentStripeIntentPost**](DefaultApi.md#paymentStripeIntentPost) | **POST** /payment/stripe/intent | 
 [**paymentStripeSubscriptionPaymentOptions**](DefaultApi.md#paymentStripeSubscriptionPaymentOptions) | **OPTIONS** /payment/stripe/subscription/payment | 
@@ -86,6 +100,8 @@ Method | HTTP request | Description
 [**postReportPost**](DefaultApi.md#postReportPost) | **POST** /post/report | 
 [**postUploadOptions**](DefaultApi.md#postUploadOptions) | **OPTIONS** /post/upload | 
 [**postUploadPost**](DefaultApi.md#postUploadPost) | **POST** /post/upload | 
+[**postUtilsRemoteMetaProxyGet**](DefaultApi.md#postUtilsRemoteMetaProxyGet) | **GET** /post/utils/remote-meta-proxy | 
+[**postUtilsRemoteMetaProxyOptions**](DefaultApi.md#postUtilsRemoteMetaProxyOptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**searchCreativeGet**](DefaultApi.md#searchCreativeGet) | **GET** /search/creative | 
 [**searchCreativeOptions**](DefaultApi.md#searchCreativeOptions) | **OPTIONS** /search/creative | 
 [**uploadNodeOptions**](DefaultApi.md#uploadNodeOptions) | **OPTIONS** /upload/node | 
@@ -307,291 +323,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **bcmaindaodldunstakeOptions**
-> bcmaindaodldunstakeOptions()
-
-
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-$apiInstance = new Swagger\Client\Api\DefaultApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-
-try {
-    $apiInstance->bcmaindaodldunstakeOptions();
-} catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->bcmaindaodldunstakeOptions: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **bcmaindaodldunstakePost**
-> \Swagger\Client\Model\BcTxResponse bcmaindaodldunstakePost($bc_stake_main_dao_request)
-
-
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-// Configure API key authorization: newlife-creator-api-eu-dev
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-$apiInstance = new Swagger\Client\Api\DefaultApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$bc_stake_main_dao_request = new \Swagger\Client\Model\BcStakeMainDAORequest(); // \Swagger\Client\Model\BcStakeMainDAORequest | 
-
-try {
-    $result = $apiInstance->bcmaindaodldunstakePost($bc_stake_main_dao_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->bcmaindaodldunstakePost: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_main_dao_request** | [**\Swagger\Client\Model\BcStakeMainDAORequest**](../Model/BcStakeMainDAORequest.md)|  |
-
-### Return type
-
-[**\Swagger\Client\Model\BcTxResponse**](../Model/BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **bcmaindaoinstunstakeOptions**
-> bcmaindaoinstunstakeOptions()
-
-
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-$apiInstance = new Swagger\Client\Api\DefaultApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-
-try {
-    $apiInstance->bcmaindaoinstunstakeOptions();
-} catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->bcmaindaoinstunstakeOptions: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **bcmaindaoinstunstakePost**
-> \Swagger\Client\Model\BcTxResponse bcmaindaoinstunstakePost($bc_stake_pool_request)
-
-
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-// Configure API key authorization: newlife-creator-api-eu-dev
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-$apiInstance = new Swagger\Client\Api\DefaultApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$bc_stake_pool_request = new \Swagger\Client\Model\BcStakePoolRequest(); // \Swagger\Client\Model\BcStakePoolRequest | 
-
-try {
-    $result = $apiInstance->bcmaindaoinstunstakePost($bc_stake_pool_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->bcmaindaoinstunstakePost: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_pool_request** | [**\Swagger\Client\Model\BcStakePoolRequest**](../Model/BcStakePoolRequest.md)|  |
-
-### Return type
-
-[**\Swagger\Client\Model\BcTxResponse**](../Model/BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **bcmaindaostakeOptions**
-> bcmaindaostakeOptions()
-
-
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-$apiInstance = new Swagger\Client\Api\DefaultApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-
-try {
-    $apiInstance->bcmaindaostakeOptions();
-} catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->bcmaindaostakeOptions: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **bcmaindaostakePost**
-> \Swagger\Client\Model\BcTxResponse bcmaindaostakePost($bc_stake_main_dao_request)
-
-
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-// Configure API key authorization: newlife-creator-api-eu-dev
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-$apiInstance = new Swagger\Client\Api\DefaultApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$bc_stake_main_dao_request = new \Swagger\Client\Model\BcStakeMainDAORequest(); // \Swagger\Client\Model\BcStakeMainDAORequest | 
-
-try {
-    $result = $apiInstance->bcmaindaostakePost($bc_stake_main_dao_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DefaultApi->bcmaindaostakePost: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_main_dao_request** | [**\Swagger\Client\Model\BcStakeMainDAORequest**](../Model/BcStakeMainDAORequest.md)|  |
-
-### Return type
-
-[**\Swagger\Client\Model\BcTxResponse**](../Model/BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -2113,6 +1844,291 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
+# **newcoinBcmaindaodldunstakeOptions**
+> newcoinBcmaindaodldunstakeOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinBcmaindaodldunstakeOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinBcmaindaodldunstakeOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinBcmaindaodldunstakePost**
+> \Swagger\Client\Model\BcTxResponse newcoinBcmaindaodldunstakePost($bc_stake_main_dao_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$bc_stake_main_dao_request = new \Swagger\Client\Model\BcStakeMainDAORequest(); // \Swagger\Client\Model\BcStakeMainDAORequest | 
+
+try {
+    $result = $apiInstance->newcoinBcmaindaodldunstakePost($bc_stake_main_dao_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinBcmaindaodldunstakePost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_main_dao_request** | [**\Swagger\Client\Model\BcStakeMainDAORequest**](../Model/BcStakeMainDAORequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\BcTxResponse**](../Model/BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinBcmaindaoinstunstakeOptions**
+> newcoinBcmaindaoinstunstakeOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinBcmaindaoinstunstakeOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinBcmaindaoinstunstakeOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinBcmaindaoinstunstakePost**
+> \Swagger\Client\Model\BcTxResponse newcoinBcmaindaoinstunstakePost($bc_stake_pool_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$bc_stake_pool_request = new \Swagger\Client\Model\BcStakePoolRequest(); // \Swagger\Client\Model\BcStakePoolRequest | 
+
+try {
+    $result = $apiInstance->newcoinBcmaindaoinstunstakePost($bc_stake_pool_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinBcmaindaoinstunstakePost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_pool_request** | [**\Swagger\Client\Model\BcStakePoolRequest**](../Model/BcStakePoolRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\BcTxResponse**](../Model/BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinBcmaindaostakeOptions**
+> newcoinBcmaindaostakeOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinBcmaindaostakeOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinBcmaindaostakeOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinBcmaindaostakePost**
+> \Swagger\Client\Model\BcTxResponse newcoinBcmaindaostakePost($bc_stake_main_dao_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$bc_stake_main_dao_request = new \Swagger\Client\Model\BcStakeMainDAORequest(); // \Swagger\Client\Model\BcStakeMainDAORequest | 
+
+try {
+    $result = $apiInstance->newcoinBcmaindaostakePost($bc_stake_main_dao_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinBcmaindaostakePost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_main_dao_request** | [**\Swagger\Client\Model\BcStakeMainDAORequest**](../Model/BcStakeMainDAORequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\BcTxResponse**](../Model/BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
 # **newcoinBcmintassetOptions**
 > newcoinBcmintassetOptions()
 
@@ -2587,8 +2603,50 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
-# **newcoinDaoProposalListGet**
-> \Swagger\Client\Model\BcListDaoProposalsResponse newcoinDaoProposalListGet($proposal_author, $dao_owner, $dao_id, $id)
+# **newcoinDaoProposalExecuteOptions**
+> newcoinDaoProposalExecuteOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinDaoProposalExecuteOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalExecuteOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalExecutePost**
+> \Swagger\Client\Model\BcDaoProposalExecuteResponse newcoinDaoProposalExecutePost($bc_dao_proposal_execute_request)
 
 
 
@@ -2608,13 +2666,70 @@ $apiInstance = new Swagger\Client\Api\DefaultApi(
     new GuzzleHttp\Client(),
     $config
 );
+$bc_dao_proposal_execute_request = new \Swagger\Client\Model\BcDaoProposalExecuteRequest(); // \Swagger\Client\Model\BcDaoProposalExecuteRequest | 
+
+try {
+    $result = $apiInstance->newcoinDaoProposalExecutePost($bc_dao_proposal_execute_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalExecutePost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_proposal_execute_request** | [**\Swagger\Client\Model\BcDaoProposalExecuteRequest**](../Model/BcDaoProposalExecuteRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\BcDaoProposalExecuteResponse**](../Model/BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalListGet**
+> \Swagger\Client\Model\BcListDaoProposalsResponse newcoinDaoProposalListGet($reverse, $proposal_author, $dao_owner, $dao_id, $limit, $lower_bound, $upper_bound, $id)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$reverse = "reverse_example"; // string | 
 $proposal_author = "proposal_author_example"; // string | 
 $dao_owner = "dao_owner_example"; // string | 
 $dao_id = "dao_id_example"; // string | 
+$limit = "limit_example"; // string | 
+$lower_bound = "lower_bound_example"; // string | 
+$upper_bound = "upper_bound_example"; // string | 
 $id = "id_example"; // string | 
 
 try {
-    $result = $apiInstance->newcoinDaoProposalListGet($proposal_author, $dao_owner, $dao_id, $id);
+    $result = $apiInstance->newcoinDaoProposalListGet($reverse, $proposal_author, $dao_owner, $dao_id, $limit, $lower_bound, $upper_bound, $id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DefaultApi->newcoinDaoProposalListGet: ', $e->getMessage(), PHP_EOL;
@@ -2626,9 +2741,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional]
  **proposal_author** | **string**|  | [optional]
  **dao_owner** | **string**|  | [optional]
  **dao_id** | **string**|  | [optional]
+ **limit** | **string**|  | [optional]
+ **lower_bound** | **string**|  | [optional]
+ **upper_bound** | **string**|  | [optional]
  **id** | **string**|  | [optional]
 
 ### Return type
@@ -2878,7 +2997,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **newcoinDaoProposalVotesGet**
-> \Swagger\Client\Model\BcDaoProposalVoteResponse newcoinDaoProposalVotesGet($voter, $vote_id)
+> \Swagger\Client\Model\BcDaoProposalVoteResponse newcoinDaoProposalVotesGet($reverse, $limit, $upper_bound, $voter, $lower_bound, $vote_id)
 
 
 
@@ -2898,11 +3017,15 @@ $apiInstance = new Swagger\Client\Api\DefaultApi(
     new GuzzleHttp\Client(),
     $config
 );
+$reverse = "reverse_example"; // string | 
+$limit = "limit_example"; // string | 
+$upper_bound = "upper_bound_example"; // string | 
 $voter = "voter_example"; // string | 
+$lower_bound = "lower_bound_example"; // string | 
 $vote_id = "vote_id_example"; // string | 
 
 try {
-    $result = $apiInstance->newcoinDaoProposalVotesGet($voter, $vote_id);
+    $result = $apiInstance->newcoinDaoProposalVotesGet($reverse, $limit, $upper_bound, $voter, $lower_bound, $vote_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DefaultApi->newcoinDaoProposalVotesGet: ', $e->getMessage(), PHP_EOL;
@@ -2914,7 +3037,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional]
+ **limit** | **string**|  | [optional]
+ **upper_bound** | **string**|  | [optional]
  **voter** | **string**|  | [optional]
+ **lower_bound** | **string**|  | [optional]
  **vote_id** | **string**|  | [optional]
 
 ### Return type
@@ -2970,6 +3097,598 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistApproveOptions**
+> newcoinDaoProposalWhitelistApproveOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinDaoProposalWhitelistApproveOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistApproveOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistApprovePost**
+> newcoinDaoProposalWhitelistApprovePost($bc_approve_dao_proposal_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$bc_approve_dao_proposal_request = new \Swagger\Client\Model\BcApproveDaoProposalRequest(); // \Swagger\Client\Model\BcApproveDaoProposalRequest | 
+
+try {
+    $apiInstance->newcoinDaoProposalWhitelistApprovePost($bc_approve_dao_proposal_request);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistApprovePost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_approve_dao_proposal_request** | [**\Swagger\Client\Model\BcApproveDaoProposalRequest**](../Model/BcApproveDaoProposalRequest.md)|  |
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistExecuteOptions**
+> newcoinDaoProposalWhitelistExecuteOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinDaoProposalWhitelistExecuteOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistExecuteOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistExecutePost**
+> \Swagger\Client\Model\BcDaoProposalExecuteResponse newcoinDaoProposalWhitelistExecutePost($bc_dao_proposal_execute_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$bc_dao_proposal_execute_request = new \Swagger\Client\Model\BcDaoProposalExecuteRequest(); // \Swagger\Client\Model\BcDaoProposalExecuteRequest | 
+
+try {
+    $result = $apiInstance->newcoinDaoProposalWhitelistExecutePost($bc_dao_proposal_execute_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistExecutePost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_proposal_execute_request** | [**\Swagger\Client\Model\BcDaoProposalExecuteRequest**](../Model/BcDaoProposalExecuteRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\BcDaoProposalExecuteResponse**](../Model/BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistListGet**
+> \Swagger\Client\Model\BcListDaoProposalsResponse newcoinDaoProposalWhitelistListGet($reverse, $proposal_author, $dao_owner, $dao_id, $limit, $lower_bound, $upper_bound, $id)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$reverse = "reverse_example"; // string | 
+$proposal_author = "proposal_author_example"; // string | 
+$dao_owner = "dao_owner_example"; // string | 
+$dao_id = "dao_id_example"; // string | 
+$limit = "limit_example"; // string | 
+$lower_bound = "lower_bound_example"; // string | 
+$upper_bound = "upper_bound_example"; // string | 
+$id = "id_example"; // string | 
+
+try {
+    $result = $apiInstance->newcoinDaoProposalWhitelistListGet($reverse, $proposal_author, $dao_owner, $dao_id, $limit, $lower_bound, $upper_bound, $id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistListGet: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional]
+ **proposal_author** | **string**|  | [optional]
+ **dao_owner** | **string**|  | [optional]
+ **dao_id** | **string**|  | [optional]
+ **limit** | **string**|  | [optional]
+ **lower_bound** | **string**|  | [optional]
+ **upper_bound** | **string**|  | [optional]
+ **id** | **string**|  | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\BcListDaoProposalsResponse**](../Model/BcListDaoProposalsResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistListOptions**
+> newcoinDaoProposalWhitelistListOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinDaoProposalWhitelistListOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistListOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistOptions**
+> newcoinDaoProposalWhitelistOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinDaoProposalWhitelistOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoProposalWhitelistPost**
+> newcoinDaoProposalWhitelistPost($bc_create_whitelist_dao_proposal)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$bc_create_whitelist_dao_proposal = new \Swagger\Client\Model\BcCreateWhitelistDaoProposal(); // \Swagger\Client\Model\BcCreateWhitelistDaoProposal | 
+
+try {
+    $apiInstance->newcoinDaoProposalWhitelistPost($bc_create_whitelist_dao_proposal);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoProposalWhitelistPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_create_whitelist_dao_proposal** | [**\Swagger\Client\Model\BcCreateWhitelistDaoProposal**](../Model/BcCreateWhitelistDaoProposal.md)|  |
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoWhitelistGet**
+> \Swagger\Client\Model\BcListDaoWhitelistResponse newcoinDaoWhitelistGet($reverse, $dao_owner, $dao_id, $limit, $upper_bound, $lower_bound)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$reverse = "reverse_example"; // string | 
+$dao_owner = "dao_owner_example"; // string | 
+$dao_id = "dao_id_example"; // string | 
+$limit = "limit_example"; // string | 
+$upper_bound = "upper_bound_example"; // string | 
+$lower_bound = "lower_bound_example"; // string | 
+
+try {
+    $result = $apiInstance->newcoinDaoWhitelistGet($reverse, $dao_owner, $dao_id, $limit, $upper_bound, $lower_bound);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoWhitelistGet: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **string**|  | [optional]
+ **dao_owner** | **string**|  | [optional]
+ **dao_id** | **string**|  | [optional]
+ **limit** | **string**|  | [optional]
+ **upper_bound** | **string**|  | [optional]
+ **lower_bound** | **string**|  | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\BcListDaoWhitelistResponse**](../Model/BcListDaoWhitelistResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoWhitelistOptions**
+> newcoinDaoWhitelistOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinDaoWhitelistOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoWhitelistOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoWithdrawVoteDepositOptions**
+> newcoinDaoWithdrawVoteDepositOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->newcoinDaoWithdrawVoteDepositOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoWithdrawVoteDepositOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **newcoinDaoWithdrawVoteDepositPost**
+> \Swagger\Client\Model\BcDaoWidthdrawVoteDepositResponse newcoinDaoWithdrawVoteDepositPost($bc_dao_widthdraw_vote_deposit_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$bc_dao_widthdraw_vote_deposit_request = new \Swagger\Client\Model\BcDaoWidthdrawVoteDepositRequest(); // \Swagger\Client\Model\BcDaoWidthdrawVoteDepositRequest | 
+
+try {
+    $result = $apiInstance->newcoinDaoWithdrawVoteDepositPost($bc_dao_widthdraw_vote_deposit_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->newcoinDaoWithdrawVoteDepositPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_widthdraw_vote_deposit_request** | [**\Swagger\Client\Model\BcDaoWidthdrawVoteDepositRequest**](../Model/BcDaoWidthdrawVoteDepositRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\BcDaoWidthdrawVoteDepositResponse**](../Model/BcDaoWidthdrawVoteDepositResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -4036,6 +4755,101 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **postUtilsRemoteMetaProxyGet**
+> \Swagger\Client\Model\PostRemoteMetaProxyResponse postUtilsRemoteMetaProxyGet($url)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$url = "url_example"; // string | 
+
+try {
+    $result = $apiInstance->postUtilsRemoteMetaProxyGet($url);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->postUtilsRemoteMetaProxyGet: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | **string**|  | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\PostRemoteMetaProxyResponse**](../Model/PostRemoteMetaProxyResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **postUtilsRemoteMetaProxyOptions**
+> postUtilsRemoteMetaProxyOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->postUtilsRemoteMetaProxyOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->postUtilsRemoteMetaProxyOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)

@@ -11,13 +11,13 @@ class PostReadResponse {
   String created = null;
   
 
-  MoodPagedListReadPublicResponseAuthor author = null;
+  PostCreateResponseAuthor author = null;
   
 
   num latitude = null;
   
 
-  List<MoodPagedListReadPublicResponseMoods> moods = [];
+  List<PostCreateResponseMoods> moods = [];
   
 
   String description = null;
@@ -50,7 +50,7 @@ class PostReadResponse {
   String id = null;
   
 
-  String consentEmail = null;
+  String embed = null;
   
 
   String updated = null;
@@ -65,7 +65,7 @@ class PostReadResponse {
 
   @override
   String toString() {
-    return 'PostReadResponse[coverContentUrl=$coverContentUrl, moodId=$moodId, created=$created, author=$author, latitude=$latitude, moods=$moods, description=$description, aspectRatio=$aspectRatio, title=$title, content=$content, tags=$tags, license=$license, contentUrl=$contentUrl, blurHash=$blurHash, newcoinMintTx=$newcoinMintTx, id=$id, consentEmail=$consentEmail, updated=$updated, contentType=$contentType, longitude=$longitude, ]';
+    return 'PostReadResponse[coverContentUrl=$coverContentUrl, moodId=$moodId, created=$created, author=$author, latitude=$latitude, moods=$moods, description=$description, aspectRatio=$aspectRatio, title=$title, content=$content, tags=$tags, license=$license, contentUrl=$contentUrl, blurHash=$blurHash, newcoinMintTx=$newcoinMintTx, id=$id, embed=$embed, updated=$updated, contentType=$contentType, longitude=$longitude, ]';
   }
 
   PostReadResponse.fromJson(Map<String, dynamic> json) {
@@ -82,13 +82,13 @@ class PostReadResponse {
     author =
       
       
-      new MoodPagedListReadPublicResponseAuthor.fromJson(json['author'])
+      new PostCreateResponseAuthor.fromJson(json['author'])
 ;
     latitude =
         json['latitude']
     ;
     moods =
-      MoodPagedListReadPublicResponseMoods.listFromJson(json['moods'])
+      PostCreateResponseMoods.listFromJson(json['moods'])
 ;
     description =
         json['description']
@@ -120,8 +120,8 @@ class PostReadResponse {
     id =
         json['id']
     ;
-    consentEmail =
-        json['consentEmail']
+    embed =
+        json['embed']
     ;
     updated =
         json['updated']
@@ -152,7 +152,7 @@ class PostReadResponse {
       'blurHash': blurHash,
       'newcoinMintTx': newcoinMintTx,
       'id': id,
-      'consentEmail': consentEmail,
+      'embed': embed,
       'updated': updated,
       'contentType': contentType,
       'longitude': longitude

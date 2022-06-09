@@ -8,12 +8,6 @@ Method | HTTP request | Description
 [**authCallbackPathOptions**](DefaultApi.md#authCallbackPathOptions) | **OPTIONS** /auth/callback/{path+} | 
 [**authProviderPathGet**](DefaultApi.md#authProviderPathGet) | **GET** /auth/provider/{path+} | 
 [**authProviderPathOptions**](DefaultApi.md#authProviderPathOptions) | **OPTIONS** /auth/provider/{path+} | 
-[**bcmaindaodldunstakeOptions**](DefaultApi.md#bcmaindaodldunstakeOptions) | **OPTIONS** /bcmaindaodldunstake | 
-[**bcmaindaodldunstakePost**](DefaultApi.md#bcmaindaodldunstakePost) | **POST** /bcmaindaodldunstake | 
-[**bcmaindaoinstunstakeOptions**](DefaultApi.md#bcmaindaoinstunstakeOptions) | **OPTIONS** /bcmaindaoinstunstake | 
-[**bcmaindaoinstunstakePost**](DefaultApi.md#bcmaindaoinstunstakePost) | **POST** /bcmaindaoinstunstake | 
-[**bcmaindaostakeOptions**](DefaultApi.md#bcmaindaostakeOptions) | **OPTIONS** /bcmaindaostake | 
-[**bcmaindaostakePost**](DefaultApi.md#bcmaindaostakePost) | **POST** /bcmaindaostake | 
 [**folderGet**](DefaultApi.md#folderGet) | **GET** /folder | 
 [**folderOptions**](DefaultApi.md#folderOptions) | **OPTIONS** /folder | 
 [**infoAuthGet**](DefaultApi.md#infoAuthGet) | **GET** /info-auth | 
@@ -46,6 +40,12 @@ Method | HTTP request | Description
 [**newcoinBcgetpoolPost**](DefaultApi.md#newcoinBcgetpoolPost) | **POST** /newcoin/bcgetpool | 
 [**newcoinBckeypairOptions**](DefaultApi.md#newcoinBckeypairOptions) | **OPTIONS** /newcoin/bckeypair | 
 [**newcoinBckeypairPost**](DefaultApi.md#newcoinBckeypairPost) | **POST** /newcoin/bckeypair | 
+[**newcoinBcmaindaodldunstakeOptions**](DefaultApi.md#newcoinBcmaindaodldunstakeOptions) | **OPTIONS** /newcoin/bcmaindaodldunstake | 
+[**newcoinBcmaindaodldunstakePost**](DefaultApi.md#newcoinBcmaindaodldunstakePost) | **POST** /newcoin/bcmaindaodldunstake | 
+[**newcoinBcmaindaoinstunstakeOptions**](DefaultApi.md#newcoinBcmaindaoinstunstakeOptions) | **OPTIONS** /newcoin/bcmaindaoinstunstake | 
+[**newcoinBcmaindaoinstunstakePost**](DefaultApi.md#newcoinBcmaindaoinstunstakePost) | **POST** /newcoin/bcmaindaoinstunstake | 
+[**newcoinBcmaindaostakeOptions**](DefaultApi.md#newcoinBcmaindaostakeOptions) | **OPTIONS** /newcoin/bcmaindaostake | 
+[**newcoinBcmaindaostakePost**](DefaultApi.md#newcoinBcmaindaostakePost) | **POST** /newcoin/bcmaindaostake | 
 [**newcoinBcmintassetOptions**](DefaultApi.md#newcoinBcmintassetOptions) | **OPTIONS** /newcoin/bcmintasset | 
 [**newcoinBcmintassetPost**](DefaultApi.md#newcoinBcmintassetPost) | **POST** /newcoin/bcmintasset | 
 [**newcoinBcpoolcreateOptions**](DefaultApi.md#newcoinBcpoolcreateOptions) | **OPTIONS** /newcoin/bcpoolcreate | 
@@ -56,6 +56,8 @@ Method | HTTP request | Description
 [**newcoinDaoCreatePost**](DefaultApi.md#newcoinDaoCreatePost) | **POST** /newcoin/dao/create | 
 [**newcoinDaoProposalApproveOptions**](DefaultApi.md#newcoinDaoProposalApproveOptions) | **OPTIONS** /newcoin/dao/proposal/approve | 
 [**newcoinDaoProposalApprovePost**](DefaultApi.md#newcoinDaoProposalApprovePost) | **POST** /newcoin/dao/proposal/approve | 
+[**newcoinDaoProposalExecuteOptions**](DefaultApi.md#newcoinDaoProposalExecuteOptions) | **OPTIONS** /newcoin/dao/proposal/execute | 
+[**newcoinDaoProposalExecutePost**](DefaultApi.md#newcoinDaoProposalExecutePost) | **POST** /newcoin/dao/proposal/execute | 
 [**newcoinDaoProposalListGet**](DefaultApi.md#newcoinDaoProposalListGet) | **GET** /newcoin/dao/proposal/list | 
 [**newcoinDaoProposalListOptions**](DefaultApi.md#newcoinDaoProposalListOptions) | **OPTIONS** /newcoin/dao/proposal/list | 
 [**newcoinDaoProposalOptions**](DefaultApi.md#newcoinDaoProposalOptions) | **OPTIONS** /newcoin/dao/proposal | 
@@ -64,6 +66,18 @@ Method | HTTP request | Description
 [**newcoinDaoProposalVotePost**](DefaultApi.md#newcoinDaoProposalVotePost) | **POST** /newcoin/dao/proposal/vote | 
 [**newcoinDaoProposalVotesGet**](DefaultApi.md#newcoinDaoProposalVotesGet) | **GET** /newcoin/dao/proposal/votes | 
 [**newcoinDaoProposalVotesOptions**](DefaultApi.md#newcoinDaoProposalVotesOptions) | **OPTIONS** /newcoin/dao/proposal/votes | 
+[**newcoinDaoProposalWhitelistApproveOptions**](DefaultApi.md#newcoinDaoProposalWhitelistApproveOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoinDaoProposalWhitelistApprovePost**](DefaultApi.md#newcoinDaoProposalWhitelistApprovePost) | **POST** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoinDaoProposalWhitelistExecuteOptions**](DefaultApi.md#newcoinDaoProposalWhitelistExecuteOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoinDaoProposalWhitelistExecutePost**](DefaultApi.md#newcoinDaoProposalWhitelistExecutePost) | **POST** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoinDaoProposalWhitelistListGet**](DefaultApi.md#newcoinDaoProposalWhitelistListGet) | **GET** /newcoin/dao/proposal-whitelist/list | 
+[**newcoinDaoProposalWhitelistListOptions**](DefaultApi.md#newcoinDaoProposalWhitelistListOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist/list | 
+[**newcoinDaoProposalWhitelistOptions**](DefaultApi.md#newcoinDaoProposalWhitelistOptions) | **OPTIONS** /newcoin/dao/proposal-whitelist | 
+[**newcoinDaoProposalWhitelistPost**](DefaultApi.md#newcoinDaoProposalWhitelistPost) | **POST** /newcoin/dao/proposal-whitelist | 
+[**newcoinDaoWhitelistGet**](DefaultApi.md#newcoinDaoWhitelistGet) | **GET** /newcoin/dao/whitelist | 
+[**newcoinDaoWhitelistOptions**](DefaultApi.md#newcoinDaoWhitelistOptions) | **OPTIONS** /newcoin/dao/whitelist | 
+[**newcoinDaoWithdrawVoteDepositOptions**](DefaultApi.md#newcoinDaoWithdrawVoteDepositOptions) | **OPTIONS** /newcoin/dao/withdrawVoteDeposit | 
+[**newcoinDaoWithdrawVoteDepositPost**](DefaultApi.md#newcoinDaoWithdrawVoteDepositPost) | **POST** /newcoin/dao/withdrawVoteDeposit | 
 [**paymentStripeIntentOptions**](DefaultApi.md#paymentStripeIntentOptions) | **OPTIONS** /payment/stripe/intent | 
 [**paymentStripeIntentPost**](DefaultApi.md#paymentStripeIntentPost) | **POST** /payment/stripe/intent | 
 [**paymentStripeSubscriptionPaymentOptions**](DefaultApi.md#paymentStripeSubscriptionPaymentOptions) | **OPTIONS** /payment/stripe/subscription/payment | 
@@ -86,6 +100,8 @@ Method | HTTP request | Description
 [**postReportPost**](DefaultApi.md#postReportPost) | **POST** /post/report | 
 [**postUploadOptions**](DefaultApi.md#postUploadOptions) | **OPTIONS** /post/upload | 
 [**postUploadPost**](DefaultApi.md#postUploadPost) | **POST** /post/upload | 
+[**postUtilsRemoteMetaProxyGet**](DefaultApi.md#postUtilsRemoteMetaProxyGet) | **GET** /post/utils/remote-meta-proxy | 
+[**postUtilsRemoteMetaProxyOptions**](DefaultApi.md#postUtilsRemoteMetaProxyOptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**searchCreativeGet**](DefaultApi.md#searchCreativeGet) | **GET** /search/creative | 
 [**searchCreativeOptions**](DefaultApi.md#searchCreativeOptions) | **OPTIONS** /search/creative | 
 [**uploadNodeOptions**](DefaultApi.md#uploadNodeOptions) | **OPTIONS** /upload/node | 
@@ -293,279 +309,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="bcmaindaodldunstakeOptions"></a>
-# **bcmaindaodldunstakeOptions**
-> bcmaindaodldunstakeOptions()
-
-
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.DefaultApi;
-
-
-DefaultApi apiInstance = new DefaultApi();
-try {
-    apiInstance.bcmaindaodldunstakeOptions();
-} catch (ApiException e) {
-    System.err.println("Exception when calling DefaultApi#bcmaindaodldunstakeOptions");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="bcmaindaodldunstakePost"></a>
-# **bcmaindaodldunstakePost**
-> BcTxResponse bcmaindaodldunstakePost(bcStakeMainDAORequest)
-
-
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.DefaultApi;
-
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
-
-DefaultApi apiInstance = new DefaultApi();
-BcStakeMainDAORequest bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
-try {
-    BcTxResponse result = apiInstance.bcmaindaodldunstakePost(bcStakeMainDAORequest);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling DefaultApi#bcmaindaodldunstakePost");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  |
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-<a name="bcmaindaoinstunstakeOptions"></a>
-# **bcmaindaoinstunstakeOptions**
-> bcmaindaoinstunstakeOptions()
-
-
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.DefaultApi;
-
-
-DefaultApi apiInstance = new DefaultApi();
-try {
-    apiInstance.bcmaindaoinstunstakeOptions();
-} catch (ApiException e) {
-    System.err.println("Exception when calling DefaultApi#bcmaindaoinstunstakeOptions");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="bcmaindaoinstunstakePost"></a>
-# **bcmaindaoinstunstakePost**
-> BcTxResponse bcmaindaoinstunstakePost(bcStakePoolRequest)
-
-
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.DefaultApi;
-
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
-
-DefaultApi apiInstance = new DefaultApi();
-BcStakePoolRequest bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
-try {
-    BcTxResponse result = apiInstance.bcmaindaoinstunstakePost(bcStakePoolRequest);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling DefaultApi#bcmaindaoinstunstakePost");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakePoolRequest** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  |
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-<a name="bcmaindaostakeOptions"></a>
-# **bcmaindaostakeOptions**
-> bcmaindaostakeOptions()
-
-
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiException;
-//import io.swagger.client.api.DefaultApi;
-
-
-DefaultApi apiInstance = new DefaultApi();
-try {
-    apiInstance.bcmaindaostakeOptions();
-} catch (ApiException e) {
-    System.err.println("Exception when calling DefaultApi#bcmaindaostakeOptions");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-null (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="bcmaindaostakePost"></a>
-# **bcmaindaostakePost**
-> BcTxResponse bcmaindaostakePost(bcStakeMainDAORequest)
-
-
-
-### Example
-```java
-// Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.DefaultApi;
-
-ApiClient defaultClient = Configuration.getDefaultApiClient();
-
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
-
-DefaultApi apiInstance = new DefaultApi();
-BcStakeMainDAORequest bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
-try {
-    BcTxResponse result = apiInstance.bcmaindaostakePost(bcStakeMainDAORequest);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling DefaultApi#bcmaindaostakePost");
-    e.printStackTrace();
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  |
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 <a name="folderGet"></a>
@@ -2017,6 +1760,279 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
+<a name="newcoinBcmaindaodldunstakeOptions"></a>
+# **newcoinBcmaindaodldunstakeOptions**
+> newcoinBcmaindaodldunstakeOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinBcmaindaodldunstakeOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinBcmaindaodldunstakeOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinBcmaindaodldunstakePost"></a>
+# **newcoinBcmaindaodldunstakePost**
+> BcTxResponse newcoinBcmaindaodldunstakePost(bcStakeMainDAORequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+BcStakeMainDAORequest bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
+try {
+    BcTxResponse result = apiInstance.newcoinBcmaindaodldunstakePost(bcStakeMainDAORequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinBcmaindaodldunstakePost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  |
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinBcmaindaoinstunstakeOptions"></a>
+# **newcoinBcmaindaoinstunstakeOptions**
+> newcoinBcmaindaoinstunstakeOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinBcmaindaoinstunstakeOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinBcmaindaoinstunstakeOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinBcmaindaoinstunstakePost"></a>
+# **newcoinBcmaindaoinstunstakePost**
+> BcTxResponse newcoinBcmaindaoinstunstakePost(bcStakePoolRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+BcStakePoolRequest bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
+try {
+    BcTxResponse result = apiInstance.newcoinBcmaindaoinstunstakePost(bcStakePoolRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinBcmaindaoinstunstakePost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakePoolRequest** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  |
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinBcmaindaostakeOptions"></a>
+# **newcoinBcmaindaostakeOptions**
+> newcoinBcmaindaostakeOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinBcmaindaostakeOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinBcmaindaostakeOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinBcmaindaostakePost"></a>
+# **newcoinBcmaindaostakePost**
+> BcTxResponse newcoinBcmaindaostakePost(bcStakeMainDAORequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+BcStakeMainDAORequest bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
+try {
+    BcTxResponse result = apiInstance.newcoinBcmaindaostakePost(bcStakeMainDAORequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinBcmaindaostakePost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcStakeMainDAORequest** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  |
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
 <a name="newcoinBcmintassetOptions"></a>
 # **newcoinBcmintassetOptions**
 > newcoinBcmintassetOptions()
@@ -2471,9 +2487,47 @@ null (empty response body)
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
-<a name="newcoinDaoProposalListGet"></a>
-# **newcoinDaoProposalListGet**
-> BcListDaoProposalsResponse newcoinDaoProposalListGet(proposalAuthor, daoOwner, daoId, id)
+<a name="newcoinDaoProposalExecuteOptions"></a>
+# **newcoinDaoProposalExecuteOptions**
+> newcoinDaoProposalExecuteOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinDaoProposalExecuteOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalExecuteOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalExecutePost"></a>
+# **newcoinDaoProposalExecutePost**
+> BcDaoProposalExecuteResponse newcoinDaoProposalExecutePost(bcDaoProposalExecuteRequest)
 
 
 
@@ -2495,12 +2549,69 @@ newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
 //newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
+BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
+try {
+    BcDaoProposalExecuteResponse result = apiInstance.newcoinDaoProposalExecutePost(bcDaoProposalExecuteRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalExecutePost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoProposalExecuteRequest** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  |
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalListGet"></a>
+# **newcoinDaoProposalListGet**
+> BcListDaoProposalsResponse newcoinDaoProposalListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+String reverse = "reverse_example"; // String | 
 String proposalAuthor = "proposalAuthor_example"; // String | 
 String daoOwner = "daoOwner_example"; // String | 
 String daoId = "daoId_example"; // String | 
+String limit = "limit_example"; // String | 
+String lowerBound = "lowerBound_example"; // String | 
+String upperBound = "upperBound_example"; // String | 
 String id = "id_example"; // String | 
 try {
-    BcListDaoProposalsResponse result = apiInstance.newcoinDaoProposalListGet(proposalAuthor, daoOwner, daoId, id);
+    BcListDaoProposalsResponse result = apiInstance.newcoinDaoProposalListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling DefaultApi#newcoinDaoProposalListGet");
@@ -2512,9 +2623,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional]
  **proposalAuthor** | **String**|  | [optional]
  **daoOwner** | **String**|  | [optional]
  **daoId** | **String**|  | [optional]
+ **limit** | **String**|  | [optional]
+ **lowerBound** | **String**|  | [optional]
+ **upperBound** | **String**|  | [optional]
  **id** | **String**|  | [optional]
 
 ### Return type
@@ -2751,7 +2866,7 @@ Name | Type | Description  | Notes
 
 <a name="newcoinDaoProposalVotesGet"></a>
 # **newcoinDaoProposalVotesGet**
-> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(voter, voteId)
+> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId)
 
 
 
@@ -2773,10 +2888,14 @@ newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
 //newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
+String reverse = "reverse_example"; // String | 
+String limit = "limit_example"; // String | 
+String upperBound = "upperBound_example"; // String | 
 String voter = "voter_example"; // String | 
+String lowerBound = "lowerBound_example"; // String | 
 String voteId = "voteId_example"; // String | 
 try {
-    BcDaoProposalVoteResponse result = apiInstance.newcoinDaoProposalVotesGet(voter, voteId);
+    BcDaoProposalVoteResponse result = apiInstance.newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling DefaultApi#newcoinDaoProposalVotesGet");
@@ -2788,7 +2907,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional]
+ **limit** | **String**|  | [optional]
+ **upperBound** | **String**|  | [optional]
  **voter** | **String**|  | [optional]
+ **lowerBound** | **String**|  | [optional]
  **voteId** | **String**|  | [optional]
 
 ### Return type
@@ -2840,6 +2963,574 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistApproveOptions"></a>
+# **newcoinDaoProposalWhitelistApproveOptions**
+> newcoinDaoProposalWhitelistApproveOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinDaoProposalWhitelistApproveOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistApproveOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistApprovePost"></a>
+# **newcoinDaoProposalWhitelistApprovePost**
+> newcoinDaoProposalWhitelistApprovePost(bcApproveDaoProposalRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+BcApproveDaoProposalRequest bcApproveDaoProposalRequest = new BcApproveDaoProposalRequest(); // BcApproveDaoProposalRequest | 
+try {
+    apiInstance.newcoinDaoProposalWhitelistApprovePost(bcApproveDaoProposalRequest);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistApprovePost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcApproveDaoProposalRequest** | [**BcApproveDaoProposalRequest**](BcApproveDaoProposalRequest.md)|  |
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistExecuteOptions"></a>
+# **newcoinDaoProposalWhitelistExecuteOptions**
+> newcoinDaoProposalWhitelistExecuteOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinDaoProposalWhitelistExecuteOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistExecuteOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistExecutePost"></a>
+# **newcoinDaoProposalWhitelistExecutePost**
+> BcDaoProposalExecuteResponse newcoinDaoProposalWhitelistExecutePost(bcDaoProposalExecuteRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
+try {
+    BcDaoProposalExecuteResponse result = apiInstance.newcoinDaoProposalWhitelistExecutePost(bcDaoProposalExecuteRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistExecutePost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoProposalExecuteRequest** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  |
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistListGet"></a>
+# **newcoinDaoProposalWhitelistListGet**
+> BcListDaoProposalsResponse newcoinDaoProposalWhitelistListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+String reverse = "reverse_example"; // String | 
+String proposalAuthor = "proposalAuthor_example"; // String | 
+String daoOwner = "daoOwner_example"; // String | 
+String daoId = "daoId_example"; // String | 
+String limit = "limit_example"; // String | 
+String lowerBound = "lowerBound_example"; // String | 
+String upperBound = "upperBound_example"; // String | 
+String id = "id_example"; // String | 
+try {
+    BcListDaoProposalsResponse result = apiInstance.newcoinDaoProposalWhitelistListGet(reverse, proposalAuthor, daoOwner, daoId, limit, lowerBound, upperBound, id);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistListGet");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional]
+ **proposalAuthor** | **String**|  | [optional]
+ **daoOwner** | **String**|  | [optional]
+ **daoId** | **String**|  | [optional]
+ **limit** | **String**|  | [optional]
+ **lowerBound** | **String**|  | [optional]
+ **upperBound** | **String**|  | [optional]
+ **id** | **String**|  | [optional]
+
+### Return type
+
+[**BcListDaoProposalsResponse**](BcListDaoProposalsResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistListOptions"></a>
+# **newcoinDaoProposalWhitelistListOptions**
+> newcoinDaoProposalWhitelistListOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinDaoProposalWhitelistListOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistListOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistOptions"></a>
+# **newcoinDaoProposalWhitelistOptions**
+> newcoinDaoProposalWhitelistOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinDaoProposalWhitelistOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoProposalWhitelistPost"></a>
+# **newcoinDaoProposalWhitelistPost**
+> newcoinDaoProposalWhitelistPost(bcCreateWhitelistDaoProposal)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+BcCreateWhitelistDaoProposal bcCreateWhitelistDaoProposal = new BcCreateWhitelistDaoProposal(); // BcCreateWhitelistDaoProposal | 
+try {
+    apiInstance.newcoinDaoProposalWhitelistPost(bcCreateWhitelistDaoProposal);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoProposalWhitelistPost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcCreateWhitelistDaoProposal** | [**BcCreateWhitelistDaoProposal**](BcCreateWhitelistDaoProposal.md)|  |
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinDaoWhitelistGet"></a>
+# **newcoinDaoWhitelistGet**
+> BcListDaoWhitelistResponse newcoinDaoWhitelistGet(reverse, daoOwner, daoId, limit, upperBound, lowerBound)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+String reverse = "reverse_example"; // String | 
+String daoOwner = "daoOwner_example"; // String | 
+String daoId = "daoId_example"; // String | 
+String limit = "limit_example"; // String | 
+String upperBound = "upperBound_example"; // String | 
+String lowerBound = "lowerBound_example"; // String | 
+try {
+    BcListDaoWhitelistResponse result = apiInstance.newcoinDaoWhitelistGet(reverse, daoOwner, daoId, limit, upperBound, lowerBound);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoWhitelistGet");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **String**|  | [optional]
+ **daoOwner** | **String**|  | [optional]
+ **daoId** | **String**|  | [optional]
+ **limit** | **String**|  | [optional]
+ **upperBound** | **String**|  | [optional]
+ **lowerBound** | **String**|  | [optional]
+
+### Return type
+
+[**BcListDaoWhitelistResponse**](BcListDaoWhitelistResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="newcoinDaoWhitelistOptions"></a>
+# **newcoinDaoWhitelistOptions**
+> newcoinDaoWhitelistOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinDaoWhitelistOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoWhitelistOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoWithdrawVoteDepositOptions"></a>
+# **newcoinDaoWithdrawVoteDepositOptions**
+> newcoinDaoWithdrawVoteDepositOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.newcoinDaoWithdrawVoteDepositOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoWithdrawVoteDepositOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="newcoinDaoWithdrawVoteDepositPost"></a>
+# **newcoinDaoWithdrawVoteDepositPost**
+> BcDaoWidthdrawVoteDepositResponse newcoinDaoWithdrawVoteDepositPost(bcDaoWidthdrawVoteDepositRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+BcDaoWidthdrawVoteDepositRequest bcDaoWidthdrawVoteDepositRequest = new BcDaoWidthdrawVoteDepositRequest(); // BcDaoWidthdrawVoteDepositRequest | 
+try {
+    BcDaoWidthdrawVoteDepositResponse result = apiInstance.newcoinDaoWithdrawVoteDepositPost(bcDaoWidthdrawVoteDepositRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#newcoinDaoWithdrawVoteDepositPost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bcDaoWidthdrawVoteDepositRequest** | [**BcDaoWidthdrawVoteDepositRequest**](BcDaoWidthdrawVoteDepositRequest.md)|  |
+
+### Return type
+
+[**BcDaoWidthdrawVoteDepositResponse**](BcDaoWidthdrawVoteDepositResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 <a name="paymentStripeIntentOptions"></a>
@@ -3862,6 +4553,97 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="postUtilsRemoteMetaProxyGet"></a>
+# **postUtilsRemoteMetaProxyGet**
+> PostRemoteMetaProxyResponse postUtilsRemoteMetaProxyGet(url)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newlife-creator-api-eu-dev
+ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
+newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+String url = "url_example"; // String | 
+try {
+    PostRemoteMetaProxyResponse result = apiInstance.postUtilsRemoteMetaProxyGet(url);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#postUtilsRemoteMetaProxyGet");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | **String**|  | [optional]
+
+### Return type
+
+[**PostRemoteMetaProxyResponse**](PostRemoteMetaProxyResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="postUtilsRemoteMetaProxyOptions"></a>
+# **postUtilsRemoteMetaProxyOptions**
+> postUtilsRemoteMetaProxyOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.postUtilsRemoteMetaProxyOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#postUtilsRemoteMetaProxyOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="searchCreativeGet"></a>

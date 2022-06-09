@@ -58,12 +58,22 @@ class ApiClient {
           return new BcCreateDaoRequest.fromJson(value);
         case 'BcCreateDaoResponse':
           return new BcCreateDaoResponse.fromJson(value);
+        case 'BcCreateWhitelistDaoProposal':
+          return new BcCreateWhitelistDaoProposal.fromJson(value);
+        case 'BcDaoProposalExecuteRequest':
+          return new BcDaoProposalExecuteRequest.fromJson(value);
+        case 'BcDaoProposalExecuteResponse':
+          return new BcDaoProposalExecuteResponse.fromJson(value);
         case 'BcDaoProposalVoteRequest':
           return new BcDaoProposalVoteRequest.fromJson(value);
         case 'BcDaoProposalVoteResponse':
           return new BcDaoProposalVoteResponse.fromJson(value);
         case 'BcDaoProposalVoteResponseRows':
           return new BcDaoProposalVoteResponseRows.fromJson(value);
+        case 'BcDaoWidthdrawVoteDepositRequest':
+          return new BcDaoWidthdrawVoteDepositRequest.fromJson(value);
+        case 'BcDaoWidthdrawVoteDepositResponse':
+          return new BcDaoWidthdrawVoteDepositResponse.fromJson(value);
         case 'BcGetAccountInfo':
           return new BcGetAccountInfo.fromJson(value);
         case 'BcGetInfoResp':
@@ -80,6 +90,8 @@ class ApiClient {
           return new BcListDaoProposalsResponseRows.fromJson(value);
         case 'BcListDaoProposalsResponseVoteNo':
           return new BcListDaoProposalsResponseVoteNo.fromJson(value);
+        case 'BcListDaoWhitelistResponse':
+          return new BcListDaoWhitelistResponse.fromJson(value);
         case 'BcMintAssetRequest':
           return new BcMintAssetRequest.fromJson(value);
         case 'BcMintAssetRequestImmutableData':
@@ -164,10 +176,18 @@ class ApiClient {
           return new PostCreateRequest.fromJson(value);
         case 'PostCreateResponse':
           return new PostCreateResponse.fromJson(value);
+        case 'PostCreateResponseAuthor':
+          return new PostCreateResponseAuthor.fromJson(value);
+        case 'PostCreateResponseMoods':
+          return new PostCreateResponseMoods.fromJson(value);
         case 'PostPagedListReadPublicResponse':
           return new PostPagedListReadPublicResponse.fromJson(value);
+        case 'PostPagedListReadPublicResponseValue':
+          return new PostPagedListReadPublicResponseValue.fromJson(value);
         case 'PostReadResponse':
           return new PostReadResponse.fromJson(value);
+        case 'PostRemoteMetaProxyResponse':
+          return new PostRemoteMetaProxyResponse.fromJson(value);
         case 'PostTagsSearchPublicResponse':
           return new PostTagsSearchPublicResponse.fromJson(value);
         case 'PostTagsSearchPublicResponseValue':
@@ -192,8 +212,6 @@ class ApiClient {
           return new SyncContactsRequestPostalAddresses.fromJson(value);
         case 'SyncContactsResponse':
           return new SyncContactsResponse.fromJson(value);
-        case 'Undefined':
-          return new Undefined.fromJson(value);
         case 'UploadRequest':
           return new UploadRequest.fromJson(value);
         case 'UploadRequestGeneric':

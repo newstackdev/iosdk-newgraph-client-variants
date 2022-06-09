@@ -5,10 +5,10 @@ class UserCreateRequest {
   String newcoinTicker = null;
   
 
-  String lastName = null;
+  String youtube = null;
   
 
-  String website = null;
+  String lastName = null;
   
 
   String consentPrivacyPolicy = null;
@@ -20,40 +20,43 @@ class UserCreateRequest {
   num latitude = null;
   
 
-  String fullName = null;
+  String description = null;
   
 
   String tumblr = null;
   
 
-  String description = null;
+  String instagram = null;
   
 
-  String instagram = null;
+  String medium = null;
   
 
   String soundcloud = null;
   
 
-  String firstName = null;
+  String snapchat = null;
   
 
-  String twitter = null;
+  String apple = null;
   
 
   String consentTestgroup = null;
   
 
-  String phone = null;
-  
-
-  String tiktok = null;
+  String twitter = null;
   
 
   String legacyToken = null;
   
 
-  String consentEmail = null;
+  String tiktok = null;
+  
+
+  String reddit = null;
+  
+
+  String signal = null;
   
 
   String email = null;
@@ -62,13 +65,43 @@ class UserCreateRequest {
   num longitude = null;
   
 
+  String website = null;
+  
+
+  String spotify = null;
+  
+
+  String facebook = null;
+  
+
+  String fullName = null;
+  
+
+  String telegram = null;
+  
+
+  String pinterest = null;
+  
+
+  String firstName = null;
+  
+
+  String discord = null;
+  
+
+  String phone = null;
+  
+
+  String consentEmail = null;
+  
+
   String username = null;
   
   UserCreateRequest();
 
   @override
   String toString() {
-    return 'UserCreateRequest[newcoinTicker=$newcoinTicker, lastName=$lastName, website=$website, consentPrivacyPolicy=$consentPrivacyPolicy, displayName=$displayName, latitude=$latitude, fullName=$fullName, tumblr=$tumblr, description=$description, instagram=$instagram, soundcloud=$soundcloud, firstName=$firstName, twitter=$twitter, consentTestgroup=$consentTestgroup, phone=$phone, tiktok=$tiktok, legacyToken=$legacyToken, consentEmail=$consentEmail, email=$email, longitude=$longitude, username=$username, ]';
+    return 'UserCreateRequest[newcoinTicker=$newcoinTicker, youtube=$youtube, lastName=$lastName, consentPrivacyPolicy=$consentPrivacyPolicy, displayName=$displayName, latitude=$latitude, description=$description, tumblr=$tumblr, instagram=$instagram, medium=$medium, soundcloud=$soundcloud, snapchat=$snapchat, apple=$apple, consentTestgroup=$consentTestgroup, twitter=$twitter, legacyToken=$legacyToken, tiktok=$tiktok, reddit=$reddit, signal=$signal, email=$email, longitude=$longitude, website=$website, spotify=$spotify, facebook=$facebook, fullName=$fullName, telegram=$telegram, pinterest=$pinterest, firstName=$firstName, discord=$discord, phone=$phone, consentEmail=$consentEmail, username=$username, ]';
   }
 
   UserCreateRequest.fromJson(Map<String, dynamic> json) {
@@ -76,11 +109,11 @@ class UserCreateRequest {
     newcoinTicker =
         json['newcoinTicker']
     ;
+    youtube =
+        json['youtube']
+    ;
     lastName =
         json['lastName']
-    ;
-    website =
-        json['website']
     ;
     consentPrivacyPolicy =
         json['consentPrivacyPolicy']
@@ -91,47 +124,80 @@ class UserCreateRequest {
     latitude =
         json['latitude']
     ;
-    fullName =
-        json['fullName']
+    description =
+        json['description']
     ;
     tumblr =
         json['tumblr']
     ;
-    description =
-        json['description']
-    ;
     instagram =
         json['instagram']
+    ;
+    medium =
+        json['medium']
     ;
     soundcloud =
         json['soundcloud']
     ;
-    firstName =
-        json['firstName']
+    snapchat =
+        json['snapchat']
     ;
-    twitter =
-        json['twitter']
+    apple =
+        json['apple']
     ;
     consentTestgroup =
         json['consentTestgroup']
     ;
-    phone =
-        json['phone']
-    ;
-    tiktok =
-        json['tiktok']
+    twitter =
+        json['twitter']
     ;
     legacyToken =
         json['legacyToken']
     ;
-    consentEmail =
-        json['consentEmail']
+    tiktok =
+        json['tiktok']
+    ;
+    reddit =
+        json['reddit']
+    ;
+    signal =
+        json['signal']
     ;
     email =
         json['email']
     ;
     longitude =
         json['longitude']
+    ;
+    website =
+        json['website']
+    ;
+    spotify =
+        json['spotify']
+    ;
+    facebook =
+        json['facebook']
+    ;
+    fullName =
+        json['fullName']
+    ;
+    telegram =
+        json['telegram']
+    ;
+    pinterest =
+        json['pinterest']
+    ;
+    firstName =
+        json['firstName']
+    ;
+    discord =
+        json['discord']
+    ;
+    phone =
+        json['phone']
+    ;
+    consentEmail =
+        json['consentEmail']
     ;
     username =
         json['username']
@@ -141,25 +207,36 @@ class UserCreateRequest {
   Map<String, dynamic> toJson() {
     return {
       'newcoinTicker': newcoinTicker,
+      'youtube': youtube,
       'lastName': lastName,
-      'website': website,
       'consentPrivacyPolicy': consentPrivacyPolicy,
       'displayName': displayName,
       'latitude': latitude,
-      'fullName': fullName,
-      'tumblr': tumblr,
       'description': description,
+      'tumblr': tumblr,
       'instagram': instagram,
+      'medium': medium,
       'soundcloud': soundcloud,
-      'firstName': firstName,
-      'twitter': twitter,
+      'snapchat': snapchat,
+      'apple': apple,
       'consentTestgroup': consentTestgroup,
-      'phone': phone,
-      'tiktok': tiktok,
+      'twitter': twitter,
       'legacyToken': legacyToken,
-      'consentEmail': consentEmail,
+      'tiktok': tiktok,
+      'reddit': reddit,
+      'signal': signal,
       'email': email,
       'longitude': longitude,
+      'website': website,
+      'spotify': spotify,
+      'facebook': facebook,
+      'fullName': fullName,
+      'telegram': telegram,
+      'pinterest': pinterest,
+      'firstName': firstName,
+      'discord': discord,
+      'phone': phone,
+      'consentEmail': consentEmail,
       'username': username
      };
   }

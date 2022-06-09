@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **blurHash** | **String** |  | [optional] [default to null]
 **newcoinMintTx** | **String** |  | [optional] [default to null]
 **id** | **String** |  | [optional] [default to null]
-**consentEmail** | **String** |  | [optional] [default to null]
+**embed** | **String** |  | [optional] [default to null]
 **updated** | **String** |  | [optional] [default to null]
 **contentType** | **String** |  | [optional] [default to null]
 **longitude** | **num** |  | [optional] [default to null]

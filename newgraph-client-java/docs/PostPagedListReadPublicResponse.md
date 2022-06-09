@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | [**List&lt;MoodPagedListReadPublicResponsePosts&gt;**](MoodPagedListReadPublicResponsePosts.md) |  |  [optional]
+**value** | [**List&lt;PostPagedListReadPublicResponseValue&gt;**](PostPagedListReadPublicResponseValue.md) |  |  [optional]
 **done** | **Boolean** |  |  [optional]
 
 

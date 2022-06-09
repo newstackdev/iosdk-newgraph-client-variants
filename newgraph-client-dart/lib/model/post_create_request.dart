@@ -11,6 +11,9 @@ class PostCreateRequest {
   String description = null;
   
 
+  String embed = null;
+  
+
   String title = null;
   
 
@@ -23,7 +26,7 @@ class PostCreateRequest {
 
   @override
   String toString() {
-    return 'PostCreateRequest[license=$license, doMint=$doMint, description=$description, title=$title, contentType=$contentType, content=$content, ]';
+    return 'PostCreateRequest[license=$license, doMint=$doMint, description=$description, embed=$embed, title=$title, contentType=$contentType, content=$content, ]';
   }
 
   PostCreateRequest.fromJson(Map<String, dynamic> json) {
@@ -36,6 +39,9 @@ class PostCreateRequest {
     ;
     description =
         json['description']
+    ;
+    embed =
+        json['embed']
     ;
     title =
         json['title']
@@ -53,6 +59,7 @@ class PostCreateRequest {
       'license': license,
       'doMint': doMint,
       'description': description,
+      'embed': embed,
       'title': title,
       'contentType': contentType,
       'content': content

@@ -50,7 +50,7 @@ class MoodPagedListReadPublicResponsePosts {
   String id = null;
   
 
-  String consentEmail = null;
+  String embed = null;
   
 
   String updated = null;
@@ -65,7 +65,7 @@ class MoodPagedListReadPublicResponsePosts {
 
   @override
   String toString() {
-    return 'MoodPagedListReadPublicResponsePosts[coverContentUrl=$coverContentUrl, moodId=$moodId, created=$created, author=$author, latitude=$latitude, moods=$moods, description=$description, aspectRatio=$aspectRatio, title=$title, content=$content, tags=$tags, license=$license, contentUrl=$contentUrl, blurHash=$blurHash, newcoinMintTx=$newcoinMintTx, id=$id, consentEmail=$consentEmail, updated=$updated, contentType=$contentType, longitude=$longitude, ]';
+    return 'MoodPagedListReadPublicResponsePosts[coverContentUrl=$coverContentUrl, moodId=$moodId, created=$created, author=$author, latitude=$latitude, moods=$moods, description=$description, aspectRatio=$aspectRatio, title=$title, content=$content, tags=$tags, license=$license, contentUrl=$contentUrl, blurHash=$blurHash, newcoinMintTx=$newcoinMintTx, id=$id, embed=$embed, updated=$updated, contentType=$contentType, longitude=$longitude, ]';
   }
 
   MoodPagedListReadPublicResponsePosts.fromJson(Map<String, dynamic> json) {
@@ -120,8 +120,8 @@ class MoodPagedListReadPublicResponsePosts {
     id =
         json['id']
     ;
-    consentEmail =
-        json['consentEmail']
+    embed =
+        json['embed']
     ;
     updated =
         json['updated']
@@ -152,7 +152,7 @@ class MoodPagedListReadPublicResponsePosts {
       'blurHash': blurHash,
       'newcoinMintTx': newcoinMintTx,
       'id': id,
-      'consentEmail': consentEmail,
+      'embed': embed,
       'updated': updated,
       'contentType': contentType,
       'longitude': longitude

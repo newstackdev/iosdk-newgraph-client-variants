@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **BlurHash** | **string** |  | [optional] 
 **NewcoinMintTx** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
-**ConsentEmail** | **string** |  | [optional] 
+**Embed** | **string** |  | [optional] 
 **Updated** | **string** |  | [optional] 
 **ContentType** | **string** |  | [optional] 
 **Longitude** | **decimal?** |  | [optional] 

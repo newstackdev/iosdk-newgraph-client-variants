@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **License** | **string** |  | [optional] 
 **DoMint** | **string** |  | [optional] 
 **Description** | **string** |  | [optional] 
+**Embed** | **string** |  | [optional] 
 **Title** | **string** |  | [optional] 
 **ContentType** | **string** |  | [optional] 
 **Content** | **string** |  | [optional] 

@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **license** | **String** |  | [optional] [default to null]
 **doMint** | **String** |  | [optional] [default to null]
 **description** | **String** |  | [optional] [default to null]
+**embed** | **String** |  | [optional] [default to null]
 **title** | **String** |  | [optional] [default to null]
 **contentType** | **String** |  | [optional] [default to null]
 **content** | **String** |  | [optional] [default to null]

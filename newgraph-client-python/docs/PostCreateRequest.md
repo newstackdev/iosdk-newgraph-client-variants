@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **license** | **str** |  | [optional] 
 **do_mint** | **str** |  | [optional] 
 **description** | **str** |  | [optional] 
+**embed** | **str** |  | [optional] 
 **title** | **str** |  | [optional] 
 **content_type** | **str** |  | [optional] 
 **content** | **str** |  | [optional] 

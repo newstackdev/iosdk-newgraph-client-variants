@@ -8,12 +8,6 @@ Method | HTTP request | Description
 [**auth_callback_path_options**](DefaultApi.md#auth_callback_path_options) | **OPTIONS** /auth/callback/{path+} | 
 [**auth_provider_path_get**](DefaultApi.md#auth_provider_path_get) | **GET** /auth/provider/{path+} | 
 [**auth_provider_path_options**](DefaultApi.md#auth_provider_path_options) | **OPTIONS** /auth/provider/{path+} | 
-[**bcmaindaodldunstake_options**](DefaultApi.md#bcmaindaodldunstake_options) | **OPTIONS** /bcmaindaodldunstake | 
-[**bcmaindaodldunstake_post**](DefaultApi.md#bcmaindaodldunstake_post) | **POST** /bcmaindaodldunstake | 
-[**bcmaindaoinstunstake_options**](DefaultApi.md#bcmaindaoinstunstake_options) | **OPTIONS** /bcmaindaoinstunstake | 
-[**bcmaindaoinstunstake_post**](DefaultApi.md#bcmaindaoinstunstake_post) | **POST** /bcmaindaoinstunstake | 
-[**bcmaindaostake_options**](DefaultApi.md#bcmaindaostake_options) | **OPTIONS** /bcmaindaostake | 
-[**bcmaindaostake_post**](DefaultApi.md#bcmaindaostake_post) | **POST** /bcmaindaostake | 
 [**folder_get**](DefaultApi.md#folder_get) | **GET** /folder | 
 [**folder_options**](DefaultApi.md#folder_options) | **OPTIONS** /folder | 
 [**info_auth_get**](DefaultApi.md#info_auth_get) | **GET** /info-auth | 
@@ -46,6 +40,12 @@ Method | HTTP request | Description
 [**newcoin_bcgetpool_post**](DefaultApi.md#newcoin_bcgetpool_post) | **POST** /newcoin/bcgetpool | 
 [**newcoin_bckeypair_options**](DefaultApi.md#newcoin_bckeypair_options) | **OPTIONS** /newcoin/bckeypair | 
 [**newcoin_bckeypair_post**](DefaultApi.md#newcoin_bckeypair_post) | **POST** /newcoin/bckeypair | 
+[**newcoin_bcmaindaodldunstake_options**](DefaultApi.md#newcoin_bcmaindaodldunstake_options) | **OPTIONS** /newcoin/bcmaindaodldunstake | 
+[**newcoin_bcmaindaodldunstake_post**](DefaultApi.md#newcoin_bcmaindaodldunstake_post) | **POST** /newcoin/bcmaindaodldunstake | 
+[**newcoin_bcmaindaoinstunstake_options**](DefaultApi.md#newcoin_bcmaindaoinstunstake_options) | **OPTIONS** /newcoin/bcmaindaoinstunstake | 
+[**newcoin_bcmaindaoinstunstake_post**](DefaultApi.md#newcoin_bcmaindaoinstunstake_post) | **POST** /newcoin/bcmaindaoinstunstake | 
+[**newcoin_bcmaindaostake_options**](DefaultApi.md#newcoin_bcmaindaostake_options) | **OPTIONS** /newcoin/bcmaindaostake | 
+[**newcoin_bcmaindaostake_post**](DefaultApi.md#newcoin_bcmaindaostake_post) | **POST** /newcoin/bcmaindaostake | 
 [**newcoin_bcmintasset_options**](DefaultApi.md#newcoin_bcmintasset_options) | **OPTIONS** /newcoin/bcmintasset | 
 [**newcoin_bcmintasset_post**](DefaultApi.md#newcoin_bcmintasset_post) | **POST** /newcoin/bcmintasset | 
 [**newcoin_bcpoolcreate_options**](DefaultApi.md#newcoin_bcpoolcreate_options) | **OPTIONS** /newcoin/bcpoolcreate | 
@@ -56,6 +56,8 @@ Method | HTTP request | Description
 [**newcoin_dao_create_post**](DefaultApi.md#newcoin_dao_create_post) | **POST** /newcoin/dao/create | 
 [**newcoin_dao_proposal_approve_options**](DefaultApi.md#newcoin_dao_proposal_approve_options) | **OPTIONS** /newcoin/dao/proposal/approve | 
 [**newcoin_dao_proposal_approve_post**](DefaultApi.md#newcoin_dao_proposal_approve_post) | **POST** /newcoin/dao/proposal/approve | 
+[**newcoin_dao_proposal_execute_options**](DefaultApi.md#newcoin_dao_proposal_execute_options) | **OPTIONS** /newcoin/dao/proposal/execute | 
+[**newcoin_dao_proposal_execute_post**](DefaultApi.md#newcoin_dao_proposal_execute_post) | **POST** /newcoin/dao/proposal/execute | 
 [**newcoin_dao_proposal_list_get**](DefaultApi.md#newcoin_dao_proposal_list_get) | **GET** /newcoin/dao/proposal/list | 
 [**newcoin_dao_proposal_list_options**](DefaultApi.md#newcoin_dao_proposal_list_options) | **OPTIONS** /newcoin/dao/proposal/list | 
 [**newcoin_dao_proposal_options**](DefaultApi.md#newcoin_dao_proposal_options) | **OPTIONS** /newcoin/dao/proposal | 
@@ -64,6 +66,18 @@ Method | HTTP request | Description
 [**newcoin_dao_proposal_vote_post**](DefaultApi.md#newcoin_dao_proposal_vote_post) | **POST** /newcoin/dao/proposal/vote | 
 [**newcoin_dao_proposal_votes_get**](DefaultApi.md#newcoin_dao_proposal_votes_get) | **GET** /newcoin/dao/proposal/votes | 
 [**newcoin_dao_proposal_votes_options**](DefaultApi.md#newcoin_dao_proposal_votes_options) | **OPTIONS** /newcoin/dao/proposal/votes | 
+[**newcoin_dao_proposal_whitelist_approve_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_approve_options) | **OPTIONS** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoin_dao_proposal_whitelist_approve_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_approve_post) | **POST** /newcoin/dao/proposal-whitelist/approve | 
+[**newcoin_dao_proposal_whitelist_execute_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_execute_options) | **OPTIONS** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoin_dao_proposal_whitelist_execute_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_execute_post) | **POST** /newcoin/dao/proposal-whitelist/execute | 
+[**newcoin_dao_proposal_whitelist_list_get**](DefaultApi.md#newcoin_dao_proposal_whitelist_list_get) | **GET** /newcoin/dao/proposal-whitelist/list | 
+[**newcoin_dao_proposal_whitelist_list_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_list_options) | **OPTIONS** /newcoin/dao/proposal-whitelist/list | 
+[**newcoin_dao_proposal_whitelist_options**](DefaultApi.md#newcoin_dao_proposal_whitelist_options) | **OPTIONS** /newcoin/dao/proposal-whitelist | 
+[**newcoin_dao_proposal_whitelist_post**](DefaultApi.md#newcoin_dao_proposal_whitelist_post) | **POST** /newcoin/dao/proposal-whitelist | 
+[**newcoin_dao_whitelist_get**](DefaultApi.md#newcoin_dao_whitelist_get) | **GET** /newcoin/dao/whitelist | 
+[**newcoin_dao_whitelist_options**](DefaultApi.md#newcoin_dao_whitelist_options) | **OPTIONS** /newcoin/dao/whitelist | 
+[**newcoin_dao_withdraw_vote_deposit_options**](DefaultApi.md#newcoin_dao_withdraw_vote_deposit_options) | **OPTIONS** /newcoin/dao/withdrawVoteDeposit | 
+[**newcoin_dao_withdraw_vote_deposit_post**](DefaultApi.md#newcoin_dao_withdraw_vote_deposit_post) | **POST** /newcoin/dao/withdrawVoteDeposit | 
 [**payment_stripe_intent_options**](DefaultApi.md#payment_stripe_intent_options) | **OPTIONS** /payment/stripe/intent | 
 [**payment_stripe_intent_post**](DefaultApi.md#payment_stripe_intent_post) | **POST** /payment/stripe/intent | 
 [**payment_stripe_subscription_payment_options**](DefaultApi.md#payment_stripe_subscription_payment_options) | **OPTIONS** /payment/stripe/subscription/payment | 
@@ -86,6 +100,8 @@ Method | HTTP request | Description
 [**post_report_post**](DefaultApi.md#post_report_post) | **POST** /post/report | 
 [**post_upload_options**](DefaultApi.md#post_upload_options) | **OPTIONS** /post/upload | 
 [**post_upload_post**](DefaultApi.md#post_upload_post) | **POST** /post/upload | 
+[**post_utils_remote_meta_proxy_get**](DefaultApi.md#post_utils_remote_meta_proxy_get) | **GET** /post/utils/remote-meta-proxy | 
+[**post_utils_remote_meta_proxy_options**](DefaultApi.md#post_utils_remote_meta_proxy_options) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**search_creative_get**](DefaultApi.md#search_creative_get) | **GET** /search/creative | 
 [**search_creative_options**](DefaultApi.md#search_creative_options) | **OPTIONS** /search/creative | 
 [**upload_node_options**](DefaultApi.md#upload_node_options) | **OPTIONS** /upload/node | 
@@ -299,279 +315,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaodldunstake_options**
-> bcmaindaodldunstake_options()
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-
-try:
-    api_instance.bcmaindaodldunstake_options()
-except ApiException as e:
-    print("Exception when calling DefaultApi->bcmaindaodldunstake_options: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaodldunstake_post**
-> BcTxResponse bcmaindaodldunstake_post(bc_stake_main_dao_request)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: newlife-creator-api-eu-dev
-configuration = swagger_client.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
-bc_stake_main_dao_request = swagger_client.BcStakeMainDAORequest() # BcStakeMainDAORequest | 
-
-try:
-    api_response = api_instance.bcmaindaodldunstake_post(bc_stake_main_dao_request)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DefaultApi->bcmaindaodldunstake_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaoinstunstake_options**
-> bcmaindaoinstunstake_options()
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-
-try:
-    api_instance.bcmaindaoinstunstake_options()
-except ApiException as e:
-    print("Exception when calling DefaultApi->bcmaindaoinstunstake_options: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaoinstunstake_post**
-> BcTxResponse bcmaindaoinstunstake_post(bc_stake_pool_request)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: newlife-creator-api-eu-dev
-configuration = swagger_client.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
-bc_stake_pool_request = swagger_client.BcStakePoolRequest() # BcStakePoolRequest | 
-
-try:
-    api_response = api_instance.bcmaindaoinstunstake_post(bc_stake_pool_request)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DefaultApi->bcmaindaoinstunstake_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_pool_request** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaostake_options**
-> bcmaindaostake_options()
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = swagger_client.DefaultApi()
-
-try:
-    api_instance.bcmaindaostake_options()
-except ApiException as e:
-    print("Exception when calling DefaultApi->bcmaindaostake_options: %s\n" % e)
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **bcmaindaostake_post**
-> BcTxResponse bcmaindaostake_post(bc_stake_main_dao_request)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import swagger_client
-from swagger_client.rest import ApiException
-from pprint import pprint
-
-# Configure API key authorization: newlife-creator-api-eu-dev
-configuration = swagger_client.Configuration()
-configuration.api_key['Authorization'] = 'YOUR_API_KEY'
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Authorization'] = 'Bearer'
-
-# create an instance of the API class
-api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
-bc_stake_main_dao_request = swagger_client.BcStakeMainDAORequest() # BcStakeMainDAORequest | 
-
-try:
-    api_response = api_instance.bcmaindaostake_post(bc_stake_main_dao_request)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DefaultApi->bcmaindaostake_post: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
-
-### Return type
-
-[**BcTxResponse**](BcTxResponse.md)
-
-### Authorization
-
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
-
-### HTTP request headers
-
- - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2029,6 +1772,279 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **newcoin_bcmaindaodldunstake_options**
+> newcoin_bcmaindaodldunstake_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_bcmaindaodldunstake_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_bcmaindaodldunstake_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaodldunstake_post**
+> BcTxResponse newcoin_bcmaindaodldunstake_post(bc_stake_main_dao_request)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_stake_main_dao_request = swagger_client.BcStakeMainDAORequest() # BcStakeMainDAORequest | 
+
+try:
+    api_response = api_instance.newcoin_bcmaindaodldunstake_post(bc_stake_main_dao_request)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_bcmaindaodldunstake_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaoinstunstake_options**
+> newcoin_bcmaindaoinstunstake_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_bcmaindaoinstunstake_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_bcmaindaoinstunstake_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaoinstunstake_post**
+> BcTxResponse newcoin_bcmaindaoinstunstake_post(bc_stake_pool_request)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_stake_pool_request = swagger_client.BcStakePoolRequest() # BcStakePoolRequest | 
+
+try:
+    api_response = api_instance.newcoin_bcmaindaoinstunstake_post(bc_stake_pool_request)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_bcmaindaoinstunstake_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_pool_request** | [**BcStakePoolRequest**](BcStakePoolRequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaostake_options**
+> newcoin_bcmaindaostake_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_bcmaindaostake_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_bcmaindaostake_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_bcmaindaostake_post**
+> BcTxResponse newcoin_bcmaindaostake_post(bc_stake_main_dao_request)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_stake_main_dao_request = swagger_client.BcStakeMainDAORequest() # BcStakeMainDAORequest | 
+
+try:
+    api_response = api_instance.newcoin_bcmaindaostake_post(bc_stake_main_dao_request)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_bcmaindaostake_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_stake_main_dao_request** | [**BcStakeMainDAORequest**](BcStakeMainDAORequest.md)|  | 
+
+### Return type
+
+[**BcTxResponse**](BcTxResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **newcoin_bcmintasset_options**
 > newcoin_bcmintasset_options()
 
@@ -2483,8 +2499,48 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **newcoin_dao_proposal_list_get**
-> BcListDaoProposalsResponse newcoin_dao_proposal_list_get(proposal_author=proposal_author, dao_owner=dao_owner, dao_id=dao_id, id=id)
+# **newcoin_dao_proposal_execute_options**
+> newcoin_dao_proposal_execute_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_dao_proposal_execute_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_execute_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_execute_post**
+> BcDaoProposalExecuteResponse newcoin_dao_proposal_execute_post(bc_dao_proposal_execute_request)
 
 
 
@@ -2504,13 +2560,68 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_dao_proposal_execute_request = swagger_client.BcDaoProposalExecuteRequest() # BcDaoProposalExecuteRequest | 
+
+try:
+    api_response = api_instance.newcoin_dao_proposal_execute_post(bc_dao_proposal_execute_request)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_execute_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_proposal_execute_request** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_list_get**
+> BcListDaoProposalsResponse newcoin_dao_proposal_list_get(reverse=reverse, proposal_author=proposal_author, dao_owner=dao_owner, dao_id=dao_id, limit=limit, lower_bound=lower_bound, upper_bound=upper_bound, id=id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+reverse = 'reverse_example' # str |  (optional)
 proposal_author = 'proposal_author_example' # str |  (optional)
 dao_owner = 'dao_owner_example' # str |  (optional)
 dao_id = 'dao_id_example' # str |  (optional)
+limit = 'limit_example' # str |  (optional)
+lower_bound = 'lower_bound_example' # str |  (optional)
+upper_bound = 'upper_bound_example' # str |  (optional)
 id = 'id_example' # str |  (optional)
 
 try:
-    api_response = api_instance.newcoin_dao_proposal_list_get(proposal_author=proposal_author, dao_owner=dao_owner, dao_id=dao_id, id=id)
+    api_response = api_instance.newcoin_dao_proposal_list_get(reverse=reverse, proposal_author=proposal_author, dao_owner=dao_owner, dao_id=dao_id, limit=limit, lower_bound=lower_bound, upper_bound=upper_bound, id=id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->newcoin_dao_proposal_list_get: %s\n" % e)
@@ -2520,9 +2631,13 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **str**|  | [optional] 
  **proposal_author** | **str**|  | [optional] 
  **dao_owner** | **str**|  | [optional] 
  **dao_id** | **str**|  | [optional] 
+ **limit** | **str**|  | [optional] 
+ **lower_bound** | **str**|  | [optional] 
+ **upper_bound** | **str**|  | [optional] 
  **id** | **str**|  | [optional] 
 
 ### Return type
@@ -2762,7 +2877,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **newcoin_dao_proposal_votes_get**
-> BcDaoProposalVoteResponse newcoin_dao_proposal_votes_get(voter=voter, vote_id=vote_id)
+> BcDaoProposalVoteResponse newcoin_dao_proposal_votes_get(reverse=reverse, limit=limit, upper_bound=upper_bound, voter=voter, lower_bound=lower_bound, vote_id=vote_id)
 
 
 
@@ -2782,11 +2897,15 @@ configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 
 # create an instance of the API class
 api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+reverse = 'reverse_example' # str |  (optional)
+limit = 'limit_example' # str |  (optional)
+upper_bound = 'upper_bound_example' # str |  (optional)
 voter = 'voter_example' # str |  (optional)
+lower_bound = 'lower_bound_example' # str |  (optional)
 vote_id = 'vote_id_example' # str |  (optional)
 
 try:
-    api_response = api_instance.newcoin_dao_proposal_votes_get(voter=voter, vote_id=vote_id)
+    api_response = api_instance.newcoin_dao_proposal_votes_get(reverse=reverse, limit=limit, upper_bound=upper_bound, voter=voter, lower_bound=lower_bound, vote_id=vote_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling DefaultApi->newcoin_dao_proposal_votes_get: %s\n" % e)
@@ -2796,7 +2915,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **reverse** | **str**|  | [optional] 
+ **limit** | **str**|  | [optional] 
+ **upper_bound** | **str**|  | [optional] 
  **voter** | **str**|  | [optional] 
+ **lower_bound** | **str**|  | [optional] 
  **vote_id** | **str**|  | [optional] 
 
 ### Return type
@@ -2850,6 +2973,574 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_approve_options**
+> newcoin_dao_proposal_whitelist_approve_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_dao_proposal_whitelist_approve_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_approve_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_approve_post**
+> newcoin_dao_proposal_whitelist_approve_post(bc_approve_dao_proposal_request)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_approve_dao_proposal_request = swagger_client.BcApproveDaoProposalRequest() # BcApproveDaoProposalRequest | 
+
+try:
+    api_instance.newcoin_dao_proposal_whitelist_approve_post(bc_approve_dao_proposal_request)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_approve_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_approve_dao_proposal_request** | [**BcApproveDaoProposalRequest**](BcApproveDaoProposalRequest.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_execute_options**
+> newcoin_dao_proposal_whitelist_execute_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_dao_proposal_whitelist_execute_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_execute_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_execute_post**
+> BcDaoProposalExecuteResponse newcoin_dao_proposal_whitelist_execute_post(bc_dao_proposal_execute_request)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_dao_proposal_execute_request = swagger_client.BcDaoProposalExecuteRequest() # BcDaoProposalExecuteRequest | 
+
+try:
+    api_response = api_instance.newcoin_dao_proposal_whitelist_execute_post(bc_dao_proposal_execute_request)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_execute_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_proposal_execute_request** | [**BcDaoProposalExecuteRequest**](BcDaoProposalExecuteRequest.md)|  | 
+
+### Return type
+
+[**BcDaoProposalExecuteResponse**](BcDaoProposalExecuteResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_list_get**
+> BcListDaoProposalsResponse newcoin_dao_proposal_whitelist_list_get(reverse=reverse, proposal_author=proposal_author, dao_owner=dao_owner, dao_id=dao_id, limit=limit, lower_bound=lower_bound, upper_bound=upper_bound, id=id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+reverse = 'reverse_example' # str |  (optional)
+proposal_author = 'proposal_author_example' # str |  (optional)
+dao_owner = 'dao_owner_example' # str |  (optional)
+dao_id = 'dao_id_example' # str |  (optional)
+limit = 'limit_example' # str |  (optional)
+lower_bound = 'lower_bound_example' # str |  (optional)
+upper_bound = 'upper_bound_example' # str |  (optional)
+id = 'id_example' # str |  (optional)
+
+try:
+    api_response = api_instance.newcoin_dao_proposal_whitelist_list_get(reverse=reverse, proposal_author=proposal_author, dao_owner=dao_owner, dao_id=dao_id, limit=limit, lower_bound=lower_bound, upper_bound=upper_bound, id=id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_list_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **str**|  | [optional] 
+ **proposal_author** | **str**|  | [optional] 
+ **dao_owner** | **str**|  | [optional] 
+ **dao_id** | **str**|  | [optional] 
+ **limit** | **str**|  | [optional] 
+ **lower_bound** | **str**|  | [optional] 
+ **upper_bound** | **str**|  | [optional] 
+ **id** | **str**|  | [optional] 
+
+### Return type
+
+[**BcListDaoProposalsResponse**](BcListDaoProposalsResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_list_options**
+> newcoin_dao_proposal_whitelist_list_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_dao_proposal_whitelist_list_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_list_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_options**
+> newcoin_dao_proposal_whitelist_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_dao_proposal_whitelist_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_proposal_whitelist_post**
+> newcoin_dao_proposal_whitelist_post(bc_create_whitelist_dao_proposal)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_create_whitelist_dao_proposal = swagger_client.BcCreateWhitelistDaoProposal() # BcCreateWhitelistDaoProposal | 
+
+try:
+    api_instance.newcoin_dao_proposal_whitelist_post(bc_create_whitelist_dao_proposal)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_proposal_whitelist_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_create_whitelist_dao_proposal** | [**BcCreateWhitelistDaoProposal**](BcCreateWhitelistDaoProposal.md)|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_whitelist_get**
+> BcListDaoWhitelistResponse newcoin_dao_whitelist_get(reverse=reverse, dao_owner=dao_owner, dao_id=dao_id, limit=limit, upper_bound=upper_bound, lower_bound=lower_bound)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+reverse = 'reverse_example' # str |  (optional)
+dao_owner = 'dao_owner_example' # str |  (optional)
+dao_id = 'dao_id_example' # str |  (optional)
+limit = 'limit_example' # str |  (optional)
+upper_bound = 'upper_bound_example' # str |  (optional)
+lower_bound = 'lower_bound_example' # str |  (optional)
+
+try:
+    api_response = api_instance.newcoin_dao_whitelist_get(reverse=reverse, dao_owner=dao_owner, dao_id=dao_id, limit=limit, upper_bound=upper_bound, lower_bound=lower_bound)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_whitelist_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reverse** | **str**|  | [optional] 
+ **dao_owner** | **str**|  | [optional] 
+ **dao_id** | **str**|  | [optional] 
+ **limit** | **str**|  | [optional] 
+ **upper_bound** | **str**|  | [optional] 
+ **lower_bound** | **str**|  | [optional] 
+
+### Return type
+
+[**BcListDaoWhitelistResponse**](BcListDaoWhitelistResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_whitelist_options**
+> newcoin_dao_whitelist_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_dao_whitelist_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_whitelist_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_withdraw_vote_deposit_options**
+> newcoin_dao_withdraw_vote_deposit_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.newcoin_dao_withdraw_vote_deposit_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_withdraw_vote_deposit_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **newcoin_dao_withdraw_vote_deposit_post**
+> BcDaoWidthdrawVoteDepositResponse newcoin_dao_withdraw_vote_deposit_post(bc_dao_widthdraw_vote_deposit_request)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+bc_dao_widthdraw_vote_deposit_request = swagger_client.BcDaoWidthdrawVoteDepositRequest() # BcDaoWidthdrawVoteDepositRequest | 
+
+try:
+    api_response = api_instance.newcoin_dao_withdraw_vote_deposit_post(bc_dao_widthdraw_vote_deposit_request)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->newcoin_dao_withdraw_vote_deposit_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **bc_dao_widthdraw_vote_deposit_request** | [**BcDaoWidthdrawVoteDepositRequest**](BcDaoWidthdrawVoteDepositRequest.md)|  | 
+
+### Return type
+
+[**BcDaoWidthdrawVoteDepositResponse**](BcDaoWidthdrawVoteDepositResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3872,6 +4563,97 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **post_utils_remote_meta_proxy_get**
+> PostRemoteMetaProxyResponse post_utils_remote_meta_proxy_get(url=url)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: newlife-creator-api-eu-dev
+configuration = swagger_client.Configuration()
+configuration.api_key['Authorization'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['Authorization'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi(swagger_client.ApiClient(configuration))
+url = 'url_example' # str |  (optional)
+
+try:
+    api_response = api_instance.post_utils_remote_meta_proxy_get(url=url)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DefaultApi->post_utils_remote_meta_proxy_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **url** | **str**|  | [optional] 
+
+### Return type
+
+[**PostRemoteMetaProxyResponse**](PostRemoteMetaProxyResponse.md)
+
+### Authorization
+
+[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **post_utils_remote_meta_proxy_options**
+> post_utils_remote_meta_proxy_options()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DefaultApi()
+
+try:
+    api_instance.post_utils_remote_meta_proxy_options()
+except ApiException as e:
+    print("Exception when calling DefaultApi->post_utils_remote_meta_proxy_options: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

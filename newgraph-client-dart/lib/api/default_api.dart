@@ -218,309 +218,6 @@ class DefaultApi {
   /// 
   ///
   /// 
-  Future bcmaindaodldunstakeOptions() async {
-    Object postBody = null;
-
-    // verify required params are set
-
-    // create path and map variables
-    String path = "/bcmaindaodldunstake".replaceAll("{format}","json");
-
-    // query params
-    List<QueryParam> queryParams = [];
-    Map<String, String> headerParams = {};
-    Map<String, String> formParams = {};
-    
-    List<String> contentTypes = ["application/json"];
-
-    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = [];
-
-    if(contentType.startsWith("multipart/form-data")) {
-      bool hasFields = false;
-      MultipartRequest mp = new MultipartRequest(null, null);
-      
-      if(hasFields)
-        postBody = mp;
-    }
-    else {
-          }
-
-    var response = await apiClient.invokeAPI(path,
-                                             'OPTIONS',
-                                             queryParams,
-                                             postBody,
-                                             headerParams,
-                                             formParams,
-                                             contentType,
-                                             authNames);
-
-    if(response.statusCode >= 400) {
-      throw new ApiException(response.statusCode, response.body);
-    } else if(response.body != null) {
-      return 
-          ;
-    } else {
-      return ;
-    }
-  }
-  /// 
-  ///
-  /// 
-  Future<BcTxResponse> bcmaindaodldunstakePost(BcStakeMainDAORequest bcStakeMainDAORequest) async {
-    Object postBody = bcStakeMainDAORequest;
-
-    // verify required params are set
-    if(bcStakeMainDAORequest == null) {
-     throw new ApiException(400, "Missing required param: bcStakeMainDAORequest");
-    }
-
-    // create path and map variables
-    String path = "/bcmaindaodldunstake".replaceAll("{format}","json");
-
-    // query params
-    List<QueryParam> queryParams = [];
-    Map<String, String> headerParams = {};
-    Map<String, String> formParams = {};
-    
-    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
-
-    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
-
-    if(contentType.startsWith("multipart/form-data")) {
-      bool hasFields = false;
-      MultipartRequest mp = new MultipartRequest(null, null);
-      
-      if(hasFields)
-        postBody = mp;
-    }
-    else {
-          }
-
-    var response = await apiClient.invokeAPI(path,
-                                             'POST',
-                                             queryParams,
-                                             postBody,
-                                             headerParams,
-                                             formParams,
-                                             contentType,
-                                             authNames);
-
-    if(response.statusCode >= 400) {
-      throw new ApiException(response.statusCode, response.body);
-    } else if(response.body != null) {
-      return 
-          apiClient.deserialize(response.body, 'BcTxResponse') as BcTxResponse ;
-    } else {
-      return null;
-    }
-  }
-  /// 
-  ///
-  /// 
-  Future bcmaindaoinstunstakeOptions() async {
-    Object postBody = null;
-
-    // verify required params are set
-
-    // create path and map variables
-    String path = "/bcmaindaoinstunstake".replaceAll("{format}","json");
-
-    // query params
-    List<QueryParam> queryParams = [];
-    Map<String, String> headerParams = {};
-    Map<String, String> formParams = {};
-    
-    List<String> contentTypes = ["application/json"];
-
-    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = [];
-
-    if(contentType.startsWith("multipart/form-data")) {
-      bool hasFields = false;
-      MultipartRequest mp = new MultipartRequest(null, null);
-      
-      if(hasFields)
-        postBody = mp;
-    }
-    else {
-          }
-
-    var response = await apiClient.invokeAPI(path,
-                                             'OPTIONS',
-                                             queryParams,
-                                             postBody,
-                                             headerParams,
-                                             formParams,
-                                             contentType,
-                                             authNames);
-
-    if(response.statusCode >= 400) {
-      throw new ApiException(response.statusCode, response.body);
-    } else if(response.body != null) {
-      return 
-          ;
-    } else {
-      return ;
-    }
-  }
-  /// 
-  ///
-  /// 
-  Future<BcTxResponse> bcmaindaoinstunstakePost(BcStakePoolRequest bcStakePoolRequest) async {
-    Object postBody = bcStakePoolRequest;
-
-    // verify required params are set
-    if(bcStakePoolRequest == null) {
-     throw new ApiException(400, "Missing required param: bcStakePoolRequest");
-    }
-
-    // create path and map variables
-    String path = "/bcmaindaoinstunstake".replaceAll("{format}","json");
-
-    // query params
-    List<QueryParam> queryParams = [];
-    Map<String, String> headerParams = {};
-    Map<String, String> formParams = {};
-    
-    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
-
-    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
-
-    if(contentType.startsWith("multipart/form-data")) {
-      bool hasFields = false;
-      MultipartRequest mp = new MultipartRequest(null, null);
-      
-      if(hasFields)
-        postBody = mp;
-    }
-    else {
-          }
-
-    var response = await apiClient.invokeAPI(path,
-                                             'POST',
-                                             queryParams,
-                                             postBody,
-                                             headerParams,
-                                             formParams,
-                                             contentType,
-                                             authNames);
-
-    if(response.statusCode >= 400) {
-      throw new ApiException(response.statusCode, response.body);
-    } else if(response.body != null) {
-      return 
-          apiClient.deserialize(response.body, 'BcTxResponse') as BcTxResponse ;
-    } else {
-      return null;
-    }
-  }
-  /// 
-  ///
-  /// 
-  Future bcmaindaostakeOptions() async {
-    Object postBody = null;
-
-    // verify required params are set
-
-    // create path and map variables
-    String path = "/bcmaindaostake".replaceAll("{format}","json");
-
-    // query params
-    List<QueryParam> queryParams = [];
-    Map<String, String> headerParams = {};
-    Map<String, String> formParams = {};
-    
-    List<String> contentTypes = ["application/json"];
-
-    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = [];
-
-    if(contentType.startsWith("multipart/form-data")) {
-      bool hasFields = false;
-      MultipartRequest mp = new MultipartRequest(null, null);
-      
-      if(hasFields)
-        postBody = mp;
-    }
-    else {
-          }
-
-    var response = await apiClient.invokeAPI(path,
-                                             'OPTIONS',
-                                             queryParams,
-                                             postBody,
-                                             headerParams,
-                                             formParams,
-                                             contentType,
-                                             authNames);
-
-    if(response.statusCode >= 400) {
-      throw new ApiException(response.statusCode, response.body);
-    } else if(response.body != null) {
-      return 
-          ;
-    } else {
-      return ;
-    }
-  }
-  /// 
-  ///
-  /// 
-  Future<BcTxResponse> bcmaindaostakePost(BcStakeMainDAORequest bcStakeMainDAORequest) async {
-    Object postBody = bcStakeMainDAORequest;
-
-    // verify required params are set
-    if(bcStakeMainDAORequest == null) {
-     throw new ApiException(400, "Missing required param: bcStakeMainDAORequest");
-    }
-
-    // create path and map variables
-    String path = "/bcmaindaostake".replaceAll("{format}","json");
-
-    // query params
-    List<QueryParam> queryParams = [];
-    Map<String, String> headerParams = {};
-    Map<String, String> formParams = {};
-    
-    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
-
-    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
-
-    if(contentType.startsWith("multipart/form-data")) {
-      bool hasFields = false;
-      MultipartRequest mp = new MultipartRequest(null, null);
-      
-      if(hasFields)
-        postBody = mp;
-    }
-    else {
-          }
-
-    var response = await apiClient.invokeAPI(path,
-                                             'POST',
-                                             queryParams,
-                                             postBody,
-                                             headerParams,
-                                             formParams,
-                                             contentType,
-                                             authNames);
-
-    if(response.statusCode >= 400) {
-      throw new ApiException(response.statusCode, response.body);
-    } else if(response.body != null) {
-      return 
-          apiClient.deserialize(response.body, 'BcTxResponse') as BcTxResponse ;
-    } else {
-      return null;
-    }
-  }
-  /// 
-  ///
-  /// 
   Future<MoodReadResponse> folderGet({ String id }) async {
     Object postBody = null;
 
@@ -2146,6 +1843,309 @@ class DefaultApi {
   /// 
   ///
   /// 
+  Future newcoinBcmaindaodldunstakeOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/bcmaindaodldunstake".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcTxResponse> newcoinBcmaindaodldunstakePost(BcStakeMainDAORequest bcStakeMainDAORequest) async {
+    Object postBody = bcStakeMainDAORequest;
+
+    // verify required params are set
+    if(bcStakeMainDAORequest == null) {
+     throw new ApiException(400, "Missing required param: bcStakeMainDAORequest");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/bcmaindaodldunstake".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcTxResponse') as BcTxResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinBcmaindaoinstunstakeOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/bcmaindaoinstunstake".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcTxResponse> newcoinBcmaindaoinstunstakePost(BcStakePoolRequest bcStakePoolRequest) async {
+    Object postBody = bcStakePoolRequest;
+
+    // verify required params are set
+    if(bcStakePoolRequest == null) {
+     throw new ApiException(400, "Missing required param: bcStakePoolRequest");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/bcmaindaoinstunstake".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcTxResponse') as BcTxResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinBcmaindaostakeOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/bcmaindaostake".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcTxResponse> newcoinBcmaindaostakePost(BcStakeMainDAORequest bcStakeMainDAORequest) async {
+    Object postBody = bcStakeMainDAORequest;
+
+    // verify required params are set
+    if(bcStakeMainDAORequest == null) {
+     throw new ApiException(400, "Missing required param: bcStakeMainDAORequest");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/bcmaindaostake".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcTxResponse') as BcTxResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
   Future newcoinBcmintassetOptions() async {
     Object postBody = null;
 
@@ -2651,7 +2651,108 @@ class DefaultApi {
   /// 
   ///
   /// 
-  Future<BcListDaoProposalsResponse> newcoinDaoProposalListGet({ String proposalAuthor, String daoOwner, String daoId, String id }) async {
+  Future newcoinDaoProposalExecuteOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal/execute".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcDaoProposalExecuteResponse> newcoinDaoProposalExecutePost(BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest) async {
+    Object postBody = bcDaoProposalExecuteRequest;
+
+    // verify required params are set
+    if(bcDaoProposalExecuteRequest == null) {
+     throw new ApiException(400, "Missing required param: bcDaoProposalExecuteRequest");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal/execute".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcDaoProposalExecuteResponse') as BcDaoProposalExecuteResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcListDaoProposalsResponse> newcoinDaoProposalListGet({ String reverse, String proposalAuthor, String daoOwner, String daoId, String limit, String lowerBound, String upperBound, String id }) async {
     Object postBody = null;
 
     // verify required params are set
@@ -2663,6 +2764,9 @@ class DefaultApi {
     List<QueryParam> queryParams = [];
     Map<String, String> headerParams = {};
     Map<String, String> formParams = {};
+    if(reverse != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "reverse", reverse));
+    }
     if(proposalAuthor != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "proposalAuthor", proposalAuthor));
     }
@@ -2671,6 +2775,15 @@ class DefaultApi {
     }
     if(daoId != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "dao_id", daoId));
+    }
+    if(limit != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "limit", limit));
+    }
+    if(lowerBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "lower_bound", lowerBound));
+    }
+    if(upperBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "upper_bound", upperBound));
     }
     if(id != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "id", id));
@@ -2963,7 +3076,7 @@ class DefaultApi {
   /// 
   ///
   /// 
-  Future<BcDaoProposalVoteResponse> newcoinDaoProposalVotesGet({ String voter, String voteId }) async {
+  Future<BcDaoProposalVoteResponse> newcoinDaoProposalVotesGet({ String reverse, String limit, String upperBound, String voter, String lowerBound, String voteId }) async {
     Object postBody = null;
 
     // verify required params are set
@@ -2975,8 +3088,20 @@ class DefaultApi {
     List<QueryParam> queryParams = [];
     Map<String, String> headerParams = {};
     Map<String, String> formParams = {};
+    if(reverse != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "reverse", reverse));
+    }
+    if(limit != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "limit", limit));
+    }
+    if(upperBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "upper_bound", upperBound));
+    }
     if(voter != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "voter", voter));
+    }
+    if(lowerBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "lower_bound", lowerBound));
     }
     if(voteId != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "voteId", voteId));
@@ -3062,6 +3187,648 @@ class DefaultApi {
           ;
     } else {
       return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoProposalWhitelistApproveOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist/approve".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoProposalWhitelistApprovePost(BcApproveDaoProposalRequest bcApproveDaoProposalRequest) async {
+    Object postBody = bcApproveDaoProposalRequest;
+
+    // verify required params are set
+    if(bcApproveDaoProposalRequest == null) {
+     throw new ApiException(400, "Missing required param: bcApproveDaoProposalRequest");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist/approve".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoProposalWhitelistExecuteOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist/execute".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcDaoProposalExecuteResponse> newcoinDaoProposalWhitelistExecutePost(BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest) async {
+    Object postBody = bcDaoProposalExecuteRequest;
+
+    // verify required params are set
+    if(bcDaoProposalExecuteRequest == null) {
+     throw new ApiException(400, "Missing required param: bcDaoProposalExecuteRequest");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist/execute".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcDaoProposalExecuteResponse') as BcDaoProposalExecuteResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcListDaoProposalsResponse> newcoinDaoProposalWhitelistListGet({ String reverse, String proposalAuthor, String daoOwner, String daoId, String limit, String lowerBound, String upperBound, String id }) async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist/list".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    if(reverse != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "reverse", reverse));
+    }
+    if(proposalAuthor != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "proposalAuthor", proposalAuthor));
+    }
+    if(daoOwner != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "dao_owner", daoOwner));
+    }
+    if(daoId != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "dao_id", daoId));
+    }
+    if(limit != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "limit", limit));
+    }
+    if(lowerBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "lower_bound", lowerBound));
+    }
+    if(upperBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "upper_bound", upperBound));
+    }
+    if(id != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "id", id));
+    }
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'GET',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcListDaoProposalsResponse') as BcListDaoProposalsResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoProposalWhitelistListOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist/list".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoProposalWhitelistOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoProposalWhitelistPost(BcCreateWhitelistDaoProposal bcCreateWhitelistDaoProposal) async {
+    Object postBody = bcCreateWhitelistDaoProposal;
+
+    // verify required params are set
+    if(bcCreateWhitelistDaoProposal == null) {
+     throw new ApiException(400, "Missing required param: bcCreateWhitelistDaoProposal");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/dao/proposal-whitelist".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcListDaoWhitelistResponse> newcoinDaoWhitelistGet({ String reverse, String daoOwner, String daoId, String limit, String upperBound, String lowerBound }) async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/whitelist".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    if(reverse != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "reverse", reverse));
+    }
+    if(daoOwner != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "dao_owner", daoOwner));
+    }
+    if(daoId != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "dao_id", daoId));
+    }
+    if(limit != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "limit", limit));
+    }
+    if(upperBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "upper_bound", upperBound));
+    }
+    if(lowerBound != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "lower_bound", lowerBound));
+    }
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'GET',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcListDaoWhitelistResponse') as BcListDaoWhitelistResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoWhitelistOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/whitelist".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future newcoinDaoWithdrawVoteDepositOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/newcoin/dao/withdrawVoteDeposit".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<BcDaoWidthdrawVoteDepositResponse> newcoinDaoWithdrawVoteDepositPost(BcDaoWidthdrawVoteDepositRequest bcDaoWidthdrawVoteDepositRequest) async {
+    Object postBody = bcDaoWidthdrawVoteDepositRequest;
+
+    // verify required params are set
+    if(bcDaoWidthdrawVoteDepositRequest == null) {
+     throw new ApiException(400, "Missing required param: bcDaoWidthdrawVoteDepositRequest");
+    }
+
+    // create path and map variables
+    String path = "/newcoin/dao/withdrawVoteDeposit".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'BcDaoWidthdrawVoteDepositResponse') as BcDaoWidthdrawVoteDepositResponse ;
+    } else {
+      return null;
     }
   }
   /// 
@@ -4206,6 +4973,107 @@ class DefaultApi {
           apiClient.deserialize(response.body, 'UploadResponse') as UploadResponse ;
     } else {
       return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<PostRemoteMetaProxyResponse> postUtilsRemoteMetaProxyGet({ String url }) async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/post/utils/remote-meta-proxy".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    if(url != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "url", url));
+    }
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newlife-creator-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'GET',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'PostRemoteMetaProxyResponse') as PostRemoteMetaProxyResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future postUtilsRemoteMetaProxyOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/post/utils/remote-meta-proxy".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
     }
   }
   /// 
