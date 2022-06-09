@@ -1,0 +1,41 @@
+# PagedRatedResponseUserValue
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**powered** | **f32** |  | [optional] [default to null]
+**display_name** | **String** |  | [optional] [default to null]
+**newcoin_acc_tx** | **String** |  | [optional] [default to null]
+**latitude** | **f32** |  | [optional] [default to null]
+**rating** | [***::models::PagedRatedResponseUserRating**](PagedRatedResponseUser_rating.md) |  | [optional] [default to null]
+**tumblr** | **String** |  | [optional] [default to null]
+**description** | **String** |  | [optional] [default to null]
+**newcoin_pool_id** | **String** |  | [optional] [default to null]
+**aspect_ratio** | **f32** |  | [optional] [default to null]
+**instagram** | **String** |  | [optional] [default to null]
+**soundcloud** | **String** |  | [optional] [default to null]
+**newcoin_active_public_key** | **String** |  | [optional] [default to null]
+**newcoin_public_key** | **String** |  | [optional] [default to null]
+**powering** | **f32** |  | [optional] [default to null]
+**twitter** | **String** |  | [optional] [default to null]
+**newcoin_owner_public_key** | **String** |  | [optional] [default to null]
+**tiktok** | **String** |  | [optional] [default to null]
+**id** | **String** |  | [optional] [default to null]
+**newcoin_pool_stake** | **f32** |  | [optional] [default to null]
+**content_type** | **String** |  | [optional] [default to null]
+**longitude** | **f32** |  | [optional] [default to null]
+**newcoin_publisher_public_key** | **String** |  | [optional] [default to null]
+**website** | **String** |  | [optional] [default to null]
+**created** | **String** |  | [optional] [default to null]
+**full_name** | **String** |  | [optional] [default to null]
+**newcoin_pool_tx** | **String** |  | [optional] [default to null]
+**license** | **String** |  | [optional] [default to null]
+**content_url** | **String** |  | [optional] [default to null]
+**blur_hash** | **String** |  | [optional] [default to null]
+**consent_email** | **String** |  | [optional] [default to null]
+**updated** | **String** |  | [optional] [default to null]
+**username** | **String** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

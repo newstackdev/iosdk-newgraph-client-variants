@@ -1,0 +1,52 @@
+# UserReadPrivateResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**last_name** | **str** |  | [optional] 
+**consent_privacy_policy** | **str** |  | [optional] 
+**powered** | **float** |  | [optional] 
+**display_name** | **str** |  | [optional] 
+**newcoin_acc_tx** | **str** |  | [optional] 
+**latitude** | **float** |  | [optional] 
+**tumblr** | **str** |  | [optional] 
+**description** | **str** |  | [optional] 
+**newcoin_pool_id** | **str** |  | [optional] 
+**aspect_ratio** | **float** |  | [optional] 
+**instagram** | **str** |  | [optional] 
+**soundcloud** | **str** |  | [optional] 
+**newcoin_active_public_key** | **str** |  | [optional] 
+**newcoin_public_key** | **str** |  | [optional] 
+**powering** | **float** |  | [optional] 
+**stripe_uid** | **str** |  | [optional] 
+**twitter** | **str** |  | [optional] 
+**consent_testgroup** | **str** |  | [optional] 
+**newcoin_private_key** | **str** |  | [optional] 
+**newcoin_owner_public_key** | **str** |  | [optional] 
+**tiktok** | **str** |  | [optional] 
+**subscription_status** | **str** |  | [optional] 
+**newcoin_publisher_private_key** | **str** |  | [optional] 
+**id** | **str** |  | [optional] 
+**newcoin_pool_stake** | **float** |  | [optional] 
+**content_type** | **str** |  | [optional] 
+**email** | **str** |  | [optional] 
+**longitude** | **float** |  | [optional] 
+**newcoin_publisher_public_key** | **str** |  | [optional] 
+**website** | **str** |  | [optional] 
+**subscription_expiry** | **str** |  | [optional] 
+**created** | **str** |  | [optional] 
+**full_name** | **str** |  | [optional] 
+**newcoin_pool_tx** | **str** |  | [optional] 
+**first_name** | **str** |  | [optional] 
+**license** | **str** |  | [optional] 
+**content_url** | **str** |  | [optional] 
+**phone** | **str** |  | [optional] 
+**blur_hash** | **str** |  | [optional] 
+**consent_email** | **str** |  | [optional] 
+**updated** | **str** |  | [optional] 
+**username** | **str** |  | [optional] 
+**status** | **str** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

@@ -1,0 +1,13 @@
+# MoodCreateRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**latitude** | **float** |  | [optional] 
+**description** | **str** |  | 
+**title** | **str** |  | 
+**longitude** | **float** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

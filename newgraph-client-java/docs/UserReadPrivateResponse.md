@@ -1,0 +1,52 @@
+
+# UserReadPrivateResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**lastName** | **String** |  |  [optional]
+**consentPrivacyPolicy** | **String** |  |  [optional]
+**powered** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**displayName** | **String** |  |  [optional]
+**newcoinAccTx** | **String** |  |  [optional]
+**latitude** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**tumblr** | **String** |  |  [optional]
+**description** | **String** |  |  [optional]
+**newcoinPoolId** | **String** |  |  [optional]
+**aspectRatio** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**instagram** | **String** |  |  [optional]
+**soundcloud** | **String** |  |  [optional]
+**newcoinActivePublicKey** | **String** |  |  [optional]
+**newcoinPublicKey** | **String** |  |  [optional]
+**powering** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**stripeUid** | **String** |  |  [optional]
+**twitter** | **String** |  |  [optional]
+**consentTestgroup** | **String** |  |  [optional]
+**newcoinPrivateKey** | **String** |  |  [optional]
+**newcoinOwnerPublicKey** | **String** |  |  [optional]
+**tiktok** | **String** |  |  [optional]
+**subscriptionStatus** | **String** |  |  [optional]
+**newcoinPublisherPrivateKey** | **String** |  |  [optional]
+**id** | **String** |  |  [optional]
+**newcoinPoolStake** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**contentType** | **String** |  |  [optional]
+**email** | **String** |  |  [optional]
+**longitude** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**newcoinPublisherPublicKey** | **String** |  |  [optional]
+**website** | **String** |  |  [optional]
+**subscriptionExpiry** | **String** |  |  [optional]
+**created** | **String** |  |  [optional]
+**fullName** | **String** |  |  [optional]
+**newcoinPoolTx** | **String** |  |  [optional]
+**firstName** | **String** |  |  [optional]
+**license** | **String** |  |  [optional]
+**contentUrl** | **String** |  |  [optional]
+**phone** | **String** |  |  [optional]
+**blurHash** | **String** |  |  [optional]
+**consentEmail** | **String** |  |  [optional]
+**updated** | **String** |  |  [optional]
+**username** | **String** |  |  [optional]
+**status** | **String** |  |  [optional]
+
+
+
