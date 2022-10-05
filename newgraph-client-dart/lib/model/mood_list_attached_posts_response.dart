@@ -2,7 +2,7 @@ part of swagger.api;
 
 class MoodListAttachedPostsResponse {
   
-  List<MoodCreateResponsePosts> value = [];
+  List<MoodPagedListReadPublicResponsePosts> value = [];
   
 
   bool done = null;
@@ -17,7 +17,7 @@ class MoodListAttachedPostsResponse {
   MoodListAttachedPostsResponse.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     value =
-      MoodCreateResponsePosts.listFromJson(json['value'])
+      MoodPagedListReadPublicResponsePosts.listFromJson(json['value'])
 ;
     done =
         json['done']

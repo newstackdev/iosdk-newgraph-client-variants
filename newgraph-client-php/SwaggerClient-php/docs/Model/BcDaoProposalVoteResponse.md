@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **dao_id** | **string** |  | [optional] 
-**more** | **object** |  | [optional] 
+**more** | **bool** |  | [optional] 
 **next_key** | **string** |  | [optional] 
 **rows** | [**\Swagger\Client\Model\BcDaoProposalVoteResponseRows[]**](BcDaoProposalVoteResponseRows.md) |  | [optional] 
 

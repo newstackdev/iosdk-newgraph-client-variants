@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **dao_id** | **str** |  | [optional] 
-**more** | **object** |  | [optional] 
+**more** | **bool** |  | [optional] 
 **next_key** | **str** |  | [optional] 
 **rows** | [**list[BcDaoProposalVoteResponseRows]**](BcDaoProposalVoteResponseRows.md) |  | [optional] 
 

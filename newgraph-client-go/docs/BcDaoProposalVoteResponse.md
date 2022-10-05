@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DaoId** | **string** |  | [optional] [default to null]
-**More** | **interface{}** |  | [optional] [default to null]
+**More** | **bool** |  | [optional] [default to null]
 **NextKey** | **string** |  | [optional] [default to null]
 **Rows** | [**[]BcDaoProposalVoteResponseRows**](BcDaoProposalVoteResponse_rows.md) |  | [optional] [default to null]
 

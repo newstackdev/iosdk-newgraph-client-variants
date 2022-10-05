@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **string** |  | [optional] 
+**tx_id_mint_asset** | **string** |  | [optional] 
 **value** | **float** |  | [optional] 
 **updated** | **string** |  | [optional] 
 

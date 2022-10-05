@@ -39,7 +39,7 @@ Name | Type | Description | Notes
 **discord** | **String** |  | [optional] [default to null]
 **phone** | **String** |  | [default to null]
 **consentEmail** | **String** |  | [optional] [default to null]
-**username** | **String** |  | [default to null]
+**username** | **String** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

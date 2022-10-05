@@ -2,6 +2,12 @@ part of swagger.api;
 
 class PagedRatedResponseUserValue {
   
+  String newcoinTicker = null;
+  
+
+  String youtube = null;
+  
+
   num powered = null;
   
 
@@ -17,13 +23,13 @@ class PagedRatedResponseUserValue {
   PagedRatedResponseUserRating rating = null;
   
 
-  String tumblr = null;
-  
-
   String description = null;
   
 
   String newcoinPoolId = null;
+  
+
+  String tumblr = null;
   
 
   num aspectRatio = null;
@@ -32,16 +38,25 @@ class PagedRatedResponseUserValue {
   String instagram = null;
   
 
-  String soundcloud = null;
+  String medium = null;
   
 
   String newcoinActivePublicKey = null;
+  
+
+  String soundcloud = null;
   
 
   String newcoinPublicKey = null;
   
 
   num powering = null;
+  
+
+  String snapchat = null;
+  
+
+  String apple = null;
   
 
   String twitter = null;
@@ -53,6 +68,12 @@ class PagedRatedResponseUserValue {
   String tiktok = null;
   
 
+  String reddit = null;
+  
+
+  String youtubeId = null;
+  
+
   String id = null;
   
 
@@ -60,6 +81,9 @@ class PagedRatedResponseUserValue {
   
 
   String contentType = null;
+  
+
+  String signal = null;
   
 
   num longitude = null;
@@ -74,7 +98,25 @@ class PagedRatedResponseUserValue {
   String created = null;
   
 
+  String spotify = null;
+  
+
+  String facebook = null;
+  
+
+  String facebookId = null;
+  
+
   String fullName = null;
+  
+
+  String telegram = null;
+  
+
+  String pinterest = null;
+  
+
+  List<String> verifiedSocialIds = [];
   
 
   String newcoinPoolTx = null;
@@ -84,6 +126,9 @@ class PagedRatedResponseUserValue {
   
 
   String contentUrl = null;
+  
+
+  String discord = null;
   
 
   String blurHash = null;
@@ -101,11 +146,17 @@ class PagedRatedResponseUserValue {
 
   @override
   String toString() {
-    return 'PagedRatedResponseUserValue[powered=$powered, displayName=$displayName, newcoinAccTx=$newcoinAccTx, latitude=$latitude, rating=$rating, tumblr=$tumblr, description=$description, newcoinPoolId=$newcoinPoolId, aspectRatio=$aspectRatio, instagram=$instagram, soundcloud=$soundcloud, newcoinActivePublicKey=$newcoinActivePublicKey, newcoinPublicKey=$newcoinPublicKey, powering=$powering, twitter=$twitter, newcoinOwnerPublicKey=$newcoinOwnerPublicKey, tiktok=$tiktok, id=$id, newcoinPoolStake=$newcoinPoolStake, contentType=$contentType, longitude=$longitude, newcoinPublisherPublicKey=$newcoinPublisherPublicKey, website=$website, created=$created, fullName=$fullName, newcoinPoolTx=$newcoinPoolTx, license=$license, contentUrl=$contentUrl, blurHash=$blurHash, consentEmail=$consentEmail, updated=$updated, username=$username, ]';
+    return 'PagedRatedResponseUserValue[newcoinTicker=$newcoinTicker, youtube=$youtube, powered=$powered, displayName=$displayName, newcoinAccTx=$newcoinAccTx, latitude=$latitude, rating=$rating, description=$description, newcoinPoolId=$newcoinPoolId, tumblr=$tumblr, aspectRatio=$aspectRatio, instagram=$instagram, medium=$medium, newcoinActivePublicKey=$newcoinActivePublicKey, soundcloud=$soundcloud, newcoinPublicKey=$newcoinPublicKey, powering=$powering, snapchat=$snapchat, apple=$apple, twitter=$twitter, newcoinOwnerPublicKey=$newcoinOwnerPublicKey, tiktok=$tiktok, reddit=$reddit, youtubeId=$youtubeId, id=$id, newcoinPoolStake=$newcoinPoolStake, contentType=$contentType, signal=$signal, longitude=$longitude, newcoinPublisherPublicKey=$newcoinPublisherPublicKey, website=$website, created=$created, spotify=$spotify, facebook=$facebook, facebookId=$facebookId, fullName=$fullName, telegram=$telegram, pinterest=$pinterest, verifiedSocialIds=$verifiedSocialIds, newcoinPoolTx=$newcoinPoolTx, license=$license, contentUrl=$contentUrl, discord=$discord, blurHash=$blurHash, consentEmail=$consentEmail, updated=$updated, username=$username, ]';
   }
 
   PagedRatedResponseUserValue.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
+    newcoinTicker =
+        json['newcoinTicker']
+    ;
+    youtube =
+        json['youtube']
+    ;
     powered =
         json['powered']
     ;
@@ -123,14 +174,14 @@ class PagedRatedResponseUserValue {
       
       new PagedRatedResponseUserRating.fromJson(json['rating'])
 ;
-    tumblr =
-        json['tumblr']
-    ;
     description =
         json['description']
     ;
     newcoinPoolId =
         json['newcoinPoolId']
+    ;
+    tumblr =
+        json['tumblr']
     ;
     aspectRatio =
         json['aspectRatio']
@@ -138,17 +189,26 @@ class PagedRatedResponseUserValue {
     instagram =
         json['instagram']
     ;
-    soundcloud =
-        json['soundcloud']
+    medium =
+        json['medium']
     ;
     newcoinActivePublicKey =
         json['newcoinActivePublicKey']
+    ;
+    soundcloud =
+        json['soundcloud']
     ;
     newcoinPublicKey =
         json['newcoinPublicKey']
     ;
     powering =
         json['powering']
+    ;
+    snapchat =
+        json['snapchat']
+    ;
+    apple =
+        json['apple']
     ;
     twitter =
         json['twitter']
@@ -159,6 +219,12 @@ class PagedRatedResponseUserValue {
     tiktok =
         json['tiktok']
     ;
+    reddit =
+        json['reddit']
+    ;
+    youtubeId =
+        json['youtubeId']
+    ;
     id =
         json['id']
     ;
@@ -167,6 +233,9 @@ class PagedRatedResponseUserValue {
     ;
     contentType =
         json['contentType']
+    ;
+    signal =
+        json['signal']
     ;
     longitude =
         json['longitude']
@@ -180,8 +249,26 @@ class PagedRatedResponseUserValue {
     created =
         json['created']
     ;
+    spotify =
+        json['spotify']
+    ;
+    facebook =
+        json['facebook']
+    ;
+    facebookId =
+        json['facebookId']
+    ;
     fullName =
         json['fullName']
+    ;
+    telegram =
+        json['telegram']
+    ;
+    pinterest =
+        json['pinterest']
+    ;
+    verifiedSocialIds =
+        (json['verifiedSocialIds'] as List).map((item) => item as String).toList()
     ;
     newcoinPoolTx =
         json['newcoinPoolTx']
@@ -191,6 +278,9 @@ class PagedRatedResponseUserValue {
     ;
     contentUrl =
         json['contentUrl']
+    ;
+    discord =
+        json['discord']
     ;
     blurHash =
         json['blurHash']
@@ -208,34 +298,49 @@ class PagedRatedResponseUserValue {
 
   Map<String, dynamic> toJson() {
     return {
+      'newcoinTicker': newcoinTicker,
+      'youtube': youtube,
       'powered': powered,
       'displayName': displayName,
       'newcoinAccTx': newcoinAccTx,
       'latitude': latitude,
       'rating': rating,
-      'tumblr': tumblr,
       'description': description,
       'newcoinPoolId': newcoinPoolId,
+      'tumblr': tumblr,
       'aspectRatio': aspectRatio,
       'instagram': instagram,
-      'soundcloud': soundcloud,
+      'medium': medium,
       'newcoinActivePublicKey': newcoinActivePublicKey,
+      'soundcloud': soundcloud,
       'newcoinPublicKey': newcoinPublicKey,
       'powering': powering,
+      'snapchat': snapchat,
+      'apple': apple,
       'twitter': twitter,
       'newcoinOwnerPublicKey': newcoinOwnerPublicKey,
       'tiktok': tiktok,
+      'reddit': reddit,
+      'youtubeId': youtubeId,
       'id': id,
       'newcoinPoolStake': newcoinPoolStake,
       'contentType': contentType,
+      'signal': signal,
       'longitude': longitude,
       'newcoinPublisherPublicKey': newcoinPublisherPublicKey,
       'website': website,
       'created': created,
+      'spotify': spotify,
+      'facebook': facebook,
+      'facebookId': facebookId,
       'fullName': fullName,
+      'telegram': telegram,
+      'pinterest': pinterest,
+      'verifiedSocialIds': verifiedSocialIds,
       'newcoinPoolTx': newcoinPoolTx,
       'license': license,
       'contentUrl': contentUrl,
+      'discord': discord,
       'blurHash': blurHash,
       'consentEmail': consentEmail,
       'updated': updated,

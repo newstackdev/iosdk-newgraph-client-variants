@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**more** | [***Value**](Value.md) |  | [optional] [default to null]
+**more** | **bool** |  | [optional] [default to null]
 **dao_id** | **String** |  | [optional] [default to null]
 **next_key** | **String** |  | [optional] [default to null]
 **rows** | [**Vec<::models::BcListDaoProposalsResponseRows>**](BcListDaoProposalsResponse_rows.md) |  | [optional] [default to null]

@@ -5,7 +5,7 @@ class MoodReadResponse {
   String created = null;
   
 
-  PagedRatedResponsePostAuthor author = null;
+  MoodPagedListReadPublicResponseAuthor author = null;
   
 
   num latitude = null;
@@ -20,7 +20,7 @@ class MoodReadResponse {
   String title = null;
   
 
-  List<MoodCreateResponsePosts> posts = [];
+  List<MoodPagedListReadPublicResponsePosts> posts = [];
   
 
   String content = null;
@@ -29,7 +29,7 @@ class MoodReadResponse {
   num stakeToAccess = null;
   
 
-  List<PagedRatedResponsePostTags> tags = [];
+  List<MoodPagedListReadPublicResponseTags> tags = [];
   
 
   String contentUrl = null;
@@ -67,7 +67,7 @@ class MoodReadResponse {
     author =
       
       
-      new PagedRatedResponsePostAuthor.fromJson(json['author'])
+      new MoodPagedListReadPublicResponseAuthor.fromJson(json['author'])
 ;
     latitude =
         json['latitude']
@@ -82,7 +82,7 @@ class MoodReadResponse {
         json['title']
     ;
     posts =
-      MoodCreateResponsePosts.listFromJson(json['posts'])
+      MoodPagedListReadPublicResponsePosts.listFromJson(json['posts'])
 ;
     content =
         json['content']
@@ -91,7 +91,7 @@ class MoodReadResponse {
         json['stakeToAccess']
     ;
     tags =
-      PagedRatedResponsePostTags.listFromJson(json['tags'])
+      MoodPagedListReadPublicResponseTags.listFromJson(json['tags'])
 ;
     contentUrl =
         json['contentUrl']

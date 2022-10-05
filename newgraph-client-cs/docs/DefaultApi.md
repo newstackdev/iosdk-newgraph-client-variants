@@ -1,6 +1,6 @@
 # IO.Swagger.Api.DefaultApi
 
-All URIs are relative to *https://api-eu-dev.newlife.io/creator*
+All URIs are relative to *https://api-eu-dev.newgra.ph/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -104,6 +104,12 @@ Method | HTTP request | Description
 [**PostUtilsRemoteMetaProxyOptions**](DefaultApi.md#postutilsremotemetaproxyoptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**SearchCreativeGet**](DefaultApi.md#searchcreativeget) | **GET** /search/creative | 
 [**SearchCreativeOptions**](DefaultApi.md#searchcreativeoptions) | **OPTIONS** /search/creative | 
+[**TestUtilsUserConfigureImportedOptions**](DefaultApi.md#testutilsuserconfigureimportedoptions) | **OPTIONS** /test-utils/user/configure/imported | 
+[**TestUtilsUserConfigureImportedPost**](DefaultApi.md#testutilsuserconfigureimportedpost) | **POST** /test-utils/user/configure/imported | 
+[**TestUtilsUserConfigureImportedWhitelistedOptions**](DefaultApi.md#testutilsuserconfigureimportedwhitelistedoptions) | **OPTIONS** /test-utils/user/configure/imported-whitelisted | 
+[**TestUtilsUserConfigureImportedWhitelistedPost**](DefaultApi.md#testutilsuserconfigureimportedwhitelistedpost) | **POST** /test-utils/user/configure/imported-whitelisted | 
+[**TestUtilsUserConfigureInvitedOptions**](DefaultApi.md#testutilsuserconfigureinvitedoptions) | **OPTIONS** /test-utils/user/configure/invited | 
+[**TestUtilsUserConfigureInvitedPost**](DefaultApi.md#testutilsuserconfigureinvitedpost) | **POST** /test-utils/user/configure/invited | 
 [**UploadNodeOptions**](DefaultApi.md#uploadnodeoptions) | **OPTIONS** /upload/node | 
 [**UploadNodePost**](DefaultApi.md#uploadnodepost) | **POST** /upload/node | 
 [**UserActivityStreamGet**](DefaultApi.md#useractivitystreamget) | **GET** /user/activityStream | 
@@ -114,8 +120,14 @@ Method | HTTP request | Description
 [**UserCurrentOptions**](DefaultApi.md#usercurrentoptions) | **OPTIONS** /user/current | 
 [**UserDelete**](DefaultApi.md#userdelete) | **DELETE** /user | 
 [**UserGet**](DefaultApi.md#userget) | **GET** /user | 
+[**UserInviteHashGet**](DefaultApi.md#userinvitehashget) | **GET** /user/invite/hash | 
+[**UserInviteHashOptions**](DefaultApi.md#userinvitehashoptions) | **OPTIONS** /user/invite/hash | 
 [**UserInviteOptions**](DefaultApi.md#userinviteoptions) | **OPTIONS** /user/invite | 
 [**UserInvitePost**](DefaultApi.md#userinvitepost) | **POST** /user/invite | 
+[**UserInviteesGet**](DefaultApi.md#userinviteesget) | **GET** /user/invitees | 
+[**UserInviteesOptions**](DefaultApi.md#userinviteesoptions) | **OPTIONS** /user/invitees | 
+[**UserInvitorGet**](DefaultApi.md#userinvitorget) | **GET** /user/invitor | 
+[**UserInvitorOptions**](DefaultApi.md#userinvitoroptions) | **OPTIONS** /user/invitor | 
 [**UserListSearchGet**](DefaultApi.md#userlistsearchget) | **GET** /user/list/search | 
 [**UserListSearchOptions**](DefaultApi.md#userlistsearchoptions) | **OPTIONS** /user/list/search | 
 [**UserListTopGet**](DefaultApi.md#userlisttopget) | **GET** /user/list/top | 
@@ -137,6 +149,8 @@ Method | HTTP request | Description
 [**UserStakePost**](DefaultApi.md#userstakepost) | **POST** /user/stake | 
 [**UserSyncContactsOptions**](DefaultApi.md#usersynccontactsoptions) | **OPTIONS** /user/syncContacts | 
 [**UserSyncContactsPost**](DefaultApi.md#usersynccontactspost) | **POST** /user/syncContacts | 
+[**UserTransferOptions**](DefaultApi.md#usertransferoptions) | **OPTIONS** /user/transfer | 
+[**UserTransferPost**](DefaultApi.md#usertransferpost) | **POST** /user/transfer | 
 [**UserUploadOptions**](DefaultApi.md#useruploadoptions) | **OPTIONS** /user/upload | 
 [**UserUploadPost**](DefaultApi.md#useruploadpost) | **POST** /user/upload | 
 [**UserUserRateOptions**](DefaultApi.md#useruserrateoptions) | **OPTIONS** /user/userRate | 
@@ -373,7 +387,7 @@ No authorization required
 
 <a name="folderget"></a>
 # **FolderGet**
-> MoodReadResponse FolderGet (string id = null)
+> MoodReadResponse FolderGet (string id = null, string page = null)
 
 
 
@@ -391,17 +405,18 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DefaultApi();
             var id = id_example;  // string |  (optional) 
+            var page = page_example;  // string |  (optional) 
 
             try
             {
-                MoodReadResponse result = apiInstance.FolderGet(id);
+                MoodReadResponse result = apiInstance.FolderGet(id, page);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -418,6 +433,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | [optional] 
+ **page** | **string**|  | [optional] 
 
 ### Return type
 
@@ -425,7 +441,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -507,7 +523,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: lambdaAuthorizer
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -536,7 +552,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[lambdaAuthorizer](../README.md#lambdaAuthorizer)
 
 ### HTTP request headers
 
@@ -777,7 +793,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -811,7 +827,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -822,7 +838,7 @@ Name | Type | Description  | Notes
 
 <a name="moodget"></a>
 # **MoodGet**
-> MoodReadResponse MoodGet (string id = null)
+> MoodReadResponse MoodGet (string id = null, string page = null)
 
 
 
@@ -840,17 +856,18 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DefaultApi();
             var id = id_example;  // string |  (optional) 
+            var page = page_example;  // string |  (optional) 
 
             try
             {
-                MoodReadResponse result = apiInstance.MoodGet(id);
+                MoodReadResponse result = apiInstance.MoodGet(id, page);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -867,6 +884,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | [optional] 
+ **page** | **string**|  | [optional] 
 
 ### Return type
 
@@ -874,7 +892,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -903,7 +921,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -943,7 +961,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1078,7 +1096,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1112,7 +1130,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1141,7 +1159,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1177,7 +1195,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1259,7 +1277,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1293,7 +1311,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1375,7 +1393,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1409,7 +1427,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1491,7 +1509,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1525,7 +1543,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1607,7 +1625,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1641,7 +1659,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1834,7 +1852,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1868,7 +1886,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1950,7 +1968,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -1984,7 +2002,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2066,7 +2084,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2100,7 +2118,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2182,7 +2200,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2216,7 +2234,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2298,7 +2316,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2332,7 +2350,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2414,7 +2432,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2448,7 +2466,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2530,7 +2548,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2564,7 +2582,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2646,7 +2664,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2680,7 +2698,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2762,7 +2780,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2796,7 +2814,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2878,7 +2896,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -2912,7 +2930,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2994,7 +3012,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3028,7 +3046,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3110,7 +3128,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3143,7 +3161,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3225,7 +3243,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3259,7 +3277,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3288,7 +3306,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3336,7 +3354,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3471,7 +3489,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3504,7 +3522,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3586,7 +3604,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3620,7 +3638,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3631,7 +3649,7 @@ Name | Type | Description  | Notes
 
 <a name="newcoindaoproposalvotesget"></a>
 # **NewcoinDaoProposalVotesGet**
-> BcDaoProposalVoteResponse NewcoinDaoProposalVotesGet (string reverse = null, string limit = null, string upperBound = null, string voter = null, string lowerBound = null, string voteId = null)
+> BcDaoProposalVoteResponse NewcoinDaoProposalVotesGet (string reverse = null, string limit = null, string upperBound = null, string voter = null, string lowerBound = null)
 
 
 
@@ -3649,7 +3667,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3660,11 +3678,10 @@ namespace Example
             var upperBound = upperBound_example;  // string |  (optional) 
             var voter = voter_example;  // string |  (optional) 
             var lowerBound = lowerBound_example;  // string |  (optional) 
-            var voteId = voteId_example;  // string |  (optional) 
 
             try
             {
-                BcDaoProposalVoteResponse result = apiInstance.NewcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId);
+                BcDaoProposalVoteResponse result = apiInstance.NewcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -3685,7 +3702,6 @@ Name | Type | Description  | Notes
  **upperBound** | **string**|  | [optional] 
  **voter** | **string**|  | [optional] 
  **lowerBound** | **string**|  | [optional] 
- **voteId** | **string**|  | [optional] 
 
 ### Return type
 
@@ -3693,7 +3709,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3828,7 +3844,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3861,7 +3877,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3943,7 +3959,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -3977,7 +3993,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4006,7 +4022,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4054,7 +4070,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4189,7 +4205,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4222,7 +4238,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4251,7 +4267,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4295,7 +4311,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4430,7 +4446,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4464,7 +4480,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4546,7 +4562,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4580,7 +4596,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4662,7 +4678,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4691,7 +4707,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4830,7 +4846,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4864,7 +4880,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4893,7 +4909,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -4935,7 +4951,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5017,7 +5033,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5059,7 +5075,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5141,7 +5157,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5181,7 +5197,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5316,7 +5332,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5350,7 +5366,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5379,7 +5395,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5413,7 +5429,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5495,7 +5511,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5529,7 +5545,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5611,7 +5627,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5645,7 +5661,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5727,7 +5743,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5761,7 +5777,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5790,7 +5806,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5824,7 +5840,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5906,7 +5922,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -5944,7 +5960,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6002,6 +6018,354 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="testutilsuserconfigureimportedoptions"></a>
+# **TestUtilsUserConfigureImportedOptions**
+> void TestUtilsUserConfigureImportedOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class TestUtilsUserConfigureImportedOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.TestUtilsUserConfigureImportedOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.TestUtilsUserConfigureImportedOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="testutilsuserconfigureimportedpost"></a>
+# **TestUtilsUserConfigureImportedPost**
+> UserInvitationReadPublicResponse TestUtilsUserConfigureImportedPost (ConfigureUserRequest configureUserRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class TestUtilsUserConfigureImportedPostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newgraph-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+
+            try
+            {
+                UserInvitationReadPublicResponse result = apiInstance.TestUtilsUserConfigureImportedPost(configureUserRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.TestUtilsUserConfigureImportedPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="testutilsuserconfigureimportedwhitelistedoptions"></a>
+# **TestUtilsUserConfigureImportedWhitelistedOptions**
+> void TestUtilsUserConfigureImportedWhitelistedOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class TestUtilsUserConfigureImportedWhitelistedOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.TestUtilsUserConfigureImportedWhitelistedOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.TestUtilsUserConfigureImportedWhitelistedOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="testutilsuserconfigureimportedwhitelistedpost"></a>
+# **TestUtilsUserConfigureImportedWhitelistedPost**
+> UserInvitationReadPublicResponse TestUtilsUserConfigureImportedWhitelistedPost (ConfigureUserRequest configureUserRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class TestUtilsUserConfigureImportedWhitelistedPostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newgraph-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+
+            try
+            {
+                UserInvitationReadPublicResponse result = apiInstance.TestUtilsUserConfigureImportedWhitelistedPost(configureUserRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.TestUtilsUserConfigureImportedWhitelistedPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="testutilsuserconfigureinvitedoptions"></a>
+# **TestUtilsUserConfigureInvitedOptions**
+> void TestUtilsUserConfigureInvitedOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class TestUtilsUserConfigureInvitedOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.TestUtilsUserConfigureInvitedOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.TestUtilsUserConfigureInvitedOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="testutilsuserconfigureinvitedpost"></a>
+# **TestUtilsUserConfigureInvitedPost**
+> UserInvitationReadPublicResponse TestUtilsUserConfigureInvitedPost (ConfigureUserRequest configureUserRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class TestUtilsUserConfigureInvitedPostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newgraph-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+
+            try
+            {
+                UserInvitationReadPublicResponse result = apiInstance.TestUtilsUserConfigureInvitedPost(configureUserRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.TestUtilsUserConfigureInvitedPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6079,7 +6443,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6113,7 +6477,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6142,7 +6506,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6178,7 +6542,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6371,7 +6735,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6401,7 +6765,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6483,7 +6847,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6517,7 +6881,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6546,7 +6910,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6582,12 +6946,123 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="userinvitehashget"></a>
+# **UserInviteHashGet**
+> UserInvitationReadPublicResponse UserInviteHashGet (string hash = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserInviteHashGetExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+            var hash = hash_example;  // string |  (optional) 
+
+            try
+            {
+                UserInvitationReadPublicResponse result = apiInstance.UserInviteHashGet(hash);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserInviteHashGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hash** | **string**|  | [optional] 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="userinvitehashoptions"></a>
+# **UserInviteHashOptions**
+> void UserInviteHashOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserInviteHashOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.UserInviteHashOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserInviteHashOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -6646,7 +7121,7 @@ No authorization required
 
 <a name="userinvitepost"></a>
 # **UserInvitePost**
-> OkResponse UserInvitePost (UserInviteRequest userInviteRequest)
+> UserInvitationReadPublicResponse UserInvitePost (UserInviteRequest userInviteRequest)
 
 
 
@@ -6664,7 +7139,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6674,7 +7149,7 @@ namespace Example
 
             try
             {
-                OkResponse result = apiInstance.UserInvitePost(userInviteRequest);
+                UserInvitationReadPublicResponse result = apiInstance.UserInvitePost(userInviteRequest);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -6694,15 +7169,259 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OkResponse**](OkResponse.md)
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="userinviteesget"></a>
+# **UserInviteesGet**
+> UserInvitationPagedListReadPublicResponse UserInviteesGet (string direction = null, string contentType = null, string page = null, string orderBy = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserInviteesGetExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newgraph-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var direction = direction_example;  // string |  (optional) 
+            var contentType = contentType_example;  // string |  (optional) 
+            var page = page_example;  // string |  (optional) 
+            var orderBy = orderBy_example;  // string |  (optional) 
+
+            try
+            {
+                UserInvitationPagedListReadPublicResponse result = apiInstance.UserInviteesGet(direction, contentType, page, orderBy);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserInviteesGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **string**|  | [optional] 
+ **contentType** | **string**|  | [optional] 
+ **page** | **string**|  | [optional] 
+ **orderBy** | **string**|  | [optional] 
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="userinviteesoptions"></a>
+# **UserInviteesOptions**
+> void UserInviteesOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserInviteesOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.UserInviteesOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserInviteesOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="userinvitorget"></a>
+# **UserInvitorGet**
+> UserInvitationPagedListReadPublicResponse UserInvitorGet (string direction = null, string contentType = null, string page = null, string orderBy = null)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserInvitorGetExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newgraph-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var direction = direction_example;  // string |  (optional) 
+            var contentType = contentType_example;  // string |  (optional) 
+            var page = page_example;  // string |  (optional) 
+            var orderBy = orderBy_example;  // string |  (optional) 
+
+            try
+            {
+                UserInvitationPagedListReadPublicResponse result = apiInstance.UserInvitorGet(direction, contentType, page, orderBy);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserInvitorGet: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **string**|  | [optional] 
+ **contentType** | **string**|  | [optional] 
+ **page** | **string**|  | [optional] 
+ **orderBy** | **string**|  | [optional] 
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="userinvitoroptions"></a>
+# **UserInvitorOptions**
+> void UserInvitorOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserInvitorOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.UserInvitorOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserInvitorOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -6727,7 +7446,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6769,7 +7488,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6851,7 +7570,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -6891,7 +7610,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6973,7 +7692,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7009,7 +7728,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7144,7 +7863,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7178,7 +7897,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7260,7 +7979,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7294,7 +8013,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7323,7 +8042,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7357,7 +8076,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7386,7 +8105,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7422,7 +8141,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7504,7 +8223,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7540,7 +8259,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7622,7 +8341,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7658,7 +8377,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7793,7 +8512,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7827,7 +8546,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -7909,7 +8628,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -7943,7 +8662,123 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="usertransferoptions"></a>
+# **UserTransferOptions**
+> void UserTransferOptions ()
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserTransferOptionsExample
+    {
+        public void main()
+        {
+            var apiInstance = new DefaultApi();
+
+            try
+            {
+                apiInstance.UserTransferOptions();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserTransferOptions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="usertransferpost"></a>
+# **UserTransferPost**
+> UserReadPrivateResponse UserTransferPost (UserTransferRequest userTransferRequest)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class UserTransferPostExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: newgraph-api-eu-dev
+            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new DefaultApi();
+            var userTransferRequest = new UserTransferRequest(); // UserTransferRequest | 
+
+            try
+            {
+                UserReadPrivateResponse result = apiInstance.UserTransferPost(userTransferRequest);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling DefaultApi.UserTransferPost: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userTransferRequest** | [**UserTransferRequest**](UserTransferRequest.md)|  | 
+
+### Return type
+
+[**UserReadPrivateResponse**](UserReadPrivateResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -8025,7 +8860,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -8059,7 +8894,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -8141,7 +8976,7 @@ namespace Example
     {
         public void main()
         {
-            // Configure API key authorization: newlife-creator-api-eu-dev
+            // Configure API key authorization: newgraph-api-eu-dev
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
@@ -8175,7 +9010,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 

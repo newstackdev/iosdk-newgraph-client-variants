@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **proposalId** | **num** |  | [optional] [default to null]
 **daoId** | **num** |  | [optional] [default to null]
 **id** | **String** |  | [optional] [default to null]
+**lockEndDate** | **String** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -2,7 +2,7 @@ part of swagger.api;
 
 class PostTagsSearchPublicResponse {
   
-  Object done = null;
+  bool done = null;
   
 
   List<PostTagsSearchPublicResponseValue> value = [];
@@ -17,10 +17,8 @@ class PostTagsSearchPublicResponse {
   PostTagsSearchPublicResponse.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     done =
-      
-      
-      new Object.fromJson(json['done'])
-;
+        json['done']
+    ;
     value =
       PostTagsSearchPublicResponseValue.listFromJson(json['value'])
 ;

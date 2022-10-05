@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**more** | **object** |  | [optional] 
+**more** | **bool** |  | [optional] 
 **dao_id** | **str** |  | [optional] 
 **next_key** | **str** |  | [optional] 
 **rows** | [**list[BcListDaoProposalsResponseRows]**](BcListDaoProposalsResponseRows.md) |  | [optional] 

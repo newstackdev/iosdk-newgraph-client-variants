@@ -218,7 +218,7 @@ class DefaultApi {
   /// 
   ///
   /// 
-  Future<MoodReadResponse> folderGet({ String id }) async {
+  Future<MoodReadResponse> folderGet({ String id, String page }) async {
     Object postBody = null;
 
     // verify required params are set
@@ -233,11 +233,14 @@ class DefaultApi {
     if(id != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "id", id));
     }
+    if(page != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "page", page));
+    }
     
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -335,7 +338,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["lambdaAuthorizer"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -583,7 +586,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -616,7 +619,7 @@ class DefaultApi {
   /// 
   ///
   /// 
-  Future<MoodReadResponse> moodGet({ String id }) async {
+  Future<MoodReadResponse> moodGet({ String id, String page }) async {
     Object postBody = null;
 
     // verify required params are set
@@ -631,11 +634,14 @@ class DefaultApi {
     if(id != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "id", id));
     }
+    if(page != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "page", page));
+    }
     
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -696,7 +702,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -846,7 +852,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -901,7 +907,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1002,7 +1008,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1103,7 +1109,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1204,7 +1210,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1305,7 +1311,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1507,7 +1513,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1608,7 +1614,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1709,7 +1715,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1810,7 +1816,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -1911,7 +1917,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2012,7 +2018,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2113,7 +2119,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2214,7 +2220,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2315,7 +2321,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2416,7 +2422,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2517,7 +2523,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2618,7 +2624,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2719,7 +2725,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2792,7 +2798,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -2942,7 +2948,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3043,7 +3049,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3076,7 +3082,7 @@ class DefaultApi {
   /// 
   ///
   /// 
-  Future<BcDaoProposalVoteResponse> newcoinDaoProposalVotesGet({ String reverse, String limit, String upperBound, String voter, String lowerBound, String voteId }) async {
+  Future<BcDaoProposalVoteResponse> newcoinDaoProposalVotesGet({ String reverse, String limit, String upperBound, String voter, String lowerBound }) async {
     Object postBody = null;
 
     // verify required params are set
@@ -3103,14 +3109,11 @@ class DefaultApi {
     if(lowerBound != null) {
       queryParams.addAll(_convertParametersForCollectionFormat("", "lower_bound", lowerBound));
     }
-    if(voteId != null) {
-      queryParams.addAll(_convertParametersForCollectionFormat("", "voteId", voteId));
-    }
     
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3260,7 +3263,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3361,7 +3364,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3434,7 +3437,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3584,7 +3587,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3651,7 +3654,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3801,7 +3804,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -3902,7 +3905,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4000,7 +4003,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4153,7 +4156,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4217,7 +4220,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4330,7 +4333,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4440,7 +4443,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4590,7 +4593,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4642,7 +4645,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4743,7 +4746,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4844,7 +4847,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4945,7 +4948,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -4997,7 +5000,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5104,7 +5107,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5186,6 +5189,309 @@ class DefaultApi {
   /// 
   ///
   /// 
+  Future testUtilsUserConfigureImportedOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/test-utils/user/configure/imported".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<UserInvitationReadPublicResponse> testUtilsUserConfigureImportedPost(ConfigureUserRequest configureUserRequest) async {
+    Object postBody = configureUserRequest;
+
+    // verify required params are set
+    if(configureUserRequest == null) {
+     throw new ApiException(400, "Missing required param: configureUserRequest");
+    }
+
+    // create path and map variables
+    String path = "/test-utils/user/configure/imported".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newgraph-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'UserInvitationReadPublicResponse') as UserInvitationReadPublicResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future testUtilsUserConfigureImportedWhitelistedOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/test-utils/user/configure/imported-whitelisted".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<UserInvitationReadPublicResponse> testUtilsUserConfigureImportedWhitelistedPost(ConfigureUserRequest configureUserRequest) async {
+    Object postBody = configureUserRequest;
+
+    // verify required params are set
+    if(configureUserRequest == null) {
+     throw new ApiException(400, "Missing required param: configureUserRequest");
+    }
+
+    // create path and map variables
+    String path = "/test-utils/user/configure/imported-whitelisted".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newgraph-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'UserInvitationReadPublicResponse') as UserInvitationReadPublicResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future testUtilsUserConfigureInvitedOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/test-utils/user/configure/invited".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<UserInvitationReadPublicResponse> testUtilsUserConfigureInvitedPost(ConfigureUserRequest configureUserRequest) async {
+    Object postBody = configureUserRequest;
+
+    // verify required params are set
+    if(configureUserRequest == null) {
+     throw new ApiException(400, "Missing required param: configureUserRequest");
+    }
+
+    // create path and map variables
+    String path = "/test-utils/user/configure/invited".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newgraph-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'UserInvitationReadPublicResponse') as UserInvitationReadPublicResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
   Future uploadNodeOptions() async {
     Object postBody = null;
 
@@ -5254,7 +5560,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5309,7 +5615,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5508,7 +5814,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5609,7 +5915,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5664,7 +5970,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5692,6 +5998,107 @@ class DefaultApi {
           apiClient.deserialize(response.body, 'UserReadPublicResponse') as UserReadPublicResponse ;
     } else {
       return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<UserInvitationReadPublicResponse> userInviteHashGet({ String hash }) async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/user/invite/hash".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    if(hash != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "hash", hash));
+    }
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'GET',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'UserInvitationReadPublicResponse') as UserInvitationReadPublicResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future userInviteHashOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/user/invite/hash".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
     }
   }
   /// 
@@ -5746,7 +6153,7 @@ class DefaultApi {
   /// 
   ///
   /// 
-  Future<OkResponse> userInvitePost(UserInviteRequest userInviteRequest) async {
+  Future<UserInvitationReadPublicResponse> userInvitePost(UserInviteRequest userInviteRequest) async {
     Object postBody = userInviteRequest;
 
     // verify required params are set
@@ -5765,7 +6172,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5790,9 +6197,229 @@ class DefaultApi {
       throw new ApiException(response.statusCode, response.body);
     } else if(response.body != null) {
       return 
-          apiClient.deserialize(response.body, 'OkResponse') as OkResponse ;
+          apiClient.deserialize(response.body, 'UserInvitationReadPublicResponse') as UserInvitationReadPublicResponse ;
     } else {
       return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<UserInvitationPagedListReadPublicResponse> userInviteesGet({ String direction, String contentType, String page, String orderBy }) async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/user/invitees".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    if(direction != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "direction", direction));
+    }
+    if(contentType != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "contentType", contentType));
+    }
+    if(page != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "page", page));
+    }
+    if(orderBy != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "orderBy", orderBy));
+    }
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newgraph-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'GET',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'UserInvitationPagedListReadPublicResponse') as UserInvitationPagedListReadPublicResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future userInviteesOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/user/invitees".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<UserInvitationPagedListReadPublicResponse> userInvitorGet({ String direction, String contentType, String page, String orderBy }) async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/user/invitor".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    if(direction != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "direction", direction));
+    }
+    if(contentType != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "contentType", contentType));
+    }
+    if(page != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "page", page));
+    }
+    if(orderBy != null) {
+      queryParams.addAll(_convertParametersForCollectionFormat("", "orderBy", orderBy));
+    }
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newgraph-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'GET',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'UserInvitationPagedListReadPublicResponse') as UserInvitationPagedListReadPublicResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future userInvitorOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/user/invitor".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
     }
   }
   /// 
@@ -5829,7 +6456,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -5939,7 +6566,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6043,7 +6670,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6193,7 +6820,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6294,7 +6921,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6346,7 +6973,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6401,7 +7028,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6505,7 +7132,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6609,7 +7236,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6759,7 +7386,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6860,7 +7487,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -6886,6 +7513,107 @@ class DefaultApi {
     } else if(response.body != null) {
       return 
           apiClient.deserialize(response.body, 'SyncContactsResponse') as SyncContactsResponse ;
+    } else {
+      return null;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future userTransferOptions() async {
+    Object postBody = null;
+
+    // verify required params are set
+
+    // create path and map variables
+    String path = "/user/transfer".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = [];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'OPTIONS',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          ;
+    } else {
+      return ;
+    }
+  }
+  /// 
+  ///
+  /// 
+  Future<UserReadPrivateResponse> userTransferPost(UserTransferRequest userTransferRequest) async {
+    Object postBody = userTransferRequest;
+
+    // verify required params are set
+    if(userTransferRequest == null) {
+     throw new ApiException(400, "Missing required param: userTransferRequest");
+    }
+
+    // create path and map variables
+    String path = "/user/transfer".replaceAll("{format}","json");
+
+    // query params
+    List<QueryParam> queryParams = [];
+    Map<String, String> headerParams = {};
+    Map<String, String> formParams = {};
+    
+    List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
+
+    String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
+    List<String> authNames = ["newgraph-api-eu-dev"];
+
+    if(contentType.startsWith("multipart/form-data")) {
+      bool hasFields = false;
+      MultipartRequest mp = new MultipartRequest(null, null);
+      
+      if(hasFields)
+        postBody = mp;
+    }
+    else {
+          }
+
+    var response = await apiClient.invokeAPI(path,
+                                             'POST',
+                                             queryParams,
+                                             postBody,
+                                             headerParams,
+                                             formParams,
+                                             contentType,
+                                             authNames);
+
+    if(response.statusCode >= 400) {
+      throw new ApiException(response.statusCode, response.body);
+    } else if(response.body != null) {
+      return 
+          apiClient.deserialize(response.body, 'UserReadPrivateResponse') as UserReadPrivateResponse ;
     } else {
       return null;
     }
@@ -6961,7 +7689,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;
@@ -7062,7 +7790,7 @@ class DefaultApi {
     List<String> contentTypes = ["application/json","application/x-www-form-urlencoded"];
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
-    List<String> authNames = ["newlife-creator-api-eu-dev"];
+    List<String> authNames = ["newgraph-api-eu-dev"];
 
     if(contentType.startsWith("multipart/form-data")) {
       bool hasFields = false;

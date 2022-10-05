@@ -1,6 +1,6 @@
 # \DefaultApi
 
-All URIs are relative to *https://api-eu-dev.newlife.io/creator*
+All URIs are relative to *https://api-eu-dev.newgra.ph/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -104,6 +104,12 @@ Method | HTTP request | Description
 [**post_utils_remote_meta_proxy_options**](DefaultApi.md#post_utils_remote_meta_proxy_options) | **Options** /post/utils/remote-meta-proxy | 
 [**search_creative_get**](DefaultApi.md#search_creative_get) | **Get** /search/creative | 
 [**search_creative_options**](DefaultApi.md#search_creative_options) | **Options** /search/creative | 
+[**test_utils_user_configure_imported_options**](DefaultApi.md#test_utils_user_configure_imported_options) | **Options** /test-utils/user/configure/imported | 
+[**test_utils_user_configure_imported_post**](DefaultApi.md#test_utils_user_configure_imported_post) | **Post** /test-utils/user/configure/imported | 
+[**test_utils_user_configure_imported_whitelisted_options**](DefaultApi.md#test_utils_user_configure_imported_whitelisted_options) | **Options** /test-utils/user/configure/imported-whitelisted | 
+[**test_utils_user_configure_imported_whitelisted_post**](DefaultApi.md#test_utils_user_configure_imported_whitelisted_post) | **Post** /test-utils/user/configure/imported-whitelisted | 
+[**test_utils_user_configure_invited_options**](DefaultApi.md#test_utils_user_configure_invited_options) | **Options** /test-utils/user/configure/invited | 
+[**test_utils_user_configure_invited_post**](DefaultApi.md#test_utils_user_configure_invited_post) | **Post** /test-utils/user/configure/invited | 
 [**upload_node_options**](DefaultApi.md#upload_node_options) | **Options** /upload/node | 
 [**upload_node_post**](DefaultApi.md#upload_node_post) | **Post** /upload/node | 
 [**user_activity_stream_get**](DefaultApi.md#user_activity_stream_get) | **Get** /user/activityStream | 
@@ -114,8 +120,14 @@ Method | HTTP request | Description
 [**user_current_options**](DefaultApi.md#user_current_options) | **Options** /user/current | 
 [**user_delete**](DefaultApi.md#user_delete) | **Delete** /user | 
 [**user_get**](DefaultApi.md#user_get) | **Get** /user | 
+[**user_invite_hash_get**](DefaultApi.md#user_invite_hash_get) | **Get** /user/invite/hash | 
+[**user_invite_hash_options**](DefaultApi.md#user_invite_hash_options) | **Options** /user/invite/hash | 
 [**user_invite_options**](DefaultApi.md#user_invite_options) | **Options** /user/invite | 
 [**user_invite_post**](DefaultApi.md#user_invite_post) | **Post** /user/invite | 
+[**user_invitees_get**](DefaultApi.md#user_invitees_get) | **Get** /user/invitees | 
+[**user_invitees_options**](DefaultApi.md#user_invitees_options) | **Options** /user/invitees | 
+[**user_invitor_get**](DefaultApi.md#user_invitor_get) | **Get** /user/invitor | 
+[**user_invitor_options**](DefaultApi.md#user_invitor_options) | **Options** /user/invitor | 
 [**user_list_search_get**](DefaultApi.md#user_list_search_get) | **Get** /user/list/search | 
 [**user_list_search_options**](DefaultApi.md#user_list_search_options) | **Options** /user/list/search | 
 [**user_list_top_get**](DefaultApi.md#user_list_top_get) | **Get** /user/list/top | 
@@ -137,6 +149,8 @@ Method | HTTP request | Description
 [**user_stake_post**](DefaultApi.md#user_stake_post) | **Post** /user/stake | 
 [**user_sync_contacts_options**](DefaultApi.md#user_sync_contacts_options) | **Options** /user/syncContacts | 
 [**user_sync_contacts_post**](DefaultApi.md#user_sync_contacts_post) | **Post** /user/syncContacts | 
+[**user_transfer_options**](DefaultApi.md#user_transfer_options) | **Options** /user/transfer | 
+[**user_transfer_post**](DefaultApi.md#user_transfer_post) | **Post** /user/transfer | 
 [**user_upload_options**](DefaultApi.md#user_upload_options) | **Options** /user/upload | 
 [**user_upload_post**](DefaultApi.md#user_upload_post) | **Post** /user/upload | 
 [**user_user_rate_options**](DefaultApi.md#user_user_rate_options) | **Options** /user/userRate | 
@@ -260,6 +274,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
+ **page** | **String**|  | 
 
 ### Return type
 
@@ -267,7 +282,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -311,7 +326,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[lambdaAuthorizer](../README.md#lambdaAuthorizer)
 
 ### HTTP request headers
 
@@ -425,7 +440,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -451,6 +466,7 @@ Optional parameters are passed through a map[string]interface{}.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | 
+ **page** | **String**|  | 
 
 ### Return type
 
@@ -458,7 +474,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -494,7 +510,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -564,7 +580,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -598,7 +614,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -646,7 +662,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -694,7 +710,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -742,7 +758,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -790,7 +806,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -885,7 +901,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -933,7 +949,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -981,7 +997,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1029,7 +1045,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1077,7 +1093,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1125,7 +1141,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1173,7 +1189,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1221,7 +1237,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1269,7 +1285,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1317,7 +1333,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1365,7 +1381,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1413,7 +1429,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1461,7 +1477,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1501,7 +1517,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1571,7 +1587,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1619,7 +1635,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1649,7 +1665,6 @@ Name | Type | Description  | Notes
  **upper_bound** | **String**|  | 
  **voter** | **String**|  | 
  **lower_bound** | **String**|  | 
- **vote_id** | **String**|  | 
 
 ### Return type
 
@@ -1657,7 +1672,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1727,7 +1742,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1775,7 +1790,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1815,7 +1830,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1885,7 +1900,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1923,7 +1938,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1993,7 +2008,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2041,7 +2056,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2085,7 +2100,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2165,7 +2180,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2202,7 +2217,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2261,7 +2276,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2319,7 +2334,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2389,7 +2404,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2415,7 +2430,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2463,7 +2478,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2511,7 +2526,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2559,7 +2574,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2592,7 +2607,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2649,7 +2664,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2676,6 +2691,150 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **test_utils_user_configure_imported_options**
+> test_utils_user_configure_imported_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **test_utils_user_configure_imported_post**
+> ::models::UserInvitationReadPublicResponse test_utils_user_configure_imported_post(ctx, configure_user_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **configure_user_request** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**::models::UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **test_utils_user_configure_imported_whitelisted_options**
+> test_utils_user_configure_imported_whitelisted_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **test_utils_user_configure_imported_whitelisted_post**
+> ::models::UserInvitationReadPublicResponse test_utils_user_configure_imported_whitelisted_post(ctx, configure_user_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **configure_user_request** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**::models::UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **test_utils_user_configure_invited_options**
+> test_utils_user_configure_invited_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **test_utils_user_configure_invited_post**
+> ::models::UserInvitationReadPublicResponse test_utils_user_configure_invited_post(ctx, configure_user_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **configure_user_request** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**::models::UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2719,7 +2878,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2753,7 +2912,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2851,7 +3010,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2899,7 +3058,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2933,12 +3092,66 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_invite_hash_get**
+> ::models::UserInvitationReadPublicResponse user_invite_hash_get(optional)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hash** | **String**|  | 
+
+### Return type
+
+[**::models::UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_invite_hash_options**
+> user_invite_hash_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -2965,7 +3178,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **user_invite_post**
-> ::models::OkResponse user_invite_post(ctx, user_invite_request)
+> ::models::UserInvitationReadPublicResponse user_invite_post(ctx, user_invite_request)
 
 
 ### Required Parameters
@@ -2977,15 +3190,131 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**::models::OkResponse**](OkResponse.md)
+[**::models::UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_invitees_get**
+> ::models::UserInvitationPagedListReadPublicResponse user_invitees_get(ctx, optional)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | 
+ **content_type** | **String**|  | 
+ **page** | **String**|  | 
+ **order_by** | **String**|  | 
+
+### Return type
+
+[**::models::UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_invitees_options**
+> user_invitees_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_invitor_get**
+> ::models::UserInvitationPagedListReadPublicResponse user_invitor_get(ctx, optional)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | 
+ **content_type** | **String**|  | 
+ **page** | **String**|  | 
+ **order_by** | **String**|  | 
+
+### Return type
+
+[**::models::UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_invitor_options**
+> user_invitor_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -3018,7 +3347,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3076,7 +3405,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3132,7 +3461,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3202,7 +3531,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3250,7 +3579,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3276,7 +3605,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3310,7 +3639,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3366,7 +3695,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3422,7 +3751,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3492,7 +3821,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3540,7 +3869,55 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_transfer_options**
+> user_transfer_options()
+
+
+### Required Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+ (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **user_transfer_post**
+> ::models::UserReadPrivateResponse user_transfer_post(ctx, user_transfer_request)
+
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context containing the authentication | nil if no authentication
+  **user_transfer_request** | [**UserTransferRequest**](UserTransferRequest.md)|  | 
+
+### Return type
+
+[**::models::UserReadPrivateResponse**](UserReadPrivateResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3588,7 +3965,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3636,7 +4013,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 

@@ -1,6 +1,6 @@
 # Swagger\Client\DefaultApi
 
-All URIs are relative to *https://api-eu-dev.newlife.io/creator*
+All URIs are relative to *https://api-eu-dev.newgra.ph/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -104,6 +104,12 @@ Method | HTTP request | Description
 [**postUtilsRemoteMetaProxyOptions**](DefaultApi.md#postUtilsRemoteMetaProxyOptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**searchCreativeGet**](DefaultApi.md#searchCreativeGet) | **GET** /search/creative | 
 [**searchCreativeOptions**](DefaultApi.md#searchCreativeOptions) | **OPTIONS** /search/creative | 
+[**testUtilsUserConfigureImportedOptions**](DefaultApi.md#testUtilsUserConfigureImportedOptions) | **OPTIONS** /test-utils/user/configure/imported | 
+[**testUtilsUserConfigureImportedPost**](DefaultApi.md#testUtilsUserConfigureImportedPost) | **POST** /test-utils/user/configure/imported | 
+[**testUtilsUserConfigureImportedWhitelistedOptions**](DefaultApi.md#testUtilsUserConfigureImportedWhitelistedOptions) | **OPTIONS** /test-utils/user/configure/imported-whitelisted | 
+[**testUtilsUserConfigureImportedWhitelistedPost**](DefaultApi.md#testUtilsUserConfigureImportedWhitelistedPost) | **POST** /test-utils/user/configure/imported-whitelisted | 
+[**testUtilsUserConfigureInvitedOptions**](DefaultApi.md#testUtilsUserConfigureInvitedOptions) | **OPTIONS** /test-utils/user/configure/invited | 
+[**testUtilsUserConfigureInvitedPost**](DefaultApi.md#testUtilsUserConfigureInvitedPost) | **POST** /test-utils/user/configure/invited | 
 [**uploadNodeOptions**](DefaultApi.md#uploadNodeOptions) | **OPTIONS** /upload/node | 
 [**uploadNodePost**](DefaultApi.md#uploadNodePost) | **POST** /upload/node | 
 [**userActivityStreamGet**](DefaultApi.md#userActivityStreamGet) | **GET** /user/activityStream | 
@@ -114,8 +120,14 @@ Method | HTTP request | Description
 [**userCurrentOptions**](DefaultApi.md#userCurrentOptions) | **OPTIONS** /user/current | 
 [**userDelete**](DefaultApi.md#userDelete) | **DELETE** /user | 
 [**userGet**](DefaultApi.md#userGet) | **GET** /user | 
+[**userInviteHashGet**](DefaultApi.md#userInviteHashGet) | **GET** /user/invite/hash | 
+[**userInviteHashOptions**](DefaultApi.md#userInviteHashOptions) | **OPTIONS** /user/invite/hash | 
 [**userInviteOptions**](DefaultApi.md#userInviteOptions) | **OPTIONS** /user/invite | 
 [**userInvitePost**](DefaultApi.md#userInvitePost) | **POST** /user/invite | 
+[**userInviteesGet**](DefaultApi.md#userInviteesGet) | **GET** /user/invitees | 
+[**userInviteesOptions**](DefaultApi.md#userInviteesOptions) | **OPTIONS** /user/invitees | 
+[**userInvitorGet**](DefaultApi.md#userInvitorGet) | **GET** /user/invitor | 
+[**userInvitorOptions**](DefaultApi.md#userInvitorOptions) | **OPTIONS** /user/invitor | 
 [**userListSearchGet**](DefaultApi.md#userListSearchGet) | **GET** /user/list/search | 
 [**userListSearchOptions**](DefaultApi.md#userListSearchOptions) | **OPTIONS** /user/list/search | 
 [**userListTopGet**](DefaultApi.md#userListTopGet) | **GET** /user/list/top | 
@@ -137,6 +149,8 @@ Method | HTTP request | Description
 [**userStakePost**](DefaultApi.md#userStakePost) | **POST** /user/stake | 
 [**userSyncContactsOptions**](DefaultApi.md#userSyncContactsOptions) | **OPTIONS** /user/syncContacts | 
 [**userSyncContactsPost**](DefaultApi.md#userSyncContactsPost) | **POST** /user/syncContacts | 
+[**userTransferOptions**](DefaultApi.md#userTransferOptions) | **OPTIONS** /user/transfer | 
+[**userTransferPost**](DefaultApi.md#userTransferPost) | **POST** /user/transfer | 
 [**userUploadOptions**](DefaultApi.md#userUploadOptions) | **OPTIONS** /user/upload | 
 [**userUploadPost**](DefaultApi.md#userUploadPost) | **POST** /user/upload | 
 [**userUserRateOptions**](DefaultApi.md#userUserRateOptions) | **OPTIONS** /user/userRate | 
@@ -328,7 +342,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **folderGet**
-> \Swagger\Client\Model\MoodReadResponse folderGet($id)
+> \Swagger\Client\Model\MoodReadResponse folderGet($id, $page)
 
 
 
@@ -337,7 +351,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -349,9 +363,10 @@ $apiInstance = new Swagger\Client\Api\DefaultApi(
     $config
 );
 $id = "id_example"; // string | 
+$page = "page_example"; // string | 
 
 try {
-    $result = $apiInstance->folderGet($id);
+    $result = $apiInstance->folderGet($id, $page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DefaultApi->folderGet: ', $e->getMessage(), PHP_EOL;
@@ -364,6 +379,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | [optional]
+ **page** | **string**|  | [optional]
 
 ### Return type
 
@@ -371,7 +387,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -432,7 +448,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: lambdaAuthorizer
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -461,7 +477,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[lambdaAuthorizer](../../README.md#lambdaAuthorizer)
 
 ### HTTP request headers
 
@@ -648,7 +664,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -682,7 +698,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -692,7 +708,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **moodGet**
-> \Swagger\Client\Model\MoodReadResponse moodGet($id)
+> \Swagger\Client\Model\MoodReadResponse moodGet($id, $page)
 
 
 
@@ -701,7 +717,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -713,9 +729,10 @@ $apiInstance = new Swagger\Client\Api\DefaultApi(
     $config
 );
 $id = "id_example"; // string | 
+$page = "page_example"; // string | 
 
 try {
-    $result = $apiInstance->moodGet($id);
+    $result = $apiInstance->moodGet($id, $page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DefaultApi->moodGet: ', $e->getMessage(), PHP_EOL;
@@ -728,6 +745,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  | [optional]
+ **page** | **string**|  | [optional]
 
 ### Return type
 
@@ -735,7 +753,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -754,7 +772,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -794,7 +812,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -897,7 +915,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -931,7 +949,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -950,7 +968,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -986,7 +1004,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1047,7 +1065,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1081,7 +1099,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1142,7 +1160,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1176,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1237,7 +1255,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1271,7 +1289,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1332,7 +1350,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1366,7 +1384,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1516,7 +1534,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1550,7 +1568,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1611,7 +1629,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1645,7 +1663,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1706,7 +1724,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1740,7 +1758,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1801,7 +1819,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1835,7 +1853,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1896,7 +1914,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -1930,7 +1948,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1991,7 +2009,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2025,7 +2043,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2086,7 +2104,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2120,7 +2138,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2181,7 +2199,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2215,7 +2233,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2276,7 +2294,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2310,7 +2328,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2371,7 +2389,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2405,7 +2423,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2466,7 +2484,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2500,7 +2518,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2561,7 +2579,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2594,7 +2612,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2655,7 +2673,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2689,7 +2707,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2708,7 +2726,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2756,7 +2774,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2859,7 +2877,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2892,7 +2910,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2953,7 +2971,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -2987,7 +3005,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2997,7 +3015,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **newcoinDaoProposalVotesGet**
-> \Swagger\Client\Model\BcDaoProposalVoteResponse newcoinDaoProposalVotesGet($reverse, $limit, $upper_bound, $voter, $lower_bound, $vote_id)
+> \Swagger\Client\Model\BcDaoProposalVoteResponse newcoinDaoProposalVotesGet($reverse, $limit, $upper_bound, $voter, $lower_bound)
 
 
 
@@ -3006,7 +3024,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3022,10 +3040,9 @@ $limit = "limit_example"; // string |
 $upper_bound = "upper_bound_example"; // string | 
 $voter = "voter_example"; // string | 
 $lower_bound = "lower_bound_example"; // string | 
-$vote_id = "vote_id_example"; // string | 
 
 try {
-    $result = $apiInstance->newcoinDaoProposalVotesGet($reverse, $limit, $upper_bound, $voter, $lower_bound, $vote_id);
+    $result = $apiInstance->newcoinDaoProposalVotesGet($reverse, $limit, $upper_bound, $voter, $lower_bound);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DefaultApi->newcoinDaoProposalVotesGet: ', $e->getMessage(), PHP_EOL;
@@ -3042,7 +3059,6 @@ Name | Type | Description  | Notes
  **upper_bound** | **string**|  | [optional]
  **voter** | **string**|  | [optional]
  **lower_bound** | **string**|  | [optional]
- **vote_id** | **string**|  | [optional]
 
 ### Return type
 
@@ -3050,7 +3066,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3153,7 +3169,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3186,7 +3202,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3247,7 +3263,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3281,7 +3297,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3300,7 +3316,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3348,7 +3364,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3451,7 +3467,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3484,7 +3500,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3503,7 +3519,7 @@ void (empty response body)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3547,7 +3563,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3650,7 +3666,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3684,7 +3700,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3745,7 +3761,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3779,7 +3795,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3840,7 +3856,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -3869,7 +3885,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3976,7 +3992,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4010,7 +4026,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4029,7 +4045,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4071,7 +4087,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4132,7 +4148,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4174,7 +4190,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4235,7 +4251,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4275,7 +4291,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4378,7 +4394,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4412,7 +4428,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4431,7 +4447,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4465,7 +4481,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4526,7 +4542,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4560,7 +4576,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4621,7 +4637,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4655,7 +4671,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4716,7 +4732,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4750,7 +4766,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4769,7 +4785,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4803,7 +4819,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4864,7 +4880,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -4902,7 +4918,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4949,6 +4965,291 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **testUtilsUserConfigureImportedOptions**
+> testUtilsUserConfigureImportedOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->testUtilsUserConfigureImportedOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->testUtilsUserConfigureImportedOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **testUtilsUserConfigureImportedPost**
+> \Swagger\Client\Model\UserInvitationReadPublicResponse testUtilsUserConfigureImportedPost($configure_user_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newgraph-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$configure_user_request = new \Swagger\Client\Model\ConfigureUserRequest(); // \Swagger\Client\Model\ConfigureUserRequest | 
+
+try {
+    $result = $apiInstance->testUtilsUserConfigureImportedPost($configure_user_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->testUtilsUserConfigureImportedPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configure_user_request** | [**\Swagger\Client\Model\ConfigureUserRequest**](../Model/ConfigureUserRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\UserInvitationReadPublicResponse**](../Model/UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **testUtilsUserConfigureImportedWhitelistedOptions**
+> testUtilsUserConfigureImportedWhitelistedOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->testUtilsUserConfigureImportedWhitelistedOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->testUtilsUserConfigureImportedWhitelistedOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **testUtilsUserConfigureImportedWhitelistedPost**
+> \Swagger\Client\Model\UserInvitationReadPublicResponse testUtilsUserConfigureImportedWhitelistedPost($configure_user_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newgraph-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$configure_user_request = new \Swagger\Client\Model\ConfigureUserRequest(); // \Swagger\Client\Model\ConfigureUserRequest | 
+
+try {
+    $result = $apiInstance->testUtilsUserConfigureImportedWhitelistedPost($configure_user_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->testUtilsUserConfigureImportedWhitelistedPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configure_user_request** | [**\Swagger\Client\Model\ConfigureUserRequest**](../Model/ConfigureUserRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\UserInvitationReadPublicResponse**](../Model/UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **testUtilsUserConfigureInvitedOptions**
+> testUtilsUserConfigureInvitedOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->testUtilsUserConfigureInvitedOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->testUtilsUserConfigureInvitedOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **testUtilsUserConfigureInvitedPost**
+> \Swagger\Client\Model\UserInvitationReadPublicResponse testUtilsUserConfigureInvitedPost($configure_user_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newgraph-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$configure_user_request = new \Swagger\Client\Model\ConfigureUserRequest(); // \Swagger\Client\Model\ConfigureUserRequest | 
+
+try {
+    $result = $apiInstance->testUtilsUserConfigureInvitedPost($configure_user_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->testUtilsUserConfigureInvitedPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configure_user_request** | [**\Swagger\Client\Model\ConfigureUserRequest**](../Model/ConfigureUserRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\UserInvitationReadPublicResponse**](../Model/UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -5005,7 +5306,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5039,7 +5340,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5058,7 +5359,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5094,7 +5395,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5244,7 +5545,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5274,7 +5575,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5335,7 +5636,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5369,7 +5670,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5388,7 +5689,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5424,12 +5725,101 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userInviteHashGet**
+> \Swagger\Client\Model\UserInvitationReadPublicResponse userInviteHashGet($hash)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$hash = "hash_example"; // string | 
+
+try {
+    $result = $apiInstance->userInviteHashGet($hash);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userInviteHashGet: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hash** | **string**|  | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\UserInvitationReadPublicResponse**](../Model/UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userInviteHashOptions**
+> userInviteHashOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->userInviteHashOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userInviteHashOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
@@ -5476,7 +5866,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userInvitePost**
-> \Swagger\Client\Model\OkResponse userInvitePost($user_invite_request)
+> \Swagger\Client\Model\UserInvitationReadPublicResponse userInvitePost($user_invite_request)
 
 
 
@@ -5485,7 +5875,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5515,15 +5905,217 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\OkResponse**](../Model/OkResponse.md)
+[**\Swagger\Client\Model\UserInvitationReadPublicResponse**](../Model/UserInvitationReadPublicResponse.md)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userInviteesGet**
+> \Swagger\Client\Model\UserInvitationPagedListReadPublicResponse userInviteesGet($direction, $content_type, $page, $order_by)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newgraph-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$direction = "direction_example"; // string | 
+$content_type = "content_type_example"; // string | 
+$page = "page_example"; // string | 
+$order_by = "order_by_example"; // string | 
+
+try {
+    $result = $apiInstance->userInviteesGet($direction, $content_type, $page, $order_by);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userInviteesGet: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **string**|  | [optional]
+ **content_type** | **string**|  | [optional]
+ **page** | **string**|  | [optional]
+ **order_by** | **string**|  | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\UserInvitationPagedListReadPublicResponse**](../Model/UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userInviteesOptions**
+> userInviteesOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->userInviteesOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userInviteesOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userInvitorGet**
+> \Swagger\Client\Model\UserInvitationPagedListReadPublicResponse userInvitorGet($direction, $content_type, $page, $order_by)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newgraph-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$direction = "direction_example"; // string | 
+$content_type = "content_type_example"; // string | 
+$page = "page_example"; // string | 
+$order_by = "order_by_example"; // string | 
+
+try {
+    $result = $apiInstance->userInvitorGet($direction, $content_type, $page, $order_by);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userInvitorGet: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **string**|  | [optional]
+ **content_type** | **string**|  | [optional]
+ **page** | **string**|  | [optional]
+ **order_by** | **string**|  | [optional]
+
+### Return type
+
+[**\Swagger\Client\Model\UserInvitationPagedListReadPublicResponse**](../Model/UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userInvitorOptions**
+> userInvitorOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->userInvitorOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userInvitorOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
@@ -5538,7 +6130,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5580,7 +6172,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5641,7 +6233,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5681,7 +6273,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5742,7 +6334,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5778,7 +6370,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5881,7 +6473,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -5915,7 +6507,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5976,7 +6568,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6010,7 +6602,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6029,7 +6621,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6063,7 +6655,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6082,7 +6674,7 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6118,7 +6710,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6179,7 +6771,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6215,7 +6807,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6276,7 +6868,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6312,7 +6904,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6415,7 +7007,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6449,7 +7041,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6510,7 +7102,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6544,7 +7136,102 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userTransferOptions**
+> userTransferOptions()
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $apiInstance->userTransferOptions();
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userTransferOptions: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **userTransferPost**
+> \Swagger\Client\Model\UserReadPrivateResponse userTransferPost($user_transfer_request)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: newgraph-api-eu-dev
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\DefaultApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$user_transfer_request = new \Swagger\Client\Model\UserTransferRequest(); // \Swagger\Client\Model\UserTransferRequest | 
+
+try {
+    $result = $apiInstance->userTransferPost($user_transfer_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DefaultApi->userTransferPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **user_transfer_request** | [**\Swagger\Client\Model\UserTransferRequest**](../Model/UserTransferRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\UserReadPrivateResponse**](../Model/UserReadPrivateResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6605,7 +7292,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6639,7 +7326,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6700,7 +7387,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: newlife-creator-api-eu-dev
+// Configure API key authorization: newgraph-api-eu-dev
 $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
@@ -6734,7 +7421,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 

@@ -5,7 +5,7 @@
 import 'package:swagger/api.dart';
 ```
 
-All URIs are relative to *https://api-eu-dev.newlife.io/creator*
+All URIs are relative to *https://api-eu-dev.newgra.ph/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -109,6 +109,12 @@ Method | HTTP request | Description
 [**postUtilsRemoteMetaProxyOptions**](DefaultApi.md#postUtilsRemoteMetaProxyOptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**searchCreativeGet**](DefaultApi.md#searchCreativeGet) | **GET** /search/creative | 
 [**searchCreativeOptions**](DefaultApi.md#searchCreativeOptions) | **OPTIONS** /search/creative | 
+[**testUtilsUserConfigureImportedOptions**](DefaultApi.md#testUtilsUserConfigureImportedOptions) | **OPTIONS** /test-utils/user/configure/imported | 
+[**testUtilsUserConfigureImportedPost**](DefaultApi.md#testUtilsUserConfigureImportedPost) | **POST** /test-utils/user/configure/imported | 
+[**testUtilsUserConfigureImportedWhitelistedOptions**](DefaultApi.md#testUtilsUserConfigureImportedWhitelistedOptions) | **OPTIONS** /test-utils/user/configure/imported-whitelisted | 
+[**testUtilsUserConfigureImportedWhitelistedPost**](DefaultApi.md#testUtilsUserConfigureImportedWhitelistedPost) | **POST** /test-utils/user/configure/imported-whitelisted | 
+[**testUtilsUserConfigureInvitedOptions**](DefaultApi.md#testUtilsUserConfigureInvitedOptions) | **OPTIONS** /test-utils/user/configure/invited | 
+[**testUtilsUserConfigureInvitedPost**](DefaultApi.md#testUtilsUserConfigureInvitedPost) | **POST** /test-utils/user/configure/invited | 
 [**uploadNodeOptions**](DefaultApi.md#uploadNodeOptions) | **OPTIONS** /upload/node | 
 [**uploadNodePost**](DefaultApi.md#uploadNodePost) | **POST** /upload/node | 
 [**userActivityStreamGet**](DefaultApi.md#userActivityStreamGet) | **GET** /user/activityStream | 
@@ -119,8 +125,14 @@ Method | HTTP request | Description
 [**userCurrentOptions**](DefaultApi.md#userCurrentOptions) | **OPTIONS** /user/current | 
 [**userDelete**](DefaultApi.md#userDelete) | **DELETE** /user | 
 [**userGet**](DefaultApi.md#userGet) | **GET** /user | 
+[**userInviteHashGet**](DefaultApi.md#userInviteHashGet) | **GET** /user/invite/hash | 
+[**userInviteHashOptions**](DefaultApi.md#userInviteHashOptions) | **OPTIONS** /user/invite/hash | 
 [**userInviteOptions**](DefaultApi.md#userInviteOptions) | **OPTIONS** /user/invite | 
 [**userInvitePost**](DefaultApi.md#userInvitePost) | **POST** /user/invite | 
+[**userInviteesGet**](DefaultApi.md#userInviteesGet) | **GET** /user/invitees | 
+[**userInviteesOptions**](DefaultApi.md#userInviteesOptions) | **OPTIONS** /user/invitees | 
+[**userInvitorGet**](DefaultApi.md#userInvitorGet) | **GET** /user/invitor | 
+[**userInvitorOptions**](DefaultApi.md#userInvitorOptions) | **OPTIONS** /user/invitor | 
 [**userListSearchGet**](DefaultApi.md#userListSearchGet) | **GET** /user/list/search | 
 [**userListSearchOptions**](DefaultApi.md#userListSearchOptions) | **OPTIONS** /user/list/search | 
 [**userListTopGet**](DefaultApi.md#userListTopGet) | **GET** /user/list/top | 
@@ -142,6 +154,8 @@ Method | HTTP request | Description
 [**userStakePost**](DefaultApi.md#userStakePost) | **POST** /user/stake | 
 [**userSyncContactsOptions**](DefaultApi.md#userSyncContactsOptions) | **OPTIONS** /user/syncContacts | 
 [**userSyncContactsPost**](DefaultApi.md#userSyncContactsPost) | **POST** /user/syncContacts | 
+[**userTransferOptions**](DefaultApi.md#userTransferOptions) | **OPTIONS** /user/transfer | 
+[**userTransferPost**](DefaultApi.md#userTransferPost) | **POST** /user/transfer | 
 [**userUploadOptions**](DefaultApi.md#userUploadOptions) | **OPTIONS** /user/upload | 
 [**userUploadPost**](DefaultApi.md#userUploadPost) | **POST** /user/upload | 
 [**userUserRateOptions**](DefaultApi.md#userUserRateOptions) | **OPTIONS** /user/userRate | 
@@ -309,23 +323,24 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **folderGet**
-> MoodReadResponse folderGet(id)
+> MoodReadResponse folderGet(id, page)
 
 
 
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
 
 var api_instance = new DefaultApi();
 var id = id_example; // String | 
+var page = page_example; // String | 
 
 try { 
-    var result = api_instance.folderGet(id);
+    var result = api_instance.folderGet(id, page);
     print(result);
 } catch (e) {
     print("Exception when calling DefaultApi->folderGet: $e\n");
@@ -337,6 +352,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
 
 ### Return type
 
@@ -344,7 +360,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -397,7 +413,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: lambdaAuthorizer
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -420,7 +436,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[lambdaAuthorizer](../README.md#lambdaAuthorizer)
 
 ### HTTP request headers
 
@@ -581,7 +597,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -609,7 +625,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -619,23 +635,24 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **moodGet**
-> MoodReadResponse moodGet(id)
+> MoodReadResponse moodGet(id, page)
 
 
 
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
 
 var api_instance = new DefaultApi();
 var id = id_example; // String | 
+var page = page_example; // String | 
 
 try { 
-    var result = api_instance.moodGet(id);
+    var result = api_instance.moodGet(id, page);
     print(result);
 } catch (e) {
     print("Exception when calling DefaultApi->moodGet: $e\n");
@@ -647,6 +664,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
 
 ### Return type
 
@@ -654,7 +672,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -671,7 +689,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -705,7 +723,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -794,7 +812,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -822,7 +840,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -839,7 +857,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -869,7 +887,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -922,7 +940,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -950,7 +968,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1003,7 +1021,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1031,7 +1049,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1084,7 +1102,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1112,7 +1130,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1165,7 +1183,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1193,7 +1211,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1323,7 +1341,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1351,7 +1369,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1404,7 +1422,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1432,7 +1450,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1485,7 +1503,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1513,7 +1531,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1566,7 +1584,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1594,7 +1612,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1647,7 +1665,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1675,7 +1693,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1728,7 +1746,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1756,7 +1774,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1809,7 +1827,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1837,7 +1855,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1890,7 +1908,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1918,7 +1936,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1971,7 +1989,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -1999,7 +2017,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2052,7 +2070,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2080,7 +2098,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2133,7 +2151,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2161,7 +2179,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2214,7 +2232,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2241,7 +2259,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2294,7 +2312,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2322,7 +2340,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2339,7 +2357,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2381,7 +2399,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2470,7 +2488,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2497,7 +2515,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2550,7 +2568,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2578,7 +2596,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2588,14 +2606,14 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **newcoinDaoProposalVotesGet**
-> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId)
+> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound)
 
 
 
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2606,10 +2624,9 @@ var limit = limit_example; // String |
 var upperBound = upperBound_example; // String | 
 var voter = voter_example; // String | 
 var lowerBound = lowerBound_example; // String | 
-var voteId = voteId_example; // String | 
 
 try { 
-    var result = api_instance.newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId);
+    var result = api_instance.newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound);
     print(result);
 } catch (e) {
     print("Exception when calling DefaultApi->newcoinDaoProposalVotesGet: $e\n");
@@ -2625,7 +2642,6 @@ Name | Type | Description  | Notes
  **upperBound** | **String**|  | [optional] 
  **voter** | **String**|  | [optional] 
  **lowerBound** | **String**|  | [optional] 
- **voteId** | **String**|  | [optional] 
 
 ### Return type
 
@@ -2633,7 +2649,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2722,7 +2738,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2749,7 +2765,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2802,7 +2818,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2830,7 +2846,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2847,7 +2863,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -2889,7 +2905,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2978,7 +2994,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3005,7 +3021,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3022,7 +3038,7 @@ void (empty response body)
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3060,7 +3076,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3149,7 +3165,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3177,7 +3193,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3230,7 +3246,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3258,7 +3274,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3311,7 +3327,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3334,7 +3350,7 @@ void (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3427,7 +3443,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3455,7 +3471,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3472,7 +3488,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3508,7 +3524,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3561,7 +3577,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3597,7 +3613,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3650,7 +3666,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3684,7 +3700,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3773,7 +3789,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3801,7 +3817,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3818,7 +3834,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3846,7 +3862,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3899,7 +3915,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -3927,7 +3943,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3980,7 +3996,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4008,7 +4024,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4061,7 +4077,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4089,7 +4105,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4106,7 +4122,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4134,7 +4150,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4187,7 +4203,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4219,7 +4235,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4260,6 +4276,249 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **testUtilsUserConfigureImportedOptions**
+> testUtilsUserConfigureImportedOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.testUtilsUserConfigureImportedOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->testUtilsUserConfigureImportedOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **testUtilsUserConfigureImportedPost**
+> UserInvitationReadPublicResponse testUtilsUserConfigureImportedPost(configureUserRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newgraph-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+
+try { 
+    var result = api_instance.testUtilsUserConfigureImportedPost(configureUserRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->testUtilsUserConfigureImportedPost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **testUtilsUserConfigureImportedWhitelistedOptions**
+> testUtilsUserConfigureImportedWhitelistedOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.testUtilsUserConfigureImportedWhitelistedOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->testUtilsUserConfigureImportedWhitelistedOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **testUtilsUserConfigureImportedWhitelistedPost**
+> UserInvitationReadPublicResponse testUtilsUserConfigureImportedWhitelistedPost(configureUserRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newgraph-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+
+try { 
+    var result = api_instance.testUtilsUserConfigureImportedWhitelistedPost(configureUserRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->testUtilsUserConfigureImportedWhitelistedPost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **testUtilsUserConfigureInvitedOptions**
+> testUtilsUserConfigureInvitedOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.testUtilsUserConfigureInvitedOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->testUtilsUserConfigureInvitedOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **testUtilsUserConfigureInvitedPost**
+> UserInvitationReadPublicResponse testUtilsUserConfigureInvitedPost(configureUserRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newgraph-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+
+try { 
+    var result = api_instance.testUtilsUserConfigureInvitedPost(configureUserRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->testUtilsUserConfigureInvitedPost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -4308,7 +4567,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4336,7 +4595,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4353,7 +4612,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4383,7 +4642,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4513,7 +4772,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4537,7 +4796,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4590,7 +4849,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4618,7 +4877,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4635,7 +4894,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4665,12 +4924,89 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userInviteHashGet**
+> UserInvitationReadPublicResponse userInviteHashGet(hash)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+var hash = hash_example; // String | 
+
+try { 
+    var result = api_instance.userInviteHashGet(hash);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->userInviteHashGet: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hash** | **String**|  | [optional] 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userInviteHashOptions**
+> userInviteHashOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.userInviteHashOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->userInviteHashOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -4711,14 +5047,14 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **userInvitePost**
-> OkResponse userInvitePost(userInviteRequest)
+> UserInvitationReadPublicResponse userInvitePost(userInviteRequest)
 
 
 
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4742,15 +5078,189 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OkResponse**](OkResponse.md)
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userInviteesGet**
+> UserInvitationPagedListReadPublicResponse userInviteesGet(direction, contentType, page, orderBy)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newgraph-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var direction = direction_example; // String | 
+var contentType = contentType_example; // String | 
+var page = page_example; // String | 
+var orderBy = orderBy_example; // String | 
+
+try { 
+    var result = api_instance.userInviteesGet(direction, contentType, page, orderBy);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->userInviteesGet: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | [optional] 
+ **contentType** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
+ **orderBy** | **String**|  | [optional] 
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userInviteesOptions**
+> userInviteesOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.userInviteesOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->userInviteesOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userInvitorGet**
+> UserInvitationPagedListReadPublicResponse userInvitorGet(direction, contentType, page, orderBy)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newgraph-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var direction = direction_example; // String | 
+var contentType = contentType_example; // String | 
+var page = page_example; // String | 
+var orderBy = orderBy_example; // String | 
+
+try { 
+    var result = api_instance.userInvitorGet(direction, contentType, page, orderBy);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->userInvitorGet: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | [optional] 
+ **contentType** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
+ **orderBy** | **String**|  | [optional] 
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userInvitorOptions**
+> userInvitorOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.userInvitorOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->userInvitorOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -4763,7 +5273,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4799,7 +5309,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4852,7 +5362,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4886,7 +5396,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4939,7 +5449,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -4969,7 +5479,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5058,7 +5568,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5086,7 +5596,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5139,7 +5649,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5167,7 +5677,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5184,7 +5694,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5212,7 +5722,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5229,7 +5739,7 @@ Name | Type | Description  | Notes
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5259,7 +5769,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5312,7 +5822,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5342,7 +5852,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5395,7 +5905,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5425,7 +5935,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5514,7 +6024,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5542,7 +6052,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5595,7 +6105,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5623,7 +6133,88 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userTransferOptions**
+> userTransferOptions()
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+
+var api_instance = new DefaultApi();
+
+try { 
+    api_instance.userTransferOptions();
+} catch (e) {
+    print("Exception when calling DefaultApi->userTransferOptions: $e\n");
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **userTransferPost**
+> UserReadPrivateResponse userTransferPost(userTransferRequest)
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure API key authorization: newgraph-api-eu-dev
+//swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
+// uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+//swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
+
+var api_instance = new DefaultApi();
+var userTransferRequest = new UserTransferRequest(); // UserTransferRequest | 
+
+try { 
+    var result = api_instance.userTransferPost(userTransferRequest);
+    print(result);
+} catch (e) {
+    print("Exception when calling DefaultApi->userTransferPost: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userTransferRequest** | [**UserTransferRequest**](UserTransferRequest.md)|  | 
+
+### Return type
+
+[**UserReadPrivateResponse**](UserReadPrivateResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5676,7 +6267,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5704,7 +6295,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5757,7 +6348,7 @@ No authorization required
 ### Example 
 ```dart
 import 'package:swagger/api.dart';
-// TODO Configure API key authorization: newlife-creator-api-eu-dev
+// TODO Configure API key authorization: newgraph-api-eu-dev
 //swagger.api.Configuration.apiKey{'Authorization'} = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 //swagger.api.Configuration.apiKeyPrefix{'Authorization'} = "Bearer";
@@ -5785,7 +6376,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 

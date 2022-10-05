@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **proposal_id** | **float** |  | [optional] 
 **dao_id** | **float** |  | [optional] 
 **id** | **str** |  | [optional] 
+**lock_end_date** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

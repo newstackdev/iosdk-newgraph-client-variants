@@ -5,6 +5,9 @@ class PagedRatedResponseUserRating {
   String created = null;
   
 
+  String txIDMintAsset = null;
+  
+
   num value = null;
    // range from 0 to 100//
 
@@ -14,13 +17,16 @@ class PagedRatedResponseUserRating {
 
   @override
   String toString() {
-    return 'PagedRatedResponseUserRating[created=$created, value=$value, updated=$updated, ]';
+    return 'PagedRatedResponseUserRating[created=$created, txIDMintAsset=$txIDMintAsset, value=$value, updated=$updated, ]';
   }
 
   PagedRatedResponseUserRating.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     created =
         json['created']
+    ;
+    txIDMintAsset =
+        json['TxID_mintAsset']
     ;
     value =
         json['value']
@@ -33,6 +39,7 @@ class PagedRatedResponseUserRating {
   Map<String, dynamic> toJson() {
     return {
       'created': created,
+      'TxID_mintAsset': txIDMintAsset,
       'value': value,
       'updated': updated
      };

@@ -16,11 +16,14 @@ class BcDaoProposalVoteResponseRows {
 
   String id = null;
   
+
+  String lockEndDate = null;
+  
   BcDaoProposalVoteResponseRows();
 
   @override
   String toString() {
-    return 'BcDaoProposalVoteResponseRows[proposalType=$proposalType, quantity=$quantity, proposalId=$proposalId, daoId=$daoId, id=$id, ]';
+    return 'BcDaoProposalVoteResponseRows[proposalType=$proposalType, quantity=$quantity, proposalId=$proposalId, daoId=$daoId, id=$id, lockEndDate=$lockEndDate, ]';
   }
 
   BcDaoProposalVoteResponseRows.fromJson(Map<String, dynamic> json) {
@@ -42,6 +45,9 @@ class BcDaoProposalVoteResponseRows {
     id =
         json['id']
     ;
+    lockEndDate =
+        json['lock_end_date']
+    ;
   }
 
   Map<String, dynamic> toJson() {
@@ -50,7 +56,8 @@ class BcDaoProposalVoteResponseRows {
       'quantity': quantity,
       'proposal_id': proposalId,
       'dao_id': daoId,
-      'id': id
+      'id': id,
+      'lock_end_date': lockEndDate
      };
   }
 

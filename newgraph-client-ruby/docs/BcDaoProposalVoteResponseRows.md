@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **proposal_id** | **Float** |  | [optional] 
 **dao_id** | **Float** |  | [optional] 
 **id** | **String** |  | [optional] 
+**lock_end_date** | **String** |  | [optional] 
 
 

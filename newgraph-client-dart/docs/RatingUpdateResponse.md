@@ -9,6 +9,7 @@ import 'package:swagger/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **String** |  | [optional] [default to null]
+**txIDMintAsset** | **String** |  | [optional] [default to null]
 **value** | **num** |  | [optional] [default to null]
 **updated** | **String** |  | [optional] [default to null]
 

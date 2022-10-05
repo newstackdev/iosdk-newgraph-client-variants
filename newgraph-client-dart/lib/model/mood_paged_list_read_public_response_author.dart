@@ -68,6 +68,9 @@ class MoodPagedListReadPublicResponseAuthor {
   String reddit = null;
   
 
+  String youtubeId = null;
+  
+
   String id = null;
   
 
@@ -98,7 +101,7 @@ class MoodPagedListReadPublicResponseAuthor {
   String facebook = null;
   
 
-  String confirmedSocials = null;
+  String facebookId = null;
   
 
   String fullName = null;
@@ -140,7 +143,7 @@ class MoodPagedListReadPublicResponseAuthor {
 
   @override
   String toString() {
-    return 'MoodPagedListReadPublicResponseAuthor[newcoinTicker=$newcoinTicker, youtube=$youtube, powered=$powered, displayName=$displayName, newcoinAccTx=$newcoinAccTx, latitude=$latitude, description=$description, newcoinPoolId=$newcoinPoolId, tumblr=$tumblr, aspectRatio=$aspectRatio, instagram=$instagram, medium=$medium, newcoinActivePublicKey=$newcoinActivePublicKey, soundcloud=$soundcloud, newcoinPublicKey=$newcoinPublicKey, powering=$powering, snapchat=$snapchat, apple=$apple, twitter=$twitter, newcoinOwnerPublicKey=$newcoinOwnerPublicKey, tiktok=$tiktok, reddit=$reddit, id=$id, newcoinPoolStake=$newcoinPoolStake, contentType=$contentType, signal=$signal, longitude=$longitude, newcoinPublisherPublicKey=$newcoinPublisherPublicKey, website=$website, created=$created, spotify=$spotify, facebook=$facebook, confirmedSocials=$confirmedSocials, fullName=$fullName, telegram=$telegram, pinterest=$pinterest, verifiedSocialIds=$verifiedSocialIds, newcoinPoolTx=$newcoinPoolTx, license=$license, contentUrl=$contentUrl, discord=$discord, blurHash=$blurHash, consentEmail=$consentEmail, updated=$updated, username=$username, ]';
+    return 'MoodPagedListReadPublicResponseAuthor[newcoinTicker=$newcoinTicker, youtube=$youtube, powered=$powered, displayName=$displayName, newcoinAccTx=$newcoinAccTx, latitude=$latitude, description=$description, newcoinPoolId=$newcoinPoolId, tumblr=$tumblr, aspectRatio=$aspectRatio, instagram=$instagram, medium=$medium, newcoinActivePublicKey=$newcoinActivePublicKey, soundcloud=$soundcloud, newcoinPublicKey=$newcoinPublicKey, powering=$powering, snapchat=$snapchat, apple=$apple, twitter=$twitter, newcoinOwnerPublicKey=$newcoinOwnerPublicKey, tiktok=$tiktok, reddit=$reddit, youtubeId=$youtubeId, id=$id, newcoinPoolStake=$newcoinPoolStake, contentType=$contentType, signal=$signal, longitude=$longitude, newcoinPublisherPublicKey=$newcoinPublisherPublicKey, website=$website, created=$created, spotify=$spotify, facebook=$facebook, facebookId=$facebookId, fullName=$fullName, telegram=$telegram, pinterest=$pinterest, verifiedSocialIds=$verifiedSocialIds, newcoinPoolTx=$newcoinPoolTx, license=$license, contentUrl=$contentUrl, discord=$discord, blurHash=$blurHash, consentEmail=$consentEmail, updated=$updated, username=$username, ]';
   }
 
   MoodPagedListReadPublicResponseAuthor.fromJson(Map<String, dynamic> json) {
@@ -211,6 +214,9 @@ class MoodPagedListReadPublicResponseAuthor {
     reddit =
         json['reddit']
     ;
+    youtubeId =
+        json['youtubeId']
+    ;
     id =
         json['id']
     ;
@@ -241,8 +247,8 @@ class MoodPagedListReadPublicResponseAuthor {
     facebook =
         json['facebook']
     ;
-    confirmedSocials =
-        json['confirmedSocials']
+    facebookId =
+        json['facebookId']
     ;
     fullName =
         json['fullName']
@@ -306,6 +312,7 @@ class MoodPagedListReadPublicResponseAuthor {
       'newcoinOwnerPublicKey': newcoinOwnerPublicKey,
       'tiktok': tiktok,
       'reddit': reddit,
+      'youtubeId': youtubeId,
       'id': id,
       'newcoinPoolStake': newcoinPoolStake,
       'contentType': contentType,
@@ -316,7 +323,7 @@ class MoodPagedListReadPublicResponseAuthor {
       'created': created,
       'spotify': spotify,
       'facebook': facebook,
-      'confirmedSocials': confirmedSocials,
+      'facebookId': facebookId,
       'fullName': fullName,
       'telegram': telegram,
       'pinterest': pinterest,

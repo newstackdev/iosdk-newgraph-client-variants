@@ -59,6 +59,12 @@ class UserReadPrivateResponse {
   String created = null;
   
 
+  num availableInvites = null;
+  
+
+  String facebookId = null;
+  
+
   String newcoinPoolTx = null;
   
 
@@ -81,6 +87,9 @@ class UserReadPrivateResponse {
   
 
   String status = null;
+  
+
+  String newcoinTicker = null;
   
 
   String youtube = null;
@@ -128,6 +137,9 @@ class UserReadPrivateResponse {
   String newcoinPublisherPrivateKey = null;
   
 
+  String youtubeId = null;
+  
+
   num newcoinPoolStake = null;
   
 
@@ -170,7 +182,7 @@ class UserReadPrivateResponse {
 
   @override
   String toString() {
-    return 'UserReadPrivateResponse[powered=$powered, newcoinAccTx=$newcoinAccTx, newcoinPoolId=$newcoinPoolId, aspectRatio=$aspectRatio, instagram=$instagram, newcoinActivePublicKey=$newcoinActivePublicKey, newcoinPublicKey=$newcoinPublicKey, powering=$powering, stripeUid=$stripeUid, twitter=$twitter, newcoinOwnerPublicKey=$newcoinOwnerPublicKey, tiktok=$tiktok, reddit=$reddit, id=$id, contentType=$contentType, signal=$signal, longitude=$longitude, subscriptionExpiry=$subscriptionExpiry, created=$created, newcoinPoolTx=$newcoinPoolTx, verifiedSocialIds=$verifiedSocialIds, firstName=$firstName, license=$license, discord=$discord, phone=$phone, updated=$updated, status=$status, youtube=$youtube, lastName=$lastName, consentPrivacyPolicy=$consentPrivacyPolicy, displayName=$displayName, latitude=$latitude, description=$description, tumblr=$tumblr, medium=$medium, soundcloud=$soundcloud, snapchat=$snapchat, apple=$apple, consentTestgroup=$consentTestgroup, newcoinPrivateKey=$newcoinPrivateKey, subscriptionStatus=$subscriptionStatus, newcoinPublisherPrivateKey=$newcoinPublisherPrivateKey, newcoinPoolStake=$newcoinPoolStake, email=$email, newcoinPublisherPublicKey=$newcoinPublisherPublicKey, website=$website, spotify=$spotify, facebook=$facebook, fullName=$fullName, telegram=$telegram, pinterest=$pinterest, contentUrl=$contentUrl, blurHash=$blurHash, consentEmail=$consentEmail, username=$username, ]';
+    return 'UserReadPrivateResponse[powered=$powered, newcoinAccTx=$newcoinAccTx, newcoinPoolId=$newcoinPoolId, aspectRatio=$aspectRatio, instagram=$instagram, newcoinActivePublicKey=$newcoinActivePublicKey, newcoinPublicKey=$newcoinPublicKey, powering=$powering, stripeUid=$stripeUid, twitter=$twitter, newcoinOwnerPublicKey=$newcoinOwnerPublicKey, tiktok=$tiktok, reddit=$reddit, id=$id, contentType=$contentType, signal=$signal, longitude=$longitude, subscriptionExpiry=$subscriptionExpiry, created=$created, availableInvites=$availableInvites, facebookId=$facebookId, newcoinPoolTx=$newcoinPoolTx, verifiedSocialIds=$verifiedSocialIds, firstName=$firstName, license=$license, discord=$discord, phone=$phone, updated=$updated, status=$status, newcoinTicker=$newcoinTicker, youtube=$youtube, lastName=$lastName, consentPrivacyPolicy=$consentPrivacyPolicy, displayName=$displayName, latitude=$latitude, description=$description, tumblr=$tumblr, medium=$medium, soundcloud=$soundcloud, snapchat=$snapchat, apple=$apple, consentTestgroup=$consentTestgroup, newcoinPrivateKey=$newcoinPrivateKey, subscriptionStatus=$subscriptionStatus, newcoinPublisherPrivateKey=$newcoinPublisherPrivateKey, youtubeId=$youtubeId, newcoinPoolStake=$newcoinPoolStake, email=$email, newcoinPublisherPublicKey=$newcoinPublisherPublicKey, website=$website, spotify=$spotify, facebook=$facebook, fullName=$fullName, telegram=$telegram, pinterest=$pinterest, contentUrl=$contentUrl, blurHash=$blurHash, consentEmail=$consentEmail, username=$username, ]';
   }
 
   UserReadPrivateResponse.fromJson(Map<String, dynamic> json) {
@@ -232,6 +244,12 @@ class UserReadPrivateResponse {
     created =
         json['created']
     ;
+    availableInvites =
+        json['availableInvites']
+    ;
+    facebookId =
+        json['facebookId']
+    ;
     newcoinPoolTx =
         json['newcoinPoolTx']
     ;
@@ -255,6 +273,9 @@ class UserReadPrivateResponse {
     ;
     status =
         json['status']
+    ;
+    newcoinTicker =
+        json['newcoinTicker']
     ;
     youtube =
         json['youtube']
@@ -300,6 +321,9 @@ class UserReadPrivateResponse {
     ;
     newcoinPublisherPrivateKey =
         json['newcoinPublisherPrivateKey']
+    ;
+    youtubeId =
+        json['youtubeId']
     ;
     newcoinPoolStake =
         json['newcoinPoolStake']
@@ -363,6 +387,8 @@ class UserReadPrivateResponse {
       'longitude': longitude,
       'subscriptionExpiry': subscriptionExpiry,
       'created': created,
+      'availableInvites': availableInvites,
+      'facebookId': facebookId,
       'newcoinPoolTx': newcoinPoolTx,
       'verifiedSocialIds': verifiedSocialIds,
       'firstName': firstName,
@@ -371,6 +397,7 @@ class UserReadPrivateResponse {
       'phone': phone,
       'updated': updated,
       'status': status,
+      'newcoinTicker': newcoinTicker,
       'youtube': youtube,
       'lastName': lastName,
       'consentPrivacyPolicy': consentPrivacyPolicy,
@@ -386,6 +413,7 @@ class UserReadPrivateResponse {
       'newcoinPrivateKey': newcoinPrivateKey,
       'subscriptionStatus': subscriptionStatus,
       'newcoinPublisherPrivateKey': newcoinPublisherPrivateKey,
+      'youtubeId': youtubeId,
       'newcoinPoolStake': newcoinPoolStake,
       'email': email,
       'newcoinPublisherPublicKey': newcoinPublisherPublicKey,

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | [**Array&lt;MoodCreateResponsePosts&gt;**](MoodCreateResponsePosts.md) |  | [optional] 
+**value** | [**Array&lt;MoodPagedListReadPublicResponsePosts&gt;**](MoodPagedListReadPublicResponsePosts.md) |  | [optional] 
 **done** | **BOOLEAN** |  | [optional] 
 
 

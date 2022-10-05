@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **dao_id** | **String** |  | [optional] [default to null]
-**more** | [***Value**](Value.md) |  | [optional] [default to null]
+**more** | **bool** |  | [optional] [default to null]
 **next_key** | **String** |  | [optional] [default to null]
 **rows** | [**Vec<::models::BcDaoProposalVoteResponseRows>**](BcDaoProposalVoteResponse_rows.md) |  | [optional] [default to null]
 

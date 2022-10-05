@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **String** |  | [optional] [default to null]
+**tx_id_mint_asset** | **String** |  | [optional] [default to null]
 **value** | **f32** |  | [optional] [default to null]
 **updated** | **String** |  | [optional] [default to null]
 

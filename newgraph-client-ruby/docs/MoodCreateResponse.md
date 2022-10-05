@@ -4,15 +4,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **String** |  | [optional] 
-**author** | [**PagedRatedResponsePostAuthor**](PagedRatedResponsePostAuthor.md) |  | [optional] 
+**author** | [**MoodPagedListReadPublicResponseAuthor**](MoodPagedListReadPublicResponseAuthor.md) |  | [optional] 
 **latitude** | **Float** |  | [optional] 
 **description** | **String** |  | [optional] 
 **aspect_ratio** | **Float** |  | [optional] 
 **title** | **String** |  | [optional] 
-**posts** | [**Array&lt;MoodCreateResponsePosts&gt;**](MoodCreateResponsePosts.md) |  | [optional] 
+**posts** | [**Array&lt;MoodPagedListReadPublicResponsePosts&gt;**](MoodPagedListReadPublicResponsePosts.md) |  | [optional] 
 **content** | **String** |  | [optional] 
 **stake_to_access** | **Float** |  | [optional] 
-**tags** | [**Array&lt;PagedRatedResponsePostTags&gt;**](PagedRatedResponsePostTags.md) |  | [optional] 
+**tags** | [**Array&lt;MoodPagedListReadPublicResponseTags&gt;**](MoodPagedListReadPublicResponseTags.md) |  | [optional] 
 **content_url** | **String** |  | [optional] 
 **posts_count** | **Float** |  | [optional] 
 **blur_hash** | **String** |  | [optional] 

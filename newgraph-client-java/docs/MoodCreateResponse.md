@@ -5,15 +5,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **created** | **String** |  |  [optional]
-**author** | [**PagedRatedResponsePostAuthor**](PagedRatedResponsePostAuthor.md) |  |  [optional]
+**author** | [**MoodPagedListReadPublicResponseAuthor**](MoodPagedListReadPublicResponseAuthor.md) |  |  [optional]
 **latitude** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **description** | **String** |  |  [optional]
 **aspectRatio** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **title** | **String** |  |  [optional]
-**posts** | [**List&lt;MoodCreateResponsePosts&gt;**](MoodCreateResponsePosts.md) |  |  [optional]
+**posts** | [**List&lt;MoodPagedListReadPublicResponsePosts&gt;**](MoodPagedListReadPublicResponsePosts.md) |  |  [optional]
 **content** | **String** |  |  [optional]
 **stakeToAccess** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
-**tags** | [**List&lt;PagedRatedResponsePostTags&gt;**](PagedRatedResponsePostTags.md) |  |  [optional]
+**tags** | [**List&lt;MoodPagedListReadPublicResponseTags&gt;**](MoodPagedListReadPublicResponseTags.md) |  |  [optional]
 **contentUrl** | **String** |  |  [optional]
 **postsCount** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **blurHash** | **String** |  |  [optional]

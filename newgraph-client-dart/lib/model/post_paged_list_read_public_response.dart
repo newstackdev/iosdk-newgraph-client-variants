@@ -2,7 +2,7 @@ part of swagger.api;
 
 class PostPagedListReadPublicResponse {
   
-  List<PostPagedListReadPublicResponseValue> value = [];
+  List<MoodPagedListReadPublicResponsePosts> value = [];
   
 
   bool done = null;
@@ -17,7 +17,7 @@ class PostPagedListReadPublicResponse {
   PostPagedListReadPublicResponse.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     value =
-      PostPagedListReadPublicResponseValue.listFromJson(json['value'])
+      MoodPagedListReadPublicResponsePosts.listFromJson(json['value'])
 ;
     done =
         json['done']

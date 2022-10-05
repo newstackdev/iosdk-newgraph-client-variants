@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **summary** | **String** |  | [optional] 
 **proposer** | **String** |  | [optional] 
 **vote_start** | **String** |  | [optional] 
-**more** | **Object** |  | [optional] 
+**more** | **BOOLEAN** |  | [optional] 
 **next_key** | **String** |  | [optional] 
 **vote_end** | **String** |  | [optional] 
 **id** | **Float** |  | [optional] 

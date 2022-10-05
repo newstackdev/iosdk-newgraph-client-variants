@@ -2,7 +2,7 @@ part of swagger.api;
 
 class BcListDaoProposalsResponse {
   
-  Object more = null;
+  bool more = null;
   
 
   String daoId = null;
@@ -23,10 +23,8 @@ class BcListDaoProposalsResponse {
   BcListDaoProposalsResponse.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     more =
-      
-      
-      new Object.fromJson(json['more'])
-;
+        json['more']
+    ;
     daoId =
         json['dao_id']
     ;

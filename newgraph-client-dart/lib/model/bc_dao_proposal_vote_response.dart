@@ -5,7 +5,7 @@ class BcDaoProposalVoteResponse {
   String daoId = null;
   
 
-  Object more = null;
+  bool more = null;
   
 
   String nextKey = null;
@@ -26,10 +26,8 @@ class BcDaoProposalVoteResponse {
         json['daoId']
     ;
     more =
-      
-      
-      new Object.fromJson(json['more'])
-;
+        json['more']
+    ;
     nextKey =
         json['next_key']
     ;

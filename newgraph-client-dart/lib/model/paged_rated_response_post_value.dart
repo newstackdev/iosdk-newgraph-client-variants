@@ -11,13 +11,13 @@ class PagedRatedResponsePostValue {
   String created = null;
   
 
-  PagedRatedResponsePostAuthor author = null;
+  MoodPagedListReadPublicResponseAuthor author = null;
   
 
   num latitude = null;
   
 
-  List<PagedRatedResponsePostMoods> moods = [];
+  List<MoodPagedListReadPublicResponseMoods> moods = [];
   
 
   PagedRatedResponseUserRating rating = null;
@@ -35,7 +35,7 @@ class PagedRatedResponsePostValue {
   String content = null;
   
 
-  List<PagedRatedResponsePostTags> tags = [];
+  List<MoodPagedListReadPublicResponseTags> tags = [];
   
 
   String license = null;
@@ -53,7 +53,7 @@ class PagedRatedResponsePostValue {
   String id = null;
   
 
-  String consentEmail = null;
+  String embed = null;
   
 
   String updated = null;
@@ -68,7 +68,7 @@ class PagedRatedResponsePostValue {
 
   @override
   String toString() {
-    return 'PagedRatedResponsePostValue[coverContentUrl=$coverContentUrl, moodId=$moodId, created=$created, author=$author, latitude=$latitude, moods=$moods, rating=$rating, description=$description, aspectRatio=$aspectRatio, title=$title, content=$content, tags=$tags, license=$license, contentUrl=$contentUrl, blurHash=$blurHash, newcoinMintTx=$newcoinMintTx, id=$id, consentEmail=$consentEmail, updated=$updated, contentType=$contentType, longitude=$longitude, ]';
+    return 'PagedRatedResponsePostValue[coverContentUrl=$coverContentUrl, moodId=$moodId, created=$created, author=$author, latitude=$latitude, moods=$moods, rating=$rating, description=$description, aspectRatio=$aspectRatio, title=$title, content=$content, tags=$tags, license=$license, contentUrl=$contentUrl, blurHash=$blurHash, newcoinMintTx=$newcoinMintTx, id=$id, embed=$embed, updated=$updated, contentType=$contentType, longitude=$longitude, ]';
   }
 
   PagedRatedResponsePostValue.fromJson(Map<String, dynamic> json) {
@@ -85,13 +85,13 @@ class PagedRatedResponsePostValue {
     author =
       
       
-      new PagedRatedResponsePostAuthor.fromJson(json['author'])
+      new MoodPagedListReadPublicResponseAuthor.fromJson(json['author'])
 ;
     latitude =
         json['latitude']
     ;
     moods =
-      PagedRatedResponsePostMoods.listFromJson(json['moods'])
+      MoodPagedListReadPublicResponseMoods.listFromJson(json['moods'])
 ;
     rating =
       
@@ -111,7 +111,7 @@ class PagedRatedResponsePostValue {
         json['content']
     ;
     tags =
-      PagedRatedResponsePostTags.listFromJson(json['tags'])
+      MoodPagedListReadPublicResponseTags.listFromJson(json['tags'])
 ;
     license =
         json['license']
@@ -128,8 +128,8 @@ class PagedRatedResponsePostValue {
     id =
         json['id']
     ;
-    consentEmail =
-        json['consentEmail']
+    embed =
+        json['embed']
     ;
     updated =
         json['updated']
@@ -161,7 +161,7 @@ class PagedRatedResponsePostValue {
       'blurHash': blurHash,
       'newcoinMintTx': newcoinMintTx,
       'id': id,
-      'consentEmail': consentEmail,
+      'embed': embed,
       'updated': updated,
       'contentType': contentType,
       'longitude': longitude

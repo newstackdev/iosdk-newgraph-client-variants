@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@newstackdev/iosdk-newgraph-client-js": "^1.0.0"
+  }
+}

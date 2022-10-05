@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **summary** | **string** |  | [optional] 
 **proposer** | **string** |  | [optional] 
 **vote_start** | **string** |  | [optional] 
-**more** | **object** |  | [optional] 
+**more** | **bool** |  | [optional] 
 **next_key** | **string** |  | [optional] 
 **vote_end** | **string** |  | [optional] 
 **id** | **float** |  | [optional] 

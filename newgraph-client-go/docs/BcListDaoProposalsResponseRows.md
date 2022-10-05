@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Summary** | **string** |  | [optional] [default to null]
 **Proposer** | **string** |  | [optional] [default to null]
 **VoteStart** | **string** |  | [optional] [default to null]
-**More** | **interface{}** |  | [optional] [default to null]
+**More** | **bool** |  | [optional] [default to null]
 **NextKey** | **string** |  | [optional] [default to null]
 **VoteEnd** | **string** |  | [optional] [default to null]
 **Id** | **float32** |  | [optional] [default to null]

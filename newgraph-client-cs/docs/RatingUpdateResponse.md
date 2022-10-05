@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Created** | **string** |  | [optional] 
+**TxIDMintAsset** | **string** |  | [optional] 
 **Value** | **decimal?** |  | [optional] 
 **Updated** | **string** |  | [optional] 
 

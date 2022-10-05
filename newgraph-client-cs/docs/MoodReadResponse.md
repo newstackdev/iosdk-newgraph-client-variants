@@ -4,15 +4,15 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Created** | **string** |  | [optional] 
-**Author** | [**PagedRatedResponsePostAuthor**](PagedRatedResponsePostAuthor.md) |  | [optional] 
+**Author** | [**MoodPagedListReadPublicResponseAuthor**](MoodPagedListReadPublicResponseAuthor.md) |  | [optional] 
 **Latitude** | **decimal?** |  | [optional] 
 **Description** | **string** |  | [optional] 
 **AspectRatio** | **decimal?** |  | [optional] 
 **Title** | **string** |  | [optional] 
-**Posts** | [**List&lt;MoodCreateResponsePosts&gt;**](MoodCreateResponsePosts.md) |  | [optional] 
+**Posts** | [**List&lt;MoodPagedListReadPublicResponsePosts&gt;**](MoodPagedListReadPublicResponsePosts.md) |  | [optional] 
 **Content** | **string** |  | [optional] 
 **StakeToAccess** | **decimal?** |  | [optional] 
-**Tags** | [**List&lt;PagedRatedResponsePostTags&gt;**](PagedRatedResponsePostTags.md) |  | [optional] 
+**Tags** | [**List&lt;MoodPagedListReadPublicResponseTags&gt;**](MoodPagedListReadPublicResponseTags.md) |  | [optional] 
 **ContentUrl** | **string** |  | [optional] 
 **PostsCount** | **decimal?** |  | [optional] 
 **BlurHash** | **string** |  | [optional] 

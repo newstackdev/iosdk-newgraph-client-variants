@@ -11,7 +11,7 @@ class BcListDaoProposalsResponseRows {
   String voteStart = null;
   
 
-  Object more = null;
+  bool more = null;
   
 
   String nextKey = null;
@@ -56,10 +56,8 @@ class BcListDaoProposalsResponseRows {
         json['vote_start']
     ;
     more =
-      
-      
-      new Object.fromJson(json['more'])
-;
+        json['more']
+    ;
     nextKey =
         json['next_key']
     ;

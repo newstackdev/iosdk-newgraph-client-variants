@@ -34,6 +34,6 @@ Name | Type | Description | Notes
 **discord** | **String** |  | [optional] 
 **phone** | **String** |  | 
 **consent_email** | **String** |  | [optional] 
-**username** | **String** |  | 
+**username** | **String** |  | [optional] 
 
 

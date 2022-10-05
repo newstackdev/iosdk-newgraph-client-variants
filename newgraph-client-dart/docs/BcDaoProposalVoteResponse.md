@@ -9,7 +9,7 @@ import 'package:swagger/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **daoId** | **String** |  | [optional] [default to null]
-**more** | [**Object**](Object.md) |  | [optional] [default to null]
+**more** | **bool** |  | [optional] [default to null]
 **nextKey** | **String** |  | [optional] [default to null]
 **rows** | [**List&lt;BcDaoProposalVoteResponseRows&gt;**](BcDaoProposalVoteResponseRows.md) |  | [optional] [default to []]
 

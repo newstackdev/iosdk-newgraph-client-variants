@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **summary** | **String** |  |  [optional]
 **proposer** | **String** |  |  [optional]
 **voteStart** | **String** |  |  [optional]
-**more** | **Object** |  |  [optional]
+**more** | **Boolean** |  |  [optional]
 **nextKey** | **String** |  |  [optional]
 **voteEnd** | **String** |  |  [optional]
 **id** | [**BigDecimal**](BigDecimal.md) |  |  [optional]

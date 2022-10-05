@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **proposalId** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **daoId** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **id** | **String** |  |  [optional]
+**lockEndDate** | **String** |  |  [optional]
 
 
 

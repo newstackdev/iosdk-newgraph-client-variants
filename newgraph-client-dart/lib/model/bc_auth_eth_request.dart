@@ -2,60 +2,32 @@ part of swagger.api;
 
 class BcAuthEthRequest {
   
-  String nftIndex = null;
+  String encryptedPayload = null;
   
 
-  String collectionAddress = null;
-  
-
-  String address = null;
-  
-
-  String signature = null;
-  
-
-  String nonce = null;
-  
-
-  String timestamp = null;
+  String payload = null;
   
   BcAuthEthRequest();
 
   @override
   String toString() {
-    return 'BcAuthEthRequest[nftIndex=$nftIndex, collectionAddress=$collectionAddress, address=$address, signature=$signature, nonce=$nonce, timestamp=$timestamp, ]';
+    return 'BcAuthEthRequest[encryptedPayload=$encryptedPayload, payload=$payload, ]';
   }
 
   BcAuthEthRequest.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
-    nftIndex =
-        json['nftIndex']
+    encryptedPayload =
+        json['encryptedPayload']
     ;
-    collectionAddress =
-        json['collectionAddress']
-    ;
-    address =
-        json['address']
-    ;
-    signature =
-        json['signature']
-    ;
-    nonce =
-        json['nonce']
-    ;
-    timestamp =
-        json['timestamp']
+    payload =
+        json['payload']
     ;
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'nftIndex': nftIndex,
-      'collectionAddress': collectionAddress,
-      'address': address,
-      'signature': signature,
-      'nonce': nonce,
-      'timestamp': timestamp
+      'encryptedPayload': encryptedPayload,
+      'payload': payload
      };
   }
 

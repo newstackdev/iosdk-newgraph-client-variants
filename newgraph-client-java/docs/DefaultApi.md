@@ -1,6 +1,6 @@
 # DefaultApi
 
-All URIs are relative to *https://api-eu-dev.newlife.io/creator*
+All URIs are relative to *https://api-eu-dev.newgra.ph/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -104,6 +104,12 @@ Method | HTTP request | Description
 [**postUtilsRemoteMetaProxyOptions**](DefaultApi.md#postUtilsRemoteMetaProxyOptions) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**searchCreativeGet**](DefaultApi.md#searchCreativeGet) | **GET** /search/creative | 
 [**searchCreativeOptions**](DefaultApi.md#searchCreativeOptions) | **OPTIONS** /search/creative | 
+[**testUtilsUserConfigureImportedOptions**](DefaultApi.md#testUtilsUserConfigureImportedOptions) | **OPTIONS** /test-utils/user/configure/imported | 
+[**testUtilsUserConfigureImportedPost**](DefaultApi.md#testUtilsUserConfigureImportedPost) | **POST** /test-utils/user/configure/imported | 
+[**testUtilsUserConfigureImportedWhitelistedOptions**](DefaultApi.md#testUtilsUserConfigureImportedWhitelistedOptions) | **OPTIONS** /test-utils/user/configure/imported-whitelisted | 
+[**testUtilsUserConfigureImportedWhitelistedPost**](DefaultApi.md#testUtilsUserConfigureImportedWhitelistedPost) | **POST** /test-utils/user/configure/imported-whitelisted | 
+[**testUtilsUserConfigureInvitedOptions**](DefaultApi.md#testUtilsUserConfigureInvitedOptions) | **OPTIONS** /test-utils/user/configure/invited | 
+[**testUtilsUserConfigureInvitedPost**](DefaultApi.md#testUtilsUserConfigureInvitedPost) | **POST** /test-utils/user/configure/invited | 
 [**uploadNodeOptions**](DefaultApi.md#uploadNodeOptions) | **OPTIONS** /upload/node | 
 [**uploadNodePost**](DefaultApi.md#uploadNodePost) | **POST** /upload/node | 
 [**userActivityStreamGet**](DefaultApi.md#userActivityStreamGet) | **GET** /user/activityStream | 
@@ -114,8 +120,14 @@ Method | HTTP request | Description
 [**userCurrentOptions**](DefaultApi.md#userCurrentOptions) | **OPTIONS** /user/current | 
 [**userDelete**](DefaultApi.md#userDelete) | **DELETE** /user | 
 [**userGet**](DefaultApi.md#userGet) | **GET** /user | 
+[**userInviteHashGet**](DefaultApi.md#userInviteHashGet) | **GET** /user/invite/hash | 
+[**userInviteHashOptions**](DefaultApi.md#userInviteHashOptions) | **OPTIONS** /user/invite/hash | 
 [**userInviteOptions**](DefaultApi.md#userInviteOptions) | **OPTIONS** /user/invite | 
 [**userInvitePost**](DefaultApi.md#userInvitePost) | **POST** /user/invite | 
+[**userInviteesGet**](DefaultApi.md#userInviteesGet) | **GET** /user/invitees | 
+[**userInviteesOptions**](DefaultApi.md#userInviteesOptions) | **OPTIONS** /user/invitees | 
+[**userInvitorGet**](DefaultApi.md#userInvitorGet) | **GET** /user/invitor | 
+[**userInvitorOptions**](DefaultApi.md#userInvitorOptions) | **OPTIONS** /user/invitor | 
 [**userListSearchGet**](DefaultApi.md#userListSearchGet) | **GET** /user/list/search | 
 [**userListSearchOptions**](DefaultApi.md#userListSearchOptions) | **OPTIONS** /user/list/search | 
 [**userListTopGet**](DefaultApi.md#userListTopGet) | **GET** /user/list/top | 
@@ -137,6 +149,8 @@ Method | HTTP request | Description
 [**userStakePost**](DefaultApi.md#userStakePost) | **POST** /user/stake | 
 [**userSyncContactsOptions**](DefaultApi.md#userSyncContactsOptions) | **OPTIONS** /user/syncContacts | 
 [**userSyncContactsPost**](DefaultApi.md#userSyncContactsPost) | **POST** /user/syncContacts | 
+[**userTransferOptions**](DefaultApi.md#userTransferOptions) | **OPTIONS** /user/transfer | 
+[**userTransferPost**](DefaultApi.md#userTransferPost) | **POST** /user/transfer | 
 [**userUploadOptions**](DefaultApi.md#userUploadOptions) | **OPTIONS** /user/upload | 
 [**userUploadPost**](DefaultApi.md#userUploadPost) | **POST** /user/upload | 
 [**userUserRateOptions**](DefaultApi.md#userUserRateOptions) | **OPTIONS** /user/userRate | 
@@ -313,7 +327,7 @@ No authorization required
 
 <a name="folderGet"></a>
 # **folderGet**
-> MoodReadResponse folderGet(id)
+> MoodReadResponse folderGet(id, page)
 
 
 
@@ -328,16 +342,17 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
+String page = "page_example"; // String | 
 try {
-    MoodReadResponse result = apiInstance.folderGet(id);
+    MoodReadResponse result = apiInstance.folderGet(id, page);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling DefaultApi#folderGet");
@@ -350,6 +365,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | [optional]
+ **page** | **String**|  | [optional]
 
 ### Return type
 
@@ -357,7 +373,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -419,11 +435,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: lambdaAuthorizer
+ApiKeyAuth lambdaAuthorizer = (ApiKeyAuth) defaultClient.getAuthentication("lambdaAuthorizer");
+lambdaAuthorizer.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//lambdaAuthorizer.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 try {
@@ -443,7 +459,7 @@ null (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[lambdaAuthorizer](../README.md#lambdaAuthorizer)
 
 ### HTTP request headers
 
@@ -619,11 +635,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 MoodAttachRequest moodAttachRequest = new MoodAttachRequest(); // MoodAttachRequest | 
@@ -648,7 +664,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -657,7 +673,7 @@ Name | Type | Description  | Notes
 
 <a name="moodGet"></a>
 # **moodGet**
-> MoodReadResponse moodGet(id)
+> MoodReadResponse moodGet(id, page)
 
 
 
@@ -672,16 +688,17 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
+String page = "page_example"; // String | 
 try {
-    MoodReadResponse result = apiInstance.moodGet(id);
+    MoodReadResponse result = apiInstance.moodGet(id, page);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling DefaultApi#moodGet");
@@ -694,6 +711,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | [optional]
+ **page** | **String**|  | [optional]
 
 ### Return type
 
@@ -701,7 +719,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -725,11 +743,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String direction = "direction_example"; // String | 
@@ -760,7 +778,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -860,11 +878,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 MoodCreateRequest moodCreateRequest = new MoodCreateRequest(); // MoodCreateRequest | 
@@ -889,7 +907,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -913,11 +931,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
@@ -944,7 +962,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1006,11 +1024,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 MoodUpdateRequest moodUpdateRequest = new MoodUpdateRequest(); // MoodUpdateRequest | 
@@ -1035,7 +1053,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1097,11 +1115,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 RatingUpdateRequest ratingUpdateRequest = new RatingUpdateRequest(); // RatingUpdateRequest | 
@@ -1126,7 +1144,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1188,11 +1206,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UploadRequestGeneric uploadRequestGeneric = new UploadRequestGeneric(); // UploadRequestGeneric | 
@@ -1217,7 +1235,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1279,11 +1297,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcAccCreateRequest bcAccCreateRequest = new BcAccCreateRequest(); // BcAccCreateRequest | 
@@ -1308,7 +1326,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1451,11 +1469,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcCollectionCreateRequest bcCollectionCreateRequest = new BcCollectionCreateRequest(); // BcCollectionCreateRequest | 
@@ -1480,7 +1498,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1542,11 +1560,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcGetAccountInfo bcGetAccountInfo = new BcGetAccountInfo(); // BcGetAccountInfo | 
@@ -1571,7 +1589,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1633,11 +1651,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcGetPoolInfo bcGetPoolInfo = new BcGetPoolInfo(); // BcGetPoolInfo | 
@@ -1662,7 +1680,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1724,11 +1742,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcKeyPairCreateRequest bcKeyPairCreateRequest = new BcKeyPairCreateRequest(); // BcKeyPairCreateRequest | 
@@ -1753,7 +1771,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1815,11 +1833,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcStakeMainDAORequest bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
@@ -1844,7 +1862,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1906,11 +1924,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcStakePoolRequest bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
@@ -1935,7 +1953,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1997,11 +2015,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcStakeMainDAORequest bcStakeMainDAORequest = new BcStakeMainDAORequest(); // BcStakeMainDAORequest | 
@@ -2026,7 +2044,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2088,11 +2106,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcMintAssetRequest bcMintAssetRequest = new BcMintAssetRequest(); // BcMintAssetRequest | 
@@ -2117,7 +2135,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2179,11 +2197,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcPoolCreateRequest bcPoolCreateRequest = new BcPoolCreateRequest(); // BcPoolCreateRequest | 
@@ -2208,7 +2226,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2270,11 +2288,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcStakePoolRequest bcStakePoolRequest = new BcStakePoolRequest(); // BcStakePoolRequest | 
@@ -2299,7 +2317,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2361,11 +2379,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcCreateDaoRequest bcCreateDaoRequest = new BcCreateDaoRequest(); // BcCreateDaoRequest | 
@@ -2390,7 +2408,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2452,11 +2470,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcApproveDaoProposalRequest bcApproveDaoProposalRequest = new BcApproveDaoProposalRequest(); // BcApproveDaoProposalRequest | 
@@ -2480,7 +2498,7 @@ null (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2542,11 +2560,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
@@ -2571,7 +2589,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2595,11 +2613,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String reverse = "reverse_example"; // String | 
@@ -2638,7 +2656,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2738,11 +2756,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcCreateDaoProposal bcCreateDaoProposal = new BcCreateDaoProposal(); // BcCreateDaoProposal | 
@@ -2766,7 +2784,7 @@ null (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2828,11 +2846,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcDaoProposalVoteRequest bcDaoProposalVoteRequest = new BcDaoProposalVoteRequest(); // BcDaoProposalVoteRequest | 
@@ -2857,7 +2875,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2866,7 +2884,7 @@ Name | Type | Description  | Notes
 
 <a name="newcoinDaoProposalVotesGet"></a>
 # **newcoinDaoProposalVotesGet**
-> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId)
+> BcDaoProposalVoteResponse newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound)
 
 
 
@@ -2881,11 +2899,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String reverse = "reverse_example"; // String | 
@@ -2893,9 +2911,8 @@ String limit = "limit_example"; // String |
 String upperBound = "upperBound_example"; // String | 
 String voter = "voter_example"; // String | 
 String lowerBound = "lowerBound_example"; // String | 
-String voteId = "voteId_example"; // String | 
 try {
-    BcDaoProposalVoteResponse result = apiInstance.newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound, voteId);
+    BcDaoProposalVoteResponse result = apiInstance.newcoinDaoProposalVotesGet(reverse, limit, upperBound, voter, lowerBound);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling DefaultApi#newcoinDaoProposalVotesGet");
@@ -2912,7 +2929,6 @@ Name | Type | Description  | Notes
  **upperBound** | **String**|  | [optional]
  **voter** | **String**|  | [optional]
  **lowerBound** | **String**|  | [optional]
- **voteId** | **String**|  | [optional]
 
 ### Return type
 
@@ -2920,7 +2936,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3020,11 +3036,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcApproveDaoProposalRequest bcApproveDaoProposalRequest = new BcApproveDaoProposalRequest(); // BcApproveDaoProposalRequest | 
@@ -3048,7 +3064,7 @@ null (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3110,11 +3126,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcDaoProposalExecuteRequest bcDaoProposalExecuteRequest = new BcDaoProposalExecuteRequest(); // BcDaoProposalExecuteRequest | 
@@ -3139,7 +3155,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3163,11 +3179,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String reverse = "reverse_example"; // String | 
@@ -3206,7 +3222,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3306,11 +3322,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcCreateWhitelistDaoProposal bcCreateWhitelistDaoProposal = new BcCreateWhitelistDaoProposal(); // BcCreateWhitelistDaoProposal | 
@@ -3334,7 +3350,7 @@ null (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3358,11 +3374,11 @@ null (empty response body)
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String reverse = "reverse_example"; // String | 
@@ -3397,7 +3413,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3497,11 +3513,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 BcDaoWidthdrawVoteDepositRequest bcDaoWidthdrawVoteDepositRequest = new BcDaoWidthdrawVoteDepositRequest(); // BcDaoWidthdrawVoteDepositRequest | 
@@ -3526,7 +3542,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3588,11 +3604,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 PaymentStripePaymentIntentCreateRequest paymentStripePaymentIntentCreateRequest = new PaymentStripePaymentIntentCreateRequest(); // PaymentStripePaymentIntentCreateRequest | 
@@ -3617,7 +3633,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3679,11 +3695,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 try {
@@ -3703,7 +3719,7 @@ null (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3807,11 +3823,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
@@ -3836,7 +3852,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3860,11 +3876,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String direction = "direction_example"; // String | 
@@ -3897,7 +3913,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3959,11 +3975,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String direction = "direction_example"; // String | 
@@ -3996,7 +4012,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4058,11 +4074,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String direction = "direction_example"; // String | 
@@ -4093,7 +4109,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4193,11 +4209,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 PostCreateRequest postCreateRequest = new PostCreateRequest(); // PostCreateRequest | 
@@ -4222,7 +4238,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4246,11 +4262,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 PostUpdateRequest postUpdateRequest = new PostUpdateRequest(); // PostUpdateRequest | 
@@ -4275,7 +4291,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4337,11 +4353,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 RatingUpdateRequest ratingUpdateRequest = new RatingUpdateRequest(); // RatingUpdateRequest | 
@@ -4366,7 +4382,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4428,11 +4444,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 ReportUpdateRequest reportUpdateRequest = new ReportUpdateRequest(); // ReportUpdateRequest | 
@@ -4457,7 +4473,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4519,11 +4535,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UploadRequestGeneric uploadRequestGeneric = new UploadRequestGeneric(); // UploadRequestGeneric | 
@@ -4548,7 +4564,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4572,11 +4588,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String url = "url_example"; // String | 
@@ -4601,7 +4617,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4663,11 +4679,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String aesthetics = "aesthetics_example"; // String | 
@@ -4696,7 +4712,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4739,6 +4755,279 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="testUtilsUserConfigureImportedOptions"></a>
+# **testUtilsUserConfigureImportedOptions**
+> testUtilsUserConfigureImportedOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.testUtilsUserConfigureImportedOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#testUtilsUserConfigureImportedOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="testUtilsUserConfigureImportedPost"></a>
+# **testUtilsUserConfigureImportedPost**
+> UserInvitationReadPublicResponse testUtilsUserConfigureImportedPost(configureUserRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+ConfigureUserRequest configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+try {
+    UserInvitationReadPublicResponse result = apiInstance.testUtilsUserConfigureImportedPost(configureUserRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#testUtilsUserConfigureImportedPost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  |
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="testUtilsUserConfigureImportedWhitelistedOptions"></a>
+# **testUtilsUserConfigureImportedWhitelistedOptions**
+> testUtilsUserConfigureImportedWhitelistedOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.testUtilsUserConfigureImportedWhitelistedOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#testUtilsUserConfigureImportedWhitelistedOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="testUtilsUserConfigureImportedWhitelistedPost"></a>
+# **testUtilsUserConfigureImportedWhitelistedPost**
+> UserInvitationReadPublicResponse testUtilsUserConfigureImportedWhitelistedPost(configureUserRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+ConfigureUserRequest configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+try {
+    UserInvitationReadPublicResponse result = apiInstance.testUtilsUserConfigureImportedWhitelistedPost(configureUserRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#testUtilsUserConfigureImportedWhitelistedPost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  |
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="testUtilsUserConfigureInvitedOptions"></a>
+# **testUtilsUserConfigureInvitedOptions**
+> testUtilsUserConfigureInvitedOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.testUtilsUserConfigureInvitedOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#testUtilsUserConfigureInvitedOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="testUtilsUserConfigureInvitedPost"></a>
+# **testUtilsUserConfigureInvitedPost**
+> UserInvitationReadPublicResponse testUtilsUserConfigureInvitedPost(configureUserRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+ConfigureUserRequest configureUserRequest = new ConfigureUserRequest(); // ConfigureUserRequest | 
+try {
+    UserInvitationReadPublicResponse result = apiInstance.testUtilsUserConfigureInvitedPost(configureUserRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#testUtilsUserConfigureInvitedPost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configureUserRequest** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  |
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 <a name="uploadNodeOptions"></a>
@@ -4796,11 +5085,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UploadRequest uploadRequest = new UploadRequest(); // UploadRequest | 
@@ -4825,7 +5114,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4849,11 +5138,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String after = "after_example"; // String | 
@@ -4880,7 +5169,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5023,11 +5312,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 try {
@@ -5048,7 +5337,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5110,11 +5399,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UserDeleteRequest userDeleteRequest = new UserDeleteRequest(); // UserDeleteRequest | 
@@ -5139,7 +5428,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5163,11 +5452,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String username = "username_example"; // String | 
@@ -5194,12 +5483,93 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
+
+<a name="userInviteHashGet"></a>
+# **userInviteHashGet**
+> UserInvitationReadPublicResponse userInviteHashGet(hash)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+String hash = "hash_example"; // String | 
+try {
+    UserInvitationReadPublicResponse result = apiInstance.userInviteHashGet(hash);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userInviteHashGet");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hash** | **String**|  | [optional]
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="userInviteHashOptions"></a>
+# **userInviteHashOptions**
+> userInviteHashOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.userInviteHashOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userInviteHashOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 <a name="userInviteOptions"></a>
 # **userInviteOptions**
@@ -5241,7 +5611,7 @@ No authorization required
 
 <a name="userInvitePost"></a>
 # **userInvitePost**
-> OkResponse userInvitePost(userInviteRequest)
+> UserInvitationReadPublicResponse userInvitePost(userInviteRequest)
 
 
 
@@ -5256,16 +5626,16 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UserInviteRequest userInviteRequest = new UserInviteRequest(); // UserInviteRequest | 
 try {
-    OkResponse result = apiInstance.userInvitePost(userInviteRequest);
+    UserInvitationReadPublicResponse result = apiInstance.userInvitePost(userInviteRequest);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling DefaultApi#userInvitePost");
@@ -5281,15 +5651,209 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OkResponse**](OkResponse.md)
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="userInviteesGet"></a>
+# **userInviteesGet**
+> UserInvitationPagedListReadPublicResponse userInviteesGet(direction, contentType, page, orderBy)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+String direction = "direction_example"; // String | 
+String contentType = "contentType_example"; // String | 
+String page = "page_example"; // String | 
+String orderBy = "orderBy_example"; // String | 
+try {
+    UserInvitationPagedListReadPublicResponse result = apiInstance.userInviteesGet(direction, contentType, page, orderBy);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userInviteesGet");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | [optional]
+ **contentType** | **String**|  | [optional]
+ **page** | **String**|  | [optional]
+ **orderBy** | **String**|  | [optional]
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="userInviteesOptions"></a>
+# **userInviteesOptions**
+> userInviteesOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.userInviteesOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userInviteesOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="userInvitorGet"></a>
+# **userInvitorGet**
+> UserInvitationPagedListReadPublicResponse userInvitorGet(direction, contentType, page, orderBy)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+String direction = "direction_example"; // String | 
+String contentType = "contentType_example"; // String | 
+String page = "page_example"; // String | 
+String orderBy = "orderBy_example"; // String | 
+try {
+    UserInvitationPagedListReadPublicResponse result = apiInstance.userInvitorGet(direction, contentType, page, orderBy);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userInvitorGet");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | [optional]
+ **contentType** | **String**|  | [optional]
+ **page** | **String**|  | [optional]
+ **orderBy** | **String**|  | [optional]
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="userInvitorOptions"></a>
+# **userInvitorOptions**
+> userInvitorOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.userInvitorOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userInvitorOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="userListSearchGet"></a>
@@ -5309,11 +5873,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String direction = "direction_example"; // String | 
@@ -5346,7 +5910,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5408,11 +5972,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String direction = "direction_example"; // String | 
@@ -5443,7 +6007,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5505,11 +6069,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
@@ -5536,7 +6100,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5636,11 +6200,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UserCreateRequest userCreateRequest = new UserCreateRequest(); // UserCreateRequest | 
@@ -5665,7 +6229,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5727,11 +6291,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UserPreRegisterRequest userPreRegisterRequest = new UserPreRegisterRequest(); // UserPreRegisterRequest | 
@@ -5756,7 +6320,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5780,11 +6344,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UserUpdateRequest userUpdateRequest = new UserUpdateRequest(); // UserUpdateRequest | 
@@ -5809,7 +6373,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5833,11 +6397,11 @@ Name | Type | Description  | Notes
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
@@ -5864,7 +6428,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5926,11 +6490,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
@@ -5957,7 +6521,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6019,11 +6583,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 String id = "id_example"; // String | 
@@ -6050,7 +6614,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6150,11 +6714,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UserStakeRequest userStakeRequest = new UserStakeRequest(); // UserStakeRequest | 
@@ -6179,7 +6743,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6241,11 +6805,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 SyncContactsRequest syncContactsRequest = new SyncContactsRequest(); // SyncContactsRequest | 
@@ -6270,7 +6834,98 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+<a name="userTransferOptions"></a>
+# **userTransferOptions**
+> userTransferOptions()
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiException;
+//import io.swagger.client.api.DefaultApi;
+
+
+DefaultApi apiInstance = new DefaultApi();
+try {
+    apiInstance.userTransferOptions();
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userTransferOptions");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="userTransferPost"></a>
+# **userTransferPost**
+> UserReadPrivateResponse userTransferPost(userTransferRequest)
+
+
+
+### Example
+```java
+// Import classes:
+//import io.swagger.client.ApiClient;
+//import io.swagger.client.ApiException;
+//import io.swagger.client.Configuration;
+//import io.swagger.client.auth.*;
+//import io.swagger.client.api.DefaultApi;
+
+ApiClient defaultClient = Configuration.getDefaultApiClient();
+
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
+
+DefaultApi apiInstance = new DefaultApi();
+UserTransferRequest userTransferRequest = new UserTransferRequest(); // UserTransferRequest | 
+try {
+    UserReadPrivateResponse result = apiInstance.userTransferPost(userTransferRequest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling DefaultApi#userTransferPost");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userTransferRequest** | [**UserTransferRequest**](UserTransferRequest.md)|  |
+
+### Return type
+
+[**UserReadPrivateResponse**](UserReadPrivateResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6332,11 +6987,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 UserUploadRequest userUploadRequest = new UserUploadRequest(); // UserUploadRequest | 
@@ -6361,7 +7016,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6423,11 +7078,11 @@ No authorization required
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
-// Configure API key authorization: newlife-creator-api-eu-dev
-ApiKeyAuth newlife-creator-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newlife-creator-api-eu-dev");
-newlife-creator-api-eu-dev.setApiKey("YOUR API KEY");
+// Configure API key authorization: newgraph-api-eu-dev
+ApiKeyAuth newgraph-api-eu-dev = (ApiKeyAuth) defaultClient.getAuthentication("newgraph-api-eu-dev");
+newgraph-api-eu-dev.setApiKey("YOUR API KEY");
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//newlife-creator-api-eu-dev.setApiKeyPrefix("Token");
+//newgraph-api-eu-dev.setApiKeyPrefix("Token");
 
 DefaultApi apiInstance = new DefaultApi();
 RatingUpdateRequest ratingUpdateRequest = new RatingUpdateRequest(); // RatingUpdateRequest | 
@@ -6452,7 +7107,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 

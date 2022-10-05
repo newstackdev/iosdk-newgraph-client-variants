@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **summary** | **String** |  | [optional] [default to null]
 **proposer** | **String** |  | [optional] [default to null]
 **voteStart** | **String** |  | [optional] [default to null]
-**more** | [**Object**](Object.md) |  | [optional] [default to null]
+**more** | **bool** |  | [optional] [default to null]
 **nextKey** | **String** |  | [optional] [default to null]
 **voteEnd** | **String** |  | [optional] [default to null]
 **id** | **num** |  | [optional] [default to null]

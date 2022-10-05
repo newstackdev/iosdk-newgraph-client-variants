@@ -11,13 +11,13 @@ class PostCreateResponse {
   String created = null;
   
 
-  PostCreateResponseAuthor author = null;
+  MoodPagedListReadPublicResponseAuthor author = null;
   
 
   num latitude = null;
   
 
-  List<PostCreateResponseMoods> moods = [];
+  List<MoodPagedListReadPublicResponseMoods> moods = [];
   
 
   String description = null;
@@ -82,13 +82,13 @@ class PostCreateResponse {
     author =
       
       
-      new PostCreateResponseAuthor.fromJson(json['author'])
+      new MoodPagedListReadPublicResponseAuthor.fromJson(json['author'])
 ;
     latitude =
         json['latitude']
     ;
     moods =
-      PostCreateResponseMoods.listFromJson(json['moods'])
+      MoodPagedListReadPublicResponseMoods.listFromJson(json['moods'])
 ;
     description =
         json['description']

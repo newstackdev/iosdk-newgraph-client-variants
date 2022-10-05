@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **summary** | **String** |  | [optional] [default to null]
 **proposer** | **String** |  | [optional] [default to null]
 **vote_start** | **String** |  | [optional] [default to null]
-**more** | [***Value**](Value.md) |  | [optional] [default to null]
+**more** | **bool** |  | [optional] [default to null]
 **next_key** | **String** |  | [optional] [default to null]
 **vote_end** | **String** |  | [optional] [default to null]
 **id** | **f32** |  | [optional] [default to null]

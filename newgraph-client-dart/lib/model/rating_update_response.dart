@@ -5,6 +5,9 @@ class RatingUpdateResponse {
   String created = null;
   
 
+  String txIDMintAsset = null;
+  
+
   num value = null;
    // range from 0 to 100//
 
@@ -14,13 +17,16 @@ class RatingUpdateResponse {
 
   @override
   String toString() {
-    return 'RatingUpdateResponse[created=$created, value=$value, updated=$updated, ]';
+    return 'RatingUpdateResponse[created=$created, txIDMintAsset=$txIDMintAsset, value=$value, updated=$updated, ]';
   }
 
   RatingUpdateResponse.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     created =
         json['created']
+    ;
+    txIDMintAsset =
+        json['TxID_mintAsset']
     ;
     value =
         json['value']
@@ -33,6 +39,7 @@ class RatingUpdateResponse {
   Map<String, dynamic> toJson() {
     return {
       'created': created,
+      'TxID_mintAsset': txIDMintAsset,
       'value': value,
       'updated': updated
      };

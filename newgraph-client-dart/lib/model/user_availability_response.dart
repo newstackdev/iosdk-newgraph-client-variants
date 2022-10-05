@@ -2,17 +2,23 @@ part of swagger.api;
 
 class UserAvailabilityResponse {
   
+  String offer = null;
+  
+
   bool available = null;
   
   UserAvailabilityResponse();
 
   @override
   String toString() {
-    return 'UserAvailabilityResponse[available=$available, ]';
+    return 'UserAvailabilityResponse[offer=$offer, available=$available, ]';
   }
 
   UserAvailabilityResponse.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
+    offer =
+        json['offer']
+    ;
     available =
         json['available']
     ;
@@ -20,6 +26,7 @@ class UserAvailabilityResponse {
 
   Map<String, dynamic> toJson() {
     return {
+      'offer': offer,
       'available': available
      };
   }

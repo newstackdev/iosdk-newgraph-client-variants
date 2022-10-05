@@ -8,7 +8,7 @@ import 'package:swagger/api.dart';
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**more** | [**Object**](Object.md) |  | [optional] [default to null]
+**more** | **bool** |  | [optional] [default to null]
 **daoId** | **String** |  | [optional] [default to null]
 **nextKey** | **String** |  | [optional] [default to null]
 **rows** | [**List&lt;BcListDaoProposalsResponseRows&gt;**](BcListDaoProposalsResponseRows.md) |  | [optional] [default to []]

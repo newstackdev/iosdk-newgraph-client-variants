@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**done** | **Object** |  |  [optional]
+**done** | **Boolean** |  |  [optional]
 **value** | [**List&lt;PostTagsSearchPublicResponseValue&gt;**](PostTagsSearchPublicResponseValue.md) |  |  [optional]
 
 

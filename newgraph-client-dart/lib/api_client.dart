@@ -18,9 +18,10 @@ class ApiClient {
   final _RegList = new RegExp(r'^List<(.*)>$');
   final _RegMap = new RegExp(r'^Map<String,(.*)>$');
 
-  ApiClient({this.basePath: "https://api-eu-dev.newlife.io/creator"}) {
+  ApiClient({this.basePath: "https://api-eu-dev.newgra.ph/v1"}) {
     // Setup authentications (key: authentication name, value: authentication).
-    _authentications['newlife-creator-api-eu-dev'] = new ApiKeyAuth("header", "Authorization");
+    _authentications['lambdaAuthorizer'] = new ApiKeyAuth("header", "Authorization");
+    _authentications['newgraph-api-eu-dev'] = new ApiKeyAuth("header", "Authorization");
   }
 
   void addDefaultHeader(String key, String value) {
@@ -104,6 +105,8 @@ class ApiClient {
           return new BcStakePoolRequest.fromJson(value);
         case 'BcTxResponse':
           return new BcTxResponse.fromJson(value);
+        case 'ConfigureUserRequest':
+          return new ConfigureUserRequest.fromJson(value);
         case 'CreativeSearchResponse':
           return new CreativeSearchResponse.fromJson(value);
         case 'CreativeSearchResponseHits':
@@ -120,8 +123,6 @@ class ApiClient {
           return new MoodCreateRequest.fromJson(value);
         case 'MoodCreateResponse':
           return new MoodCreateResponse.fromJson(value);
-        case 'MoodCreateResponsePosts':
-          return new MoodCreateResponsePosts.fromJson(value);
         case 'MoodListAttachedPostsResponse':
           return new MoodListAttachedPostsResponse.fromJson(value);
         case 'MoodPagedListReadPublicResponse':
@@ -146,14 +147,6 @@ class ApiClient {
           return new OkResponse.fromJson(value);
         case 'PagedRatedResponsePost':
           return new PagedRatedResponsePost.fromJson(value);
-        case 'PagedRatedResponsePostAuthor':
-          return new PagedRatedResponsePostAuthor.fromJson(value);
-        case 'PagedRatedResponsePostMoods':
-          return new PagedRatedResponsePostMoods.fromJson(value);
-        case 'PagedRatedResponsePostRel':
-          return new PagedRatedResponsePostRel.fromJson(value);
-        case 'PagedRatedResponsePostTags':
-          return new PagedRatedResponsePostTags.fromJson(value);
         case 'PagedRatedResponsePostValue':
           return new PagedRatedResponsePostValue.fromJson(value);
         case 'PagedRatedResponseUser':
@@ -176,14 +169,8 @@ class ApiClient {
           return new PostCreateRequest.fromJson(value);
         case 'PostCreateResponse':
           return new PostCreateResponse.fromJson(value);
-        case 'PostCreateResponseAuthor':
-          return new PostCreateResponseAuthor.fromJson(value);
-        case 'PostCreateResponseMoods':
-          return new PostCreateResponseMoods.fromJson(value);
         case 'PostPagedListReadPublicResponse':
           return new PostPagedListReadPublicResponse.fromJson(value);
-        case 'PostPagedListReadPublicResponseValue':
-          return new PostPagedListReadPublicResponseValue.fromJson(value);
         case 'PostReadResponse':
           return new PostReadResponse.fromJson(value);
         case 'PostRemoteMetaProxyResponse':
@@ -224,6 +211,14 @@ class ApiClient {
           return new UserCreateRequest.fromJson(value);
         case 'UserDeleteRequest':
           return new UserDeleteRequest.fromJson(value);
+        case 'UserInvitationPagedListReadPublicResponse':
+          return new UserInvitationPagedListReadPublicResponse.fromJson(value);
+        case 'UserInvitationPagedListReadPublicResponseInvitation':
+          return new UserInvitationPagedListReadPublicResponseInvitation.fromJson(value);
+        case 'UserInvitationPagedListReadPublicResponseValue':
+          return new UserInvitationPagedListReadPublicResponseValue.fromJson(value);
+        case 'UserInvitationReadPublicResponse':
+          return new UserInvitationReadPublicResponse.fromJson(value);
         case 'UserInviteRequest':
           return new UserInviteRequest.fromJson(value);
         case 'UserPagedListReadPublicResponse':
@@ -236,6 +231,8 @@ class ApiClient {
           return new UserReadPublicResponse.fromJson(value);
         case 'UserStakeRequest':
           return new UserStakeRequest.fromJson(value);
+        case 'UserTransferRequest':
+          return new UserTransferRequest.fromJson(value);
         case 'UserUpdateRequest':
           return new UserUpdateRequest.fromJson(value);
         case 'UserUploadRequest':

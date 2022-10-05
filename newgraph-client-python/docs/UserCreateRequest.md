@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **discord** | **str** |  | [optional] 
 **phone** | **str** |  | 
 **consent_email** | **str** |  | [optional] 
-**username** | **str** |  | 
+**username** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

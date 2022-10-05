@@ -1,6 +1,6 @@
 # SwaggerClient::DefaultApi
 
-All URIs are relative to *https://api-eu-dev.newlife.io/creator*
+All URIs are relative to *https://api-eu-dev.newgra.ph/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -104,6 +104,12 @@ Method | HTTP request | Description
 [**post_utils_remote_meta_proxy_options**](DefaultApi.md#post_utils_remote_meta_proxy_options) | **OPTIONS** /post/utils/remote-meta-proxy | 
 [**search_creative_get**](DefaultApi.md#search_creative_get) | **GET** /search/creative | 
 [**search_creative_options**](DefaultApi.md#search_creative_options) | **OPTIONS** /search/creative | 
+[**test_utils_user_configure_imported_options**](DefaultApi.md#test_utils_user_configure_imported_options) | **OPTIONS** /test-utils/user/configure/imported | 
+[**test_utils_user_configure_imported_post**](DefaultApi.md#test_utils_user_configure_imported_post) | **POST** /test-utils/user/configure/imported | 
+[**test_utils_user_configure_imported_whitelisted_options**](DefaultApi.md#test_utils_user_configure_imported_whitelisted_options) | **OPTIONS** /test-utils/user/configure/imported-whitelisted | 
+[**test_utils_user_configure_imported_whitelisted_post**](DefaultApi.md#test_utils_user_configure_imported_whitelisted_post) | **POST** /test-utils/user/configure/imported-whitelisted | 
+[**test_utils_user_configure_invited_options**](DefaultApi.md#test_utils_user_configure_invited_options) | **OPTIONS** /test-utils/user/configure/invited | 
+[**test_utils_user_configure_invited_post**](DefaultApi.md#test_utils_user_configure_invited_post) | **POST** /test-utils/user/configure/invited | 
 [**upload_node_options**](DefaultApi.md#upload_node_options) | **OPTIONS** /upload/node | 
 [**upload_node_post**](DefaultApi.md#upload_node_post) | **POST** /upload/node | 
 [**user_activity_stream_get**](DefaultApi.md#user_activity_stream_get) | **GET** /user/activityStream | 
@@ -114,8 +120,14 @@ Method | HTTP request | Description
 [**user_current_options**](DefaultApi.md#user_current_options) | **OPTIONS** /user/current | 
 [**user_delete**](DefaultApi.md#user_delete) | **DELETE** /user | 
 [**user_get**](DefaultApi.md#user_get) | **GET** /user | 
+[**user_invite_hash_get**](DefaultApi.md#user_invite_hash_get) | **GET** /user/invite/hash | 
+[**user_invite_hash_options**](DefaultApi.md#user_invite_hash_options) | **OPTIONS** /user/invite/hash | 
 [**user_invite_options**](DefaultApi.md#user_invite_options) | **OPTIONS** /user/invite | 
 [**user_invite_post**](DefaultApi.md#user_invite_post) | **POST** /user/invite | 
+[**user_invitees_get**](DefaultApi.md#user_invitees_get) | **GET** /user/invitees | 
+[**user_invitees_options**](DefaultApi.md#user_invitees_options) | **OPTIONS** /user/invitees | 
+[**user_invitor_get**](DefaultApi.md#user_invitor_get) | **GET** /user/invitor | 
+[**user_invitor_options**](DefaultApi.md#user_invitor_options) | **OPTIONS** /user/invitor | 
 [**user_list_search_get**](DefaultApi.md#user_list_search_get) | **GET** /user/list/search | 
 [**user_list_search_options**](DefaultApi.md#user_list_search_options) | **OPTIONS** /user/list/search | 
 [**user_list_top_get**](DefaultApi.md#user_list_top_get) | **GET** /user/list/top | 
@@ -137,6 +149,8 @@ Method | HTTP request | Description
 [**user_stake_post**](DefaultApi.md#user_stake_post) | **POST** /user/stake | 
 [**user_sync_contacts_options**](DefaultApi.md#user_sync_contacts_options) | **OPTIONS** /user/syncContacts | 
 [**user_sync_contacts_post**](DefaultApi.md#user_sync_contacts_post) | **POST** /user/syncContacts | 
+[**user_transfer_options**](DefaultApi.md#user_transfer_options) | **OPTIONS** /user/transfer | 
+[**user_transfer_post**](DefaultApi.md#user_transfer_post) | **POST** /user/transfer | 
 [**user_upload_options**](DefaultApi.md#user_upload_options) | **OPTIONS** /user/upload | 
 [**user_upload_post**](DefaultApi.md#user_upload_post) | **POST** /user/upload | 
 [**user_user_rate_options**](DefaultApi.md#user_user_rate_options) | **OPTIONS** /user/userRate | 
@@ -326,7 +340,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -335,7 +349,8 @@ end
 api_instance = SwaggerClient::DefaultApi.new
 
 opts = { 
-  id: 'id_example' # String | 
+  id: 'id_example', # String | 
+  page: 'page_example' # String | 
 }
 
 begin
@@ -351,6 +366,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
 
 ### Return type
 
@@ -358,7 +374,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -415,7 +431,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: lambdaAuthorizer
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -439,7 +455,7 @@ nil (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[lambdaAuthorizer](../README.md#lambdaAuthorizer)
 
 ### HTTP request headers
 
@@ -607,7 +623,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -638,7 +654,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -658,7 +674,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -667,7 +683,8 @@ end
 api_instance = SwaggerClient::DefaultApi.new
 
 opts = { 
-  id: 'id_example' # String | 
+  id: 'id_example', # String | 
+  page: 'page_example' # String | 
 }
 
 begin
@@ -683,6 +700,7 @@ end
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
 
 ### Return type
 
@@ -690,7 +708,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -710,7 +728,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -748,7 +766,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -842,7 +860,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -873,7 +891,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -893,7 +911,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -927,7 +945,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -984,7 +1002,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1015,7 +1033,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1072,7 +1090,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1103,7 +1121,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1160,7 +1178,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1191,7 +1209,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1248,7 +1266,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1279,7 +1297,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1417,7 +1435,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1448,7 +1466,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1505,7 +1523,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1536,7 +1554,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1593,7 +1611,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1624,7 +1642,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1681,7 +1699,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1712,7 +1730,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1769,7 +1787,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1800,7 +1818,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1857,7 +1875,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1888,7 +1906,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -1945,7 +1963,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -1976,7 +1994,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2033,7 +2051,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2064,7 +2082,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2121,7 +2139,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2152,7 +2170,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2209,7 +2227,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2240,7 +2258,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2297,7 +2315,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2328,7 +2346,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2385,7 +2403,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2415,7 +2433,7 @@ nil (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2472,7 +2490,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2503,7 +2521,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2523,7 +2541,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2569,7 +2587,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2663,7 +2681,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2693,7 +2711,7 @@ nil (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2750,7 +2768,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2781,7 +2799,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2801,7 +2819,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2814,8 +2832,7 @@ opts = {
   limit: 'limit_example', # String | 
   upper_bound: 'upper_bound_example', # String | 
   voter: 'voter_example', # String | 
-  lower_bound: 'lower_bound_example', # String | 
-  vote_id: 'vote_id_example' # String | 
+  lower_bound: 'lower_bound_example' # String | 
 }
 
 begin
@@ -2835,7 +2852,6 @@ Name | Type | Description  | Notes
  **upper_bound** | **String**|  | [optional] 
  **voter** | **String**|  | [optional] 
  **lower_bound** | **String**|  | [optional] 
- **vote_id** | **String**|  | [optional] 
 
 ### Return type
 
@@ -2843,7 +2859,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -2937,7 +2953,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -2967,7 +2983,7 @@ nil (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3024,7 +3040,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3055,7 +3071,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3075,7 +3091,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3121,7 +3137,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3215,7 +3231,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3245,7 +3261,7 @@ nil (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3265,7 +3281,7 @@ nil (empty response body)
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3307,7 +3323,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3401,7 +3417,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3432,7 +3448,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3489,7 +3505,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3520,7 +3536,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3577,7 +3593,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3601,7 +3617,7 @@ nil (empty response body)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3701,7 +3717,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3733,7 +3749,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3753,7 +3769,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3793,7 +3809,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3850,7 +3866,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3890,7 +3906,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -3947,7 +3963,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -3985,7 +4001,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4079,7 +4095,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4110,7 +4126,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4130,7 +4146,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4161,7 +4177,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4218,7 +4234,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4249,7 +4265,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4306,7 +4322,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4337,7 +4353,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4394,7 +4410,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4425,7 +4441,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4445,7 +4461,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4477,7 +4493,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4534,7 +4550,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4570,7 +4586,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4612,6 +4628,270 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **test_utils_user_configure_imported_options**
+> test_utils_user_configure_imported_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.test_utils_user_configure_imported_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->test_utils_user_configure_imported_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **test_utils_user_configure_imported_post**
+> UserInvitationReadPublicResponse test_utils_user_configure_imported_post(configure_user_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newgraph-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+configure_user_request = SwaggerClient::ConfigureUserRequest.new # ConfigureUserRequest | 
+
+
+begin
+  result = api_instance.test_utils_user_configure_imported_post(configure_user_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->test_utils_user_configure_imported_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configure_user_request** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **test_utils_user_configure_imported_whitelisted_options**
+> test_utils_user_configure_imported_whitelisted_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.test_utils_user_configure_imported_whitelisted_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->test_utils_user_configure_imported_whitelisted_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **test_utils_user_configure_imported_whitelisted_post**
+> UserInvitationReadPublicResponse test_utils_user_configure_imported_whitelisted_post(configure_user_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newgraph-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+configure_user_request = SwaggerClient::ConfigureUserRequest.new # ConfigureUserRequest | 
+
+
+begin
+  result = api_instance.test_utils_user_configure_imported_whitelisted_post(configure_user_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->test_utils_user_configure_imported_whitelisted_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configure_user_request** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **test_utils_user_configure_invited_options**
+> test_utils_user_configure_invited_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.test_utils_user_configure_invited_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->test_utils_user_configure_invited_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **test_utils_user_configure_invited_post**
+> UserInvitationReadPublicResponse test_utils_user_configure_invited_post(configure_user_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newgraph-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+configure_user_request = SwaggerClient::ConfigureUserRequest.new # ConfigureUserRequest | 
+
+
+begin
+  result = api_instance.test_utils_user_configure_invited_post(configure_user_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->test_utils_user_configure_invited_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **configure_user_request** | [**ConfigureUserRequest**](ConfigureUserRequest.md)|  | 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json
 
 
@@ -4664,7 +4944,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4695,7 +4975,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4715,7 +4995,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4749,7 +5029,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4888,7 +5168,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -4913,7 +5193,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -4970,7 +5250,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5001,7 +5281,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5021,7 +5301,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5055,12 +5335,94 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
+
+
+
+# **user_invite_hash_get**
+> UserInvitationReadPublicResponse user_invite_hash_get(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+opts = { 
+  hash: 'hash_example' # String | 
+}
+
+begin
+  result = api_instance.user_invite_hash_get(opts)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_invite_hash_get: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **hash** | **String**|  | [optional] 
+
+### Return type
+
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **user_invite_hash_options**
+> user_invite_hash_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.user_invite_hash_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_invite_hash_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 
 
@@ -5102,7 +5464,7 @@ No authorization required
 
 
 # **user_invite_post**
-> OkResponse user_invite_post(user_invite_request)
+> UserInvitationReadPublicResponse user_invite_post(user_invite_request)
 
 
 
@@ -5112,7 +5474,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5139,15 +5501,205 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**OkResponse**](OkResponse.md)
+[**UserInvitationReadPublicResponse**](UserInvitationReadPublicResponse.md)
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **user_invitees_get**
+> UserInvitationPagedListReadPublicResponse user_invitees_get(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newgraph-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+opts = { 
+  direction: 'direction_example', # String | 
+  content_type: 'content_type_example', # String | 
+  page: 'page_example', # String | 
+  order_by: 'order_by_example' # String | 
+}
+
+begin
+  result = api_instance.user_invitees_get(opts)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_invitees_get: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | [optional] 
+ **content_type** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
+ **order_by** | **String**|  | [optional] 
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **user_invitees_options**
+> user_invitees_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.user_invitees_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_invitees_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **user_invitor_get**
+> UserInvitationPagedListReadPublicResponse user_invitor_get(opts)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newgraph-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+opts = { 
+  direction: 'direction_example', # String | 
+  content_type: 'content_type_example', # String | 
+  page: 'page_example', # String | 
+  order_by: 'order_by_example' # String | 
+}
+
+begin
+  result = api_instance.user_invitor_get(opts)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_invitor_get: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **direction** | **String**|  | [optional] 
+ **content_type** | **String**|  | [optional] 
+ **page** | **String**|  | [optional] 
+ **order_by** | **String**|  | [optional] 
+
+### Return type
+
+[**UserInvitationPagedListReadPublicResponse**](UserInvitationPagedListReadPublicResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **user_invitor_options**
+> user_invitor_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.user_invitor_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_invitor_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 
@@ -5163,7 +5715,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5203,7 +5755,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5260,7 +5812,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5298,7 +5850,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5355,7 +5907,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5389,7 +5941,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5483,7 +6035,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5514,7 +6066,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5571,7 +6123,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5602,7 +6154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5622,7 +6174,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5653,7 +6205,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5673,7 +6225,7 @@ Name | Type | Description  | Notes
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5707,7 +6259,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5764,7 +6316,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5798,7 +6350,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5855,7 +6407,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -5889,7 +6441,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -5983,7 +6535,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -6014,7 +6566,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6071,7 +6623,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -6102,7 +6654,95 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded
+ - **Accept**: application/json
+
+
+
+# **user_transfer_options**
+> user_transfer_options
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+
+api_instance = SwaggerClient::DefaultApi.new
+
+begin
+  api_instance.user_transfer_options
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_transfer_options: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+nil (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **user_transfer_post**
+> UserReadPrivateResponse user_transfer_post(user_transfer_request)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'swagger_client'
+# setup authorization
+SwaggerClient.configure do |config|
+  # Configure API key authorization: newgraph-api-eu-dev
+  config.api_key['Authorization'] = 'YOUR API KEY'
+  # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
+  #config.api_key_prefix['Authorization'] = 'Bearer'
+end
+
+api_instance = SwaggerClient::DefaultApi.new
+
+user_transfer_request = SwaggerClient::UserTransferRequest.new # UserTransferRequest | 
+
+
+begin
+  result = api_instance.user_transfer_post(user_transfer_request)
+  p result
+rescue SwaggerClient::ApiError => e
+  puts "Exception when calling DefaultApi->user_transfer_post: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **user_transfer_request** | [**UserTransferRequest**](UserTransferRequest.md)|  | 
+
+### Return type
+
+[**UserReadPrivateResponse**](UserReadPrivateResponse.md)
+
+### Authorization
+
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6159,7 +6799,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -6190,7 +6830,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
@@ -6247,7 +6887,7 @@ No authorization required
 require 'swagger_client'
 # setup authorization
 SwaggerClient.configure do |config|
-  # Configure API key authorization: newlife-creator-api-eu-dev
+  # Configure API key authorization: newgraph-api-eu-dev
   config.api_key['Authorization'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['Authorization'] = 'Bearer'
@@ -6278,7 +6918,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[newlife-creator-api-eu-dev](../README.md#newlife-creator-api-eu-dev)
+[newgraph-api-eu-dev](../README.md#newgraph-api-eu-dev)
 
 ### HTTP request headers
 
